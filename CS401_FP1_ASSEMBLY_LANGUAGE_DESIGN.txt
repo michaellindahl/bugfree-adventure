@@ -1,0 +1,58 @@
+CS 401 NAME(s): 							  Due Apr 17
+FINAL GROUP PROJECT:  CPU DESIGN PART I:  LANGUAGE DESIGN
+
+
+For this project you must work in a group of three to four individuals.
+
+1.1 Processors of the World Comparison
+Compare the hardware architectures and assembly/machine languages for four different processors. You must include ARM and MIPS in your comparison however, you may pick any two other processors you wish; below are some suggestions with info: 
+
+Old Style Intel 8080 or 8085 Architecture
+http://en.wikipedia.org/wiki/Intel_8080 
+http://www.intel-vintage.info/intelotherresources.htm#906748189 
+Old Style Motorola 6502 Architecture
+http://www.visual6502.org/welcome.html
+http://en.wikipedia.org/wiki/MOS_Technology_6502 
+http://opencores.org/project,t65
+Modern General Purpose MIPS Architecture – see your textbook.
+Modern General Purpose ARM Architecture
+http://www.apdl.co.uk/riscworld/volume1/issue4/armcode/index.htm 
+http://en.wikipedia.org/wiki/ARM_architecture
+http://morrow.ece.wisc.edu/ECE353/arm_reference/ddi0100e_arm_arm.pdf 
+Modern Application Specific Nvidia Fermi Architecture (Graphics Processor)
+http://www.orangeowlsolutions.com/archives/388
+http://www.nvidia.com/content/PDF/fermi_white_papers/NVIDIA_Fermi_Compute_Architecture_Whitepaper.pdf
+http://code.google.com/p/asfermi/wiki/Opcode
+http://code.google.com/p/asfermi/wiki/nanb
+
+When comparing the four architectures you should look at the high-level architecture design of each style and compare the following:
+
+Data Path Units – Write a paragraph describing the Data Path Unit architecture for each processor. How do the DPUs compare one to another?
+
+Instruction Format Comparisons – Pick two instructions: Pick a branch instruction and one other instruction. Compare the assembly and machine code format for both of these instructions among all 4 processors.
+
+1.2 CPU Design: Assembly Language Design and Format 
+   Step 1: Decide on the specific application area you want your processor to focus on. Are you interested in general purpose? audio? graphics? encryption? security? Look at sample processors and their assembly language design for ideas on how you want to design your assembly language. If you choose MIPS, your application area is general purpose.
+
+Step 2: Design the programmer’s view of the architecture for your processor (e.g. the general instructions and instructions for accessing registers/memory). If you choose MIPs, this is done for you, however, you will need to implement a minimum of 5 additional instructions.
+
+Don’t start with too many instructions! Look on pages 432 and 433 in the text book to see the instructions implemented in the book for the single cycle processor, (e.g. addi, or, and, add, beq, slt, sub, sw, lw, j).  Your processor will need enough total instructions to do useful work (somewhere in the range of 5 to 10 instructions) 
+
+Once you have a list of instructions (and registers) for your assembly language, write some ad-hoc assembly language programs (using your newly defined assembly language) that you will use to test your CPU once you have designed and implemented a processor to run your language. Obviously, you MUST understand how your language will work BEFORE you implement a CPU to decode and run your language!
+
+Assembly Language Common Requirements:
+You must have enough instructions to run a useful program (e.g. something of the complexity of generating the Fibonacci sequence)
+If you decided to simply implement a MIPS style processor (i.e. expand the single cycle example), then you must add an additional 5 instructions chosen from Appendix B over and above the instructions you have already implemented. 
+
+Two Assembly Language Test Programs:
+Implement an ad-hoc assembly program that runs every instruction you have designed.
+Implement a well know algorithm that you will eventually run on your CPU (e.g. sieve of Eratosthenes, Fibonacci etc.)Implement a version of this algorithm in your assembly language.
+
+Step 3: Translate your program from assembly language into machine language so that it will be ready to run once you have implemented your microprocessor design in VHDL.  For bonus points, make an assembler that will translate any assembly language program using your instructions into your machine code.
+What to Hand In: 
+Place the following items in a text document (i.e. word / pdf) called FP1_Language_Design in your folder on CS1.  Hand in a single printout of the front page of this document with your names on the document.
+The processors of the world comparison of 4 processors.
+The programmers view of the architectures: define the registers, and the binary format for each instruction. (e.g. fig 6.10, 6.12, etc) and a  table of instructions that describes each instruction’s operation (see appendix B for an example of what this should look like).
+Two Assembly Language Test Programs, an ad-hoc program and a well-known algorithm. For full points these must be complete and well documented.
+A machine code listing (in Hexadecimal) of each of your programs.
+For Bonus Points: Your assembler code (if implemented)
