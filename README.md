@@ -6,7 +6,9 @@ bugfree-adventure
 ###FINAL GROUP PROJECT:  CPU DESIGN PART I:  LANGUAGE DESIGN (DUE: 4/17/14)
 *Tentative Dates set to each section*
 
-#### 1.1 PROCESSORS OF THE WORLD COMPARISON **Status:** Strenths and Weaknesses on Old Style and Modern Application
+#### 1.1 PROCESSORS OF THE WORLD COMPARISON 
+**Status:** Strenths and Weaknesses on Old Style and Modern Application
+
 *Neat, Compared 4 processors architecture, machine code, and assembly language with an excellent comparison and discussion of pros and cons of each processor.*
 
  * Michael: Old Style Intel Architecture
@@ -21,11 +23,14 @@ What to compare:
 2.	<b>Instruction Format Comparisons</b> – Pick two instructions: Pick a branch instruction and one other instruction. Compare the assembly and machine code format for both of these instructions among all 4 processors.
 
 
-#### 1.2 PROGRAMMERS VIEW OF THE ARCHITECTURE **Status:**Complete
+#### 1.2 PROGRAMMERS VIEW OF THE ARCHITECTURE 
+**Status:** Complete
 
-#### 1.3 TWO ASSEMBLY LANGUAGE TEST PROGRAMS (4/15) **Status:**Test Program for all instructions
+#### 1.3 TWO ASSEMBLY LANGUAGE TEST PROGRAMS (4/15) 
+**Status:** Test Program for all instructions
 
-#### 1.4 HEXADECIMAL MACHINE CODE LISTINGS  (4/16)  **Status:**Hex listing for all instruction test program
+#### 1.4 HEXADECIMAL MACHINE CODE LISTINGS  (4/16)  
+**Status:** Hex listing for all instruction test program
 
 ####10 bonus pts possible: ASSEMBLER PROGRAM (4/17?)
 *If time is available
