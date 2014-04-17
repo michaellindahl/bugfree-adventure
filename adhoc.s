@@ -65,7 +65,7 @@ ori  	$a3, $a0, 7 # 34870007
 		# lw $t, offset($s)
 		# storing $a3 into 8($0)
 		
-sw   	$a3, 8($0) # AC470047
+sw   	$a3, 8($0) # AC070008
 
 
 		# test j
