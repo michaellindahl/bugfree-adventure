@@ -63,8 +63,9 @@ ori  	$a3, $a0, 7 # 34870007
 		# test sw
 		# $t = MEM[$s + offset];
 		# lw $t, offset($s)
-		# storing $a3 into 71($2)
-sw   $a3, 71($2) # AC470047
+		# storing $a3 into 8($0)
+		
+sw   	$a3, 8($0) # AC470047
 
 
 		# test j
@@ -81,8 +82,8 @@ testjump:
 		# test lw
 		# MEM[$s + offset] = $t;
 		# lw $t, offset($s)
-		# loading 71($2) into $a3
-lw   $a3, 0($0)
+		# loading 8($0) into $a3
+lw   	$a3, 8($0)
 
  jr   $ra            	# return to OS
 
