@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/CS401/mips_cpu_v2_sim_reorg/mips/top.xst" -ofn "C:/CS401/mips_cpu_v2_sim_reorg/mips/top.syr" 

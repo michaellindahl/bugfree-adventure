@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "X:/mlindahl15/CS475/MIPS_CPU_FPGA_AND_SIM_V4/mips/testbench_isim_beh.exe" -prj "X:/mlindahl15/CS475/MIPS_CPU_FPGA_AND_SIM_V4/mips/testbench_beh.prj" "work.testbench" 

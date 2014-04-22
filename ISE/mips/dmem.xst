@@ -1,0 +1,5 @@
+set -tmpdir "C:/CS401/mips_cpu_v2_sim_reorg/mips/xst/projnav.tmp"
+set -xsthdpdir "C:/CS401/mips_cpu_v2_sim_reorg/mips/xst"
+elaborate
+-ifn dmem.prj
+-ifmt mixed

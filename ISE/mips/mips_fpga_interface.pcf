@@ -1,0 +1,26 @@
+//! **************************************************************************
+// Written by: Map P.68d on Mon Apr 07 16:48:10 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "T9" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "E11" LEVEL 1;
+COMP "led<0>" LOCATE = SITE "M6" LEVEL 1;
+COMP "led<1>" LOCATE = SITE "M11" LEVEL 1;
+COMP "led<2>" LOCATE = SITE "N6" LEVEL 1;
+COMP "led<3>" LOCATE = SITE "R7" LEVEL 1;
+COMP "led<4>" LOCATE = SITE "P10" LEVEL 1;
+COMP "led<5>" LOCATE = SITE "T7" LEVEL 1;
+COMP "led<6>" LOCATE = SITE "R10" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+TIMEGRP clk = BEL "mips_clk_input" BEL "cnt_0" BEL "cnt_1" BEL "cnt_2" BEL
+        "cnt_3" BEL "cnt_4" BEL "cnt_5" BEL "cnt_6" BEL "cnt_7" BEL "cnt_8"
+        BEL "cnt_9" BEL "cnt_10" BEL "cnt_11" BEL "cnt_12" BEL "cnt_13" BEL
+        "cnt_14" BEL "cnt_15" BEL "cnt_16" BEL "cnt_17" BEL "cnt_18" BEL
+        "cnt_19" BEL "cnt_20" BEL "cnt_21" BEL "cnt_22" BEL "cnt_23" BEL
+        "cnt_24" BEL "cnt_25" BEL "cnt_26" BEL "cnt_27" BEL "cnt_28" BEL
+        "cnt_29" BEL "cnt_30" BEL "cnt_31" BEL "clk_BUFGP/BUFG.GCLKMUX" BEL
+        "clk_BUFGP/BUFG";
+TS_clk = PERIOD TIMEGRP "clk" 10 ns HIGH 50%;
+SCHEMATIC END;
+
