@@ -1,0 +1,10 @@
+######DPU Control Signals
+*PC Source (PCSrc)
+*Jump 
+*Register File (RegWrite)
+*Register Destination (RegDst)
+*ALU Source (ALUSrc)
+*ALU Control (ALUControl)
+*Memory to register (MemtoReg)
+*Write to memory (MemWrite)
+*Other signals will be needed inside of the Control Unit (Op and Branch for PCSrc)
