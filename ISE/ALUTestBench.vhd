@@ -95,7 +95,8 @@ BEGIN
       -- wait for <clock>_period*10;
 
       -- set a, b
-		a <= X"010"; b <= X"110";
+		a <= X"010"; 
+		b <= X"110";
 		
 		-- test a and b
 		alucontrol <= "000"; wait for 10 ns;

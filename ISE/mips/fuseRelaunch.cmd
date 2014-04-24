@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "X:/mlindahl15/CS475/MIPS_CPU_FPGA_AND_SIM_V4/mips/testbench_isim_beh.exe" -prj "X:/mlindahl15/CS475/MIPS_CPU_FPGA_AND_SIM_V4/mips/testbench_beh.prj" "work.testbench" 
+-intstyle "ise" -incremental -o "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/ALUTestBench_isim_beh.exe" -prj "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/ALUTestBench_beh.prj" "work.ALUTestBench" 
