@@ -95,134 +95,142 @@ BEGIN
       -- wait for <clock>_period*10;
 
       -- set a, b
-		a <= X"010"; 
-		b <= X"110";
+		a <= X"00000002"; -- 010                    010
+		b <= X"00000006"; -- 110   11111111111111111001 (not)
 		
 		-- test a and b
 		alucontrol <= "000"; wait for 10 ns;
-		assert result = X"010" report "#1 and failed";
+		assert result = X"00000002" report "#1 and failed";
 		
 		-- test a or b
 		alucontrol <= "001"; wait for 10 ns;
-		assert result = X"110" report "#1 or failed";	
+		assert result = X"00000006" report "#1 or failed";	
 		
 		-- test a + b
 		alucontrol <= "010"; wait for 10 ns;
-		assert result = X"1000" report "#1 plus failed";
+		assert result = X"00000008" report "#1 plus failed";
 		
 		-- test a and not b
 		alucontrol <= "100"; wait for 10 ns;
-		assert result = X"000" report "#1 and not failed";
+		assert result = X"00000000" report "#1 and not failed";
 		
 		-- test a or not b
 		alucontrol <= "101"; wait for 10 ns;
-		assert result = X"011" report "#1 or not failed";	
+		assert result = X"FFFFFFFB" report "#1 or not failed";	
 		
 		-- test a - b
 		alucontrol <= "110"; wait for 10 ns;
-		assert result = "11111111111111111111111111111100" report "#1 subtract failed";		
+		assert result = X"FFFFFFFC" report "#1 subtract failed";		
 		
 		-- test slt
 		alucontrol <= "111"; wait for 10 ns;
-		assert result = X"001" report "#1 slt failed";
+		assert result = X"00000001" report "#1 slt failed";
 		
 		
       -- set a, b
-		a <= X"1100"; b <= X"0001";
+		a <= X"0000000C"; -- 1100
+		b <= X"00000001"; -- 0001 
 		
 		-- test a and b
 		alucontrol <= "000"; wait for 10 ns;
-		assert result = X"0000" report "#2 and failed";
+		assert result = X"00000000" report "#2 and failed";
 		
 		-- test a or b
 		alucontrol <= "001"; wait for 10 ns;
-		assert result = X"1101" report "#2 or failed";	
+		assert result = X"0000000D" report "#2 or failed";	
 		
 		-- test a + b
 		alucontrol <= "010"; wait for 10 ns;
-		assert result = X"1101" report "#2 plus failed";
+		assert result = X"0000000D" report "#2 plus failed";
 		
 		-- test a and not b
 		alucontrol <= "100"; wait for 10 ns;
-		assert result = X"1100" report "#2 and not failed";
+		assert result = X"0000000C" report "#2 and not failed";
 		
 		-- test a or not b
 		alucontrol <= "101"; wait for 10 ns;
-		assert result = X"1110" report "#2 or not failed";	
+		assert result = X"FFFFFFFE" report "#2 or not failed";	
 		
 		-- test a - b
 		alucontrol <= "110"; wait for 10 ns;
-		assert result = X"1011" report "#2 subtract failed";		
+		assert result = X"0000000B" report "#2 subtract failed";		
 		
 		-- test slt
 		alucontrol <= "111"; wait for 10 ns;
-		assert result = X"0000" report "#2 slt failed";
+		assert result = X"00000000" report "#2 slt failed";
 		
 		
 		
       -- set a, b
-		a <= X"10101"; b <= X"01101";
+		a <= X"0000000C"; -- 01100 (12)      01100
+		b <= X"0000000D"; -- 01101 (13)   111100
 		
 		-- test a and b
 		alucontrol <= "000"; wait for 10 ns;
-		assert result = X"00101" report "#3 and failed";
+		assert result = X"0000000C" report "#3 and failed"; -- 01100
 		
 		-- test a or b
 		alucontrol <= "001"; wait for 10 ns;
-		assert result = X"11101" report "#3 or failed";	
+		assert result = X"0000000D" report "#3 or failed";	-- 01101
 		
 		-- test a + b
 		alucontrol <= "010"; wait for 10 ns;
-		assert result = X"100010" report "#3 plus failed";
+		assert result = X"00000019" report "#3 plus failed"; -- (25)
 		
 		-- test a and not b
 		alucontrol <= "100"; wait for 10 ns;
-		assert result = X"10000" report "#3 and not failed";
+		assert result = X"00000000" report "#3 and not failed"; 
 		
 		-- test a or not b
 		alucontrol <= "101"; wait for 10 ns;
-		assert result = X"10111" report "#3 or not failed";	
+		assert result = X"FFFFFFFE" report "#3 or not failed"; -- 11111110
 		
 		-- test a - b
+		--   001
+		--   110
+		-- 11111
 		alucontrol <= "110"; wait for 10 ns;
-		assert result = X"01000" report "#3 subtract failed";		
+		assert result = X"FFFFFFFF" report "#3 subtract failed";	-- FFFFFE
 		
 		-- test slt
 		alucontrol <= "111"; wait for 10 ns;
-		assert result = X"0000" report "#3 slt failed";
+		assert result = X"00000001" report "#3 slt failed";
 		
 
 			
       -- set a, b
-		a <= X"00011"; b <= X"11011";
+		a <= X"00000003"; -- 00011    00011
+		b <= X"0000001B"; -- 11011    11111100111
 		
 		-- test a and b
 		alucontrol <= "000"; wait for 10 ns;
-		assert result = X"00011" report "#4 and failed";
+		assert result = X"00000003" report "#4 and failed";
 		
 		-- test a or b
 		alucontrol <= "001"; wait for 10 ns;
-		assert result = X"11011" report "#4 or failed";	
+		assert result = X"0000001B" report "#4 or failed";	
 		
 		-- test a + b
 		alucontrol <= "010"; wait for 10 ns;
-		assert result = X"11110" report "#4 plus failed";
+		assert result = X"0000001E" report "#4 plus failed";
 		
 		-- test a and not b
 		alucontrol <= "100"; wait for 10 ns;
-		assert result = X"00000" report "#4 and not failed";
+		assert result = X"00000000" report "#4 and not failed";
 		
 		-- test a or not b
 		alucontrol <= "101"; wait for 10 ns;
-		assert result = X"00111" report "#4 or not failed";	
+		assert result = X"FFFFFFE7" report "#4 or not failed";	
 		
 		-- test a - b
+		--   011000
+		-- 11101000
 		alucontrol <= "110"; wait for 10 ns;
-		assert result = X"11111111111111111111111111111000" report "#4 subtract failed";		
+		assert result = X"FFFFFFE8" report "#4 subtract failed";		
 		
 		-- test slt
 		alucontrol <= "111"; wait for 10 ns;
-		assert result = X"0001" report "#4 slt failed";
+		assert result = X"00000001" report "#4 slt failed";
 		
 	
       wait;

@@ -17,8 +17,8 @@ begin
   -- slt should be 1 if most significant bit of sum is 1
   slt <= X"00000001" when sum(31) = '1' else X"00000000";
   with alucontrol(1 downto 0) select result <=
-    a and b when "00",
-    a or b  when "01",
+    a and b2 when "00",
+    a or b2  when "01",
     sum     when "10",
     slt     when others;
   zero <= '1' when result = X"00000000" else '0';
