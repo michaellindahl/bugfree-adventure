@@ -20,10 +20,11 @@ begin
       when "100011" => controls <= "101001000"; -- LW
       when "101011" => controls <= "0X101X000"; -- SW
       when "000100" => controls <= "0X010X001"; -- BEQ
-      when "001000" => controls <= "101000000"; -- ADDI
-      when "000010" => controls <= "0XXX0X1XX"; -- J
-		when "001101" => controls <= "101000010"; -- ori
 		when "000101" => controls <= "0X010X001"; -- bne
+		when "001000" => controls <= "101000000"; -- ADDI
+		when "001101" => controls <= "101000010"; -- ori
+		when "001100" => controls <= "101000010"; -- andi
+		when "000010" => controls <= "0XXX0X1XX"; -- J
 		--when "000100" => controls <= "0X010X001"; -- BEQ
       when others   => controls <= "---------"; -- illegal op
     end case;

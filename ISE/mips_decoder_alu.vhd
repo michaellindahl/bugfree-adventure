@@ -16,6 +16,7 @@ begin
       when "01" => alucontrol <= "110"; -- sub (for beq)
       when "10" => case op is
 								 when "001101" => alucontrol <= "010"; -- ori
+								 when "001100" => alucontrol <= "000"; -- andi (made it like and)
 								 when "000000" => case funct is         -- R-type instructions
 													 when "100000" => alucontrol <= "010"; -- add (for add)
 													 when "100010" => alucontrol <= "110"; -- subtract (for sub)
