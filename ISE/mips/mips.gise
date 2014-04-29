@@ -24,7 +24,6 @@
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ALUTestBench_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="ALUTestBench_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALUTestBench_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
@@ -39,9 +38,7 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="dmem.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="dmem.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="dmem.xst"/>
-    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="mips_fpga_interface.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="mips_fpga_interface.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="mips_fpga_interface.bld"/>
@@ -115,7 +112,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1398793827" xil_pn:in_ck="-600017114461476584" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1398793827">
+    <transform xil_pn:end_ts="1398794523" xil_pn:in_ck="-600017114461476584" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1398794523">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../ALUTestBench.vhd"/>
@@ -131,11 +128,11 @@
       <outfile xil_pn:name="../mips_testbench.vhd"/>
       <outfile xil_pn:name="../mips_top.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1398793798" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="8807761803313408874" xil_pn:start_ts="1398793798">
+    <transform xil_pn:end_ts="1398794527" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="8807761803313408874" xil_pn:start_ts="1398794527">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1398793798" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-561788914244653534" xil_pn:start_ts="1398793798">
+    <transform xil_pn:end_ts="1398794527" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-561788914244653534" xil_pn:start_ts="1398794527">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -143,7 +140,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1398793827" xil_pn:in_ck="-600017114461476584" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1398793827">
+    <transform xil_pn:end_ts="1398794523" xil_pn:in_ck="-600017114461476584" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1398794523">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../ALUTestBench.vhd"/>
@@ -159,18 +156,18 @@
       <outfile xil_pn:name="../mips_testbench.vhd"/>
       <outfile xil_pn:name="../mips_top.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1398793829" xil_pn:in_ck="-600017114461476584" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-122521137738725379" xil_pn:start_ts="1398793827">
+    <transform xil_pn:end_ts="1398794529" xil_pn:in_ck="-600017114461476584" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-122521137738725379" xil_pn:start_ts="1398794527">
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1398793364" xil_pn:in_ck="4419158871916974861" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="5953106937819060154" xil_pn:start_ts="1398793364">
+    <transform xil_pn:end_ts="1398794526" xil_pn:in_ck="4419158871916974861" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3478756992845604714" xil_pn:start_ts="1398794526">
       <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForced"/>
-      <outfile xil_pn:name="ALUTestBench_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="testbench_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1396917688" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1396917688">
       <status xil_pn:value="SuccessfullyRun"/>
