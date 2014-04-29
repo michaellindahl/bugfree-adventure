@@ -5,7 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Simulator" num="0" delta="unknown" >Unable to copy libPortabilityNOSH.dll to the simulation executable directory: <arg fmt="%s" index="1">boost::filesystem::copy_file: The system cannot find the path specified, &quot;isim\ALUTestBench_isim_beh.exe.sim\libPortability.dll&quot;</arg>.
+<msg type="error" file="HDLCompiler" num="410" delta="unknown" >"C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips/../mips_datapath.vhd" Line 84: Expression has <arg fmt="%d" index="1">3</arg> elements ; expected <arg fmt="%d" index="2">4</arg>
+</msg>
+
+<msg type="error" file="Simulator" num="777" delta="unknown" >Static elaboration of top level VHDL design unit <arg fmt="%s" index="1">testbench</arg> in library <arg fmt="%s" index="2">work</arg> failed
 </msg>
 
 </messages>

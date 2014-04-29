@@ -18,7 +18,7 @@ end;
 architecture struct of datapath is
   component alu
     port(a, b:       in  STD_LOGIC_VECTOR(31 downto 0);
-         alucontrol: in  STD_LOGIC_VECTOR(2 downto 0);
+         alucontrol: in  STD_LOGIC_VECTOR(3 downto 0);
          result:     inout STD_LOGIC_VECTOR(31 downto 0);
 	      zero:       out STD_LOGIC);
   end component;

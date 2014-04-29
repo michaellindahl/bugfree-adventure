@@ -1,2 +1,0 @@
-vhdl work "../mips_alu.vhd"
-vhdl work "../ALUTestBench.vhd"
