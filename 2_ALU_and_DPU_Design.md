@@ -1,8 +1,8 @@
 ### ALU Design
 MIPS - General Purpose
 
-######ALU Operations
-| F_2:0      | Function/Desc      |
+######ALU Operations/Control Signals
+| F_3:0      | Function/Desc      |
 | ---------- | ------------------ | 
 | 0000       | A AND B            | 
 | 0001       | A OR B             | 
