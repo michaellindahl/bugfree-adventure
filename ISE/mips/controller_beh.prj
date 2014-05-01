@@ -1,0 +1,3 @@
+vhdl work "../mips_decoder_main.vhd"
+vhdl work "../mips_decoder_alu.vhd"
+vhdl work "../mips_controller.vhd"
