@@ -4,10 +4,11 @@ use IEEE.STD_LOGIC_1164.all;
 entity aludec is -- ALU control decoder
   port(funct:      in  STD_LOGIC_VECTOR(5 downto 0);
        aluop:      in  STD_LOGIC_VECTOR(1 downto 0);
-       alucontrol: out STD_LOGIC_VECTOR(3 downto 0);
+       alucontrol: out STD_LOGIC_VECTOR(3 downto 0); --
 		 op:      in STD_LOGIC_VECTOR(5 downto 0));
 end;
 
+--changed number of bits into alu control 
 architecture behave of aludec is
 begin
   process(aluop, funct) begin
@@ -15,7 +16,7 @@ begin
       when "00" => alucontrol <= "0010"; -- add (for lb/sb/addi)
       when "01" => alucontrol <= "1010"; -- sub (for beq)
       when "10" => case op is
-								 when "001101" => alucontrol <= "0001"; -- ori
+								 when "001101" => alucontrol <= "0010"; -- ori
 								 when "001100" => alucontrol <= "0000"; -- andi (made it like and)
 								 when "000000" => case funct is         -- R-type instructions
 													 when "100000" => alucontrol <= "0010"; -- add (for add)

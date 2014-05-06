@@ -50,7 +50,7 @@ architecture behave of imem is
     impure function InitRamFromFile ( RamFileName : in string ) return RamType is -- this runs when your program is synthesized. this will read from a file, load it into RAM, and that RAM becomes a static value that can be synthesized to your hardware. reads from memfile.dat.
 	      variable ch: character;
          variable index : integer; 
-			variable result: signed(31 downto 0);
+  			variable result: signed(31 downto 0);
 			variable tmpResult: signed(63 downto 0);
 	      file mem_file: TEXT is in RamFileName;
          variable L: line;

@@ -108,3 +108,5 @@ xst -intstyle ise -ifn "X:/mlindahl15/CS475/MIPS_CPU_FPGA_AND_SIM_V4/mips/mips_f
 xst -intstyle ise -ifn "X:/mlindahl15/CS475/MIPS_CPU_FPGA_AND_SIM_V4/mips/mips_fpga_interface.xst" -ofn "X:/mlindahl15/CS475/MIPS_CPU_FPGA_AND_SIM_V4/mips/mips_fpga_interface.syr" 
 xst -intstyle ise -ifn "X:/mlindahl15/CS475/MIPS_CPU_FPGA_AND_SIM_V4/mips/mips_fpga_interface.xst" -ofn "X:/mlindahl15/CS475/MIPS_CPU_FPGA_AND_SIM_V4/mips/mips_fpga_interface.syr" 
 xst -intstyle ise -ifn "X:/mlindahl15/CS475/MIPS_CPU_FPGA_AND_SIM_V4/mips/mips_fpga_interface.xst" -ofn "X:/mlindahl15/CS475/MIPS_CPU_FPGA_AND_SIM_V4/mips/mips_fpga_interface.syr" 
+xst -intstyle ise -ifn "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+xst -intstyle ise -ifn "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 

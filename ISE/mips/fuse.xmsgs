@@ -5,9 +5,6 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1242" delta="unknown" >"C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips/../mips_mem.vhd" Line 79: <arg fmt="%s" index="1">Error</arg>: <arg fmt="%s" index="2">&quot;Format error on line 0&quot;</arg>
-</msg>
-
 <msg type="warning" file="Simulator" num="0" delta="unknown" >Unable to copy libPortabilityNOSH.dll to the simulation executable directory: <arg fmt="%s" index="1">boost::filesystem::copy_file: The system cannot find the path specified, &quot;isim\testbench_isim_beh.exe.sim\libPortability.dll&quot;</arg>.
 </msg>
 
