@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> Parameter xsthdpdir set to xst
 
@@ -116,8 +116,7 @@ Architecture behave of Entity alu is up to date.
 Compiling vhdl file "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_decoder_main.vhd" in Library work.
 Architecture behave of Entity maindec is up to date.
 Compiling vhdl file "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_decoder_alu.vhd" in Library work.
-Entity <aludec> compiled.
-Entity <aludec> (Architecture <behave>) compiled.
+Architecture behave of Entity aludec is up to date.
 Compiling vhdl file "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_controller.vhd" in Library work.
 Architecture struct of Entity controller is up to date.
 Compiling vhdl file "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_datapath.vhd" in Library work.
@@ -125,10 +124,8 @@ Architecture struct of Entity datapath is up to date.
 Compiling vhdl file "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips.vhd" in Library work.
 Architecture struct of Entity mips is up to date.
 Compiling vhdl file "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_mem.vhd" in Library work.
-Entity <dmem> compiled.
-Entity <dmem> (Architecture <behave>) compiled.
-Entity <imem> compiled.
-Entity <imem> (Architecture <behave>) compiled.
+Architecture behave of Entity dmem is up to date.
+Architecture behave of Entity imem is up to date.
 Compiling vhdl file "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_top.vhd" in Library work.
 Architecture test of Entity top is up to date.
 Compiling vhdl file "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd" in Library work.
@@ -2552,10 +2549,45 @@ WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_36_3> of sequential type is unconnec
 WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_36_2> of sequential type is unconnected in block <mips_fpga_interface>.
 WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_36_1> of sequential type is unconnected in block <mips_fpga_interface>.
 WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_36_0> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren2> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren6> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren4> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren8> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren12> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren10> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren14> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren18> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren16> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren20> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren24> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren22> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren26> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren30> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren28> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren32> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren36> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren34> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren38> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren42> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren40> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren44> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren48> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren46> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren50> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren54> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren52> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren56> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren60> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren58> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren62> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/rf/Mram_mem_ren64> of sequential type is unconnected in block <mips_fpga_interface>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block mips_fpga_interface, actual ratio is 3.
+FlipFlop mips_cpu/mips1/dp/pcreg/q_4 has been replicated 1 time(s)
+FlipFlop mips_cpu/mips1/dp/pcreg/q_5 has been replicated 1 time(s)
+FlipFlop mips_cpu/mips1/dp/pcreg/q_6 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -2563,8 +2595,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 39
- Flip-Flops                                            : 39
+# Registers                                            : 42
+ Flip-Flops                                            : 42
 
 =========================================================================
 
@@ -2593,28 +2625,27 @@ Design Statistics
 # IOs                              : 9
 
 Cell Usage :
-# BELS                             : 648
+# BELS                             : 628
 #      GND                         : 1
 #      INV                         : 12
 #      LUT1                        : 76
-#      LUT2                        : 12
-#      LUT2_D                      : 1
-#      LUT2_L                      : 1
-#      LUT3                        : 56
-#      LUT3_D                      : 5
-#      LUT3_L                      : 6
+#      LUT2                        : 27
+#      LUT2_D                      : 3
+#      LUT3                        : 39
+#      LUT3_D                      : 7
+#      LUT3_L                      : 1
 #      LUT4                        : 166
-#      LUT4_D                      : 12
-#      LUT4_L                      : 50
+#      LUT4_D                      : 18
+#      LUT4_L                      : 28
 #      MUXCY                       : 138
 #      MUXF5                       : 8
 #      VCC                         : 1
 #      XORCY                       : 103
-# FlipFlops/Latches                : 39
-#      FDC                         : 6
+# FlipFlops/Latches                : 42
+#      FDC                         : 9
 #      FDR                         : 33
-# RAMS                             : 128
-#      RAM16X1D                    : 128
+# RAMS                             : 96
+#      RAM16X1D                    : 96
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
@@ -2628,11 +2659,11 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-4 
 
- Number of Slices:                      289  out of   7680     3%  
- Number of Slice Flip Flops:             39  out of  15360     0%  
- Number of 4 input LUTs:                653  out of  15360     4%  
-    Number used as logic:               397
-    Number used as RAMs:                256
+ Number of Slices:                      272  out of   7680     3%  
+ Number of Slice Flip Flops:             42  out of  15360     0%  
+ Number of 4 input LUTs:                569  out of  15360     3%  
+    Number used as logic:               377
+    Number used as RAMs:                192
  Number of IOs:                           9
  Number of bonded IOBs:                   9  out of    173     5%  
  Number of GCLKs:                         2  out of      8    25%  
@@ -2659,7 +2690,7 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
 clk                                | BUFGP                  | 33    |
-mips_clk_input1                    | BUFG                   | 134   |
+mips_clk_input1                    | BUFG                   | 105   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -2667,16 +2698,16 @@ Asynchronous Control Signals Information:
 -----------------------------------+----------------------------------+-------+
 Control Signal                     | Buffer(FF name)                  | Load  |
 -----------------------------------+----------------------------------+-------+
-reset(reset1_INV_0:O)              | NONE(mips_cpu/mips1/dp/pcreg/q_2)| 6     |
+reset(reset1_INV_0:O)              | NONE(mips_cpu/mips1/dp/pcreg/q_2)| 9     |
 -----------------------------------+----------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 20.553ns (Maximum Frequency: 48.656MHz)
-   Minimum input arrival time before clock: 5.353ns
-   Maximum output required time after clock: 8.360ns
+   Minimum period: 18.809ns (Maximum Frequency: 53.167MHz)
+   Minimum input arrival time before clock: 5.497ns
+   Maximum output required time after clock: 8.452ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -2685,10 +2716,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 12.759ns (frequency: 78.375MHz)
+  Clock period: 12.615ns (frequency: 79.270MHz)
   Total number of paths / destination ports: 17265 / 65
 -------------------------------------------------------------------------
-Delay:               12.759ns (Levels of Logic = 34)
+Delay:               12.615ns (Levels of Logic = 34)
   Source:            cnt_1 (FF)
   Destination:       cnt_0 (FF)
   Source Clock:      clk rising
@@ -2731,77 +2762,66 @@ Delay:               12.759ns (Levels of Logic = 34)
      XORCY:CI->O           2   0.904   1.216  Madd_mips_clk_input_add0000_xor<29> (mips_clk_input_add0000<29>)
      LUT2:I0->O            1   0.551   0.000  Mcompar_cnt_cmp_ge0000_lut<11> (Mcompar_cnt_cmp_ge0000_lut<11>)
      MUXCY:S->O            1   0.500   0.000  Mcompar_cnt_cmp_ge0000_cy<11> (Mcompar_cnt_cmp_ge0000_cy<11>)
-     MUXCY:CI->O           1   0.303   1.140  Mcompar_cnt_cmp_ge0000_cy<12> (cnt_cmp_ge0000)
-     LUT2:I0->O           32   0.551   1.853  cnt_or00001 (cnt_or0000)
+     MUXCY:CI->O           1   0.303   0.996  Mcompar_cnt_cmp_ge0000_cy<12> (cnt_cmp_ge0000)
+     LUT2:I1->O           32   0.551   1.853  cnt_or00001 (cnt_or0000)
      FDR:R                     1.026          cnt_0
     ----------------------------------------
-    Total                     12.759ns (7.334ns logic, 5.425ns route)
-                                       (57.5% logic, 42.5% route)
+    Total                     12.615ns (7.334ns logic, 5.281ns route)
+                                       (58.1% logic, 41.9% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'mips_clk_input1'
-  Clock period: 20.553ns (frequency: 48.656MHz)
-  Total number of paths / destination ports: 1773288 / 1286
+  Clock period: 18.809ns (frequency: 53.167MHz)
+  Total number of paths / destination ports: 1223046 / 937
 -------------------------------------------------------------------------
-Delay:               20.553ns (Levels of Logic = 38)
-  Source:            mips_cpu/mips1/dp/pcreg/q_5 (FF)
+Delay:               18.809ns (Levels of Logic = 27)
+  Source:            mips_cpu/mips1/dp/pcreg/q_7 (FF)
   Destination:       mips_cpu/mips1/dp/pcreg/q_2 (FF)
   Source Clock:      mips_clk_input1 rising
   Destination Clock: mips_clk_input1 rising
 
-  Data Path: mips_cpu/mips1/dp/pcreg/q_5 to mips_cpu/mips1/dp/pcreg/q_2
+  Data Path: mips_cpu/mips1/dp/pcreg/q_7 to mips_cpu/mips1/dp/pcreg/q_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             26   0.720   1.845  mips_cpu/mips1/dp/pcreg/q_5 (mips_cpu/mips1/dp/pcreg/q_5)
-     LUT4_D:I3->O         38   0.551   1.955  mips_cpu/imem1/Mrom_rd101111 (N3)
-     LUT4:I2->O           64   0.551   2.036  mips_cpu/imem1/Mrom_rd35111 (mips_cpu/instr<21>)
-     RAM16X1D:DPRA0->DPO    1   0.551   1.140  mips_cpu/mips1/dp/rf/Mram_mem2 (mips_cpu/mips1/dp/rf/N7)
-     LUT4:I0->O            2   0.551   1.216  mips_cpu/mips1/dp/rf/rd1<0>1 (mips_cpu/mips1/dp/srca<0>)
-     LUT4:I0->O            1   0.551   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_lut<0> (mips_cpu/mips1/dp/mainalu/Madd_sum_lut<0>)
-     MUXCY:S->O            1   0.500   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<0> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<0>)
-     MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<1> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<1>)
-     MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<2> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<2>)
-     MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<3> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<3>)
-     MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<4> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<4>)
-     MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<5> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<5>)
-     MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<6> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<6>)
-     MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<7> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<7>)
-     MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<8> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<8>)
-     MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<9> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<9>)
-     MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<10> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<10>)
-     MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<11> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<11>)
-     MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<12> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<12>)
-     MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<13> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<13>)
-     MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<14> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<14>)
-     MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<15> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<15>)
+     FDC:C->Q             28   0.720   1.856  mips_cpu/mips1/dp/pcreg/q_7 (mips_cpu/mips1/dp/pcreg/q_7)
+     LUT4_D:I3->O         20   0.551   1.613  mips_cpu/imem1/Mrom_rd101111 (N3)
+     LUT3:I2->O           75   0.551   2.099  mips_cpu/instr<23>1 (mips_cpu/instr<23>)
+     RAM16X1D:DPRA2->DPO    1   0.551   0.827  mips_cpu/mips1/dp/rf/Mram_mem32 (mips_cpu/mips1/dp/rf/N67)
+     LUT4:I3->O            2   0.551   1.072  mips_cpu/mips1/dp/rf/rd1<15>1 (mips_cpu/mips1/dp/srca<15>)
+     LUT2:I1->O            1   0.551   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_lut<15> (mips_cpu/mips1/dp/mainalu/Madd_sum_lut<15>)
+     MUXCY:S->O            1   0.500   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<15> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<15>)
      MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<16> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<16>)
      MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<17> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<17>)
      MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<18> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<18>)
      MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<19> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<19>)
      MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<20> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<20>)
-     XORCY:CI->O           1   0.904   0.827  mips_cpu/mips1/dp/mainalu/Madd_sum_xor<21> (mips_cpu/mips1/dp/mainalu/sum<21>)
-     LUT4:I3->O            5   0.551   1.260  mips_cpu/mips1/dp/mainalu/result<21> (mips_cpu/dataadr<21>)
-     LUT4:I0->O            1   0.551   0.000  mips_cpu/mips1/cont/pcsrc_wg_lut<1> (mips_cpu/mips1/cont/pcsrc_wg_lut<1>)
-     MUXCY:S->O            1   0.500   0.000  mips_cpu/mips1/cont/pcsrc_wg_cy<1> (mips_cpu/mips1/cont/pcsrc_wg_cy<1>)
-     MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/cont/pcsrc_wg_cy<2> (mips_cpu/mips1/cont/pcsrc_wg_cy<2>)
-     MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/cont/pcsrc_wg_cy<3> (mips_cpu/mips1/cont/pcsrc_wg_cy<3>)
-     MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/cont/pcsrc_wg_cy<4> (mips_cpu/mips1/cont/pcsrc_wg_cy<4>)
-     MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/cont/pcsrc_wg_cy<5> (mips_cpu/mips1/cont/pcsrc_wg_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<21> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<21>)
+     MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<22> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<22>)
+     MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<23> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<23>)
+     MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<24> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<24>)
+     MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<25> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<25>)
+     MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<26> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<26>)
+     MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<27> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<27>)
+     MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/dp/mainalu/Madd_sum_cy<28> (mips_cpu/mips1/dp/mainalu/Madd_sum_cy<28>)
+     XORCY:CI->O           1   0.904   0.827  mips_cpu/mips1/dp/mainalu/Madd_sum_xor<29> (mips_cpu/mips1/dp/mainalu/sum<29>)
+     LUT4:I3->O            4   0.551   0.943  mips_cpu/mips1/dp/mainalu/result<29> (mips_cpu/dataadr<29>)
+     LUT4:I3->O            1   0.551   0.000  mips_cpu/mips1/cont/pcsrc_wg_lut<5> (mips_cpu/mips1/cont/pcsrc_wg_lut<5>)
+     MUXCY:S->O            1   0.500   0.000  mips_cpu/mips1/cont/pcsrc_wg_cy<5> (mips_cpu/mips1/cont/pcsrc_wg_cy<5>)
      MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/cont/pcsrc_wg_cy<6> (mips_cpu/mips1/cont/pcsrc_wg_cy<6>)
      MUXCY:CI->O           1   0.064   0.000  mips_cpu/mips1/cont/pcsrc_wg_cy<7> (mips_cpu/mips1/cont/pcsrc_wg_cy<7>)
-     MUXCY:CI->O           6   0.303   1.071  mips_cpu/mips1/cont/pcsrc_wg_cy<8> (mips_cpu/mips1/cont/pcsrc_wg_cy<8>)
-     LUT3:I2->O            1   0.551   0.000  mips_cpu/mips1/dp/pcmux/y<7> (mips_cpu/mips1/dp/pcnext<7>)
+     MUXCY:CI->O           6   0.303   1.003  mips_cpu/mips1/cont/pcsrc_wg_cy<8> (mips_cpu/mips1/cont/pcsrc_wg_cy<8>)
+     MUXF5:S->O            1   0.621   0.000  mips_cpu/mips1/dp/pcmux/y<7> (mips_cpu/mips1/dp/pcnext<7>)
      FDC:D                     0.203          mips_cpu/mips1/dp/pcreg/q_7
     ----------------------------------------
-    Total                     20.553ns (9.202ns logic, 11.351ns route)
-                                       (44.8% logic, 55.2% route)
+    Total                     18.809ns (8.568ns logic, 10.241ns route)
+                                       (45.6% logic, 54.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
   Total number of paths / destination ports: 33 / 33
 -------------------------------------------------------------------------
-Offset:              5.353ns (Levels of Logic = 2)
+Offset:              5.497ns (Levels of Logic = 2)
   Source:            rst_n (PAD)
   Destination:       cnt_0 (FF)
   Destination Clock: clk rising
@@ -2810,43 +2830,43 @@ Offset:              5.353ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             3   0.821   1.102  rst_n_IBUF (rst_n_IBUF)
-     LUT2:I1->O           32   0.551   1.853  cnt_or00001 (cnt_or0000)
+     IBUF:I->O             3   0.821   1.246  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O           32   0.551   1.853  cnt_or00001 (cnt_or0000)
      FDR:R                     1.026          cnt_0
     ----------------------------------------
-    Total                      5.353ns (2.398ns logic, 2.955ns route)
-                                       (44.8% logic, 55.2% route)
+    Total                      5.497ns (2.398ns logic, 3.099ns route)
+                                       (43.6% logic, 56.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'mips_clk_input1'
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
-Offset:              8.360ns (Levels of Logic = 1)
-  Source:            mips_cpu/mips1/dp/pcreg/q_3 (FF)
-  Destination:       led<3> (PAD)
+Offset:              8.452ns (Levels of Logic = 1)
+  Source:            mips_cpu/mips1/dp/pcreg/q_2 (FF)
+  Destination:       led<2> (PAD)
   Source Clock:      mips_clk_input1 rising
 
-  Data Path: mips_cpu/mips1/dp/pcreg/q_3 to led<3>
+  Data Path: mips_cpu/mips1/dp/pcreg/q_2 to led<2>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             57   0.720   1.996  mips_cpu/mips1/dp/pcreg/q_3 (mips_cpu/mips1/dp/pcreg/q_3)
-     OBUF:I->O                 5.644          led_3_OBUF (led<3>)
+     FDC:C->Q             73   0.720   2.088  mips_cpu/mips1/dp/pcreg/q_2 (mips_cpu/mips1/dp/pcreg/q_2)
+     OBUF:I->O                 5.644          led_2_OBUF (led<2>)
     ----------------------------------------
-    Total                      8.360ns (6.364ns logic, 1.996ns route)
-                                       (76.1% logic, 23.9% route)
+    Total                      8.452ns (6.364ns logic, 2.088ns route)
+                                       (75.3% logic, 24.7% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 20.00 secs
-Total CPU time to Xst completion: 19.80 secs
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 21.10 secs
  
 --> 
 
-Total memory usage is 294296 kilobytes
+Total memory usage is 294372 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings : 2080 (   0 filtered)
+Number of warnings : 2112 (   0 filtered)
 Number of infos    :    3 (   0 filtered)
 
