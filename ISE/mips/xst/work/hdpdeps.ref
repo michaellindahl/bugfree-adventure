@@ -1,4 +1,4 @@
-V3 119
+V3 129
 FL //cs1/cs_classdata/401_Computer_Architecture/Session_07_MIPS_Architecture/MIPS_CPU_FPGA_AND_SIM_V4/mips.vhd 2014/03/09.14:58:11 P.68d
 FL //cs1/cs_classdata/401_Computer_Architecture/Session_07_MIPS_Architecture/MIPS_CPU_FPGA_AND_SIM_V4/mips_alu.vhd 2014/03/11.20:26:29 P.68d
 FL //cs1/cs_classdata/401_Computer_Architecture/Session_07_MIPS_Architecture/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd 2014/03/09.15:05:48 P.68d
@@ -67,113 +67,123 @@ FL C:/CS401/mips_cpu_v3_fpga/mips/mips_fpga_interface.vhd 2014/03/09.16:35:30 P.
 FL C:/CS401/mips_cpu_v3_fpga/mips/mips_mem.vhd 2014/03/09.14:45:30 P.68d
 FL C:/CS401/mips_cpu_v3_fpga/mips/mips_top.vhd 2014/03/09.15:56:13 P.68d
 FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips.vhd 2014/04/29.11:01:57 P.68d
-EN work/mips 1399577825 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips.vhd \
-      PB ieee/std_logic_1164 1370735607
-AR work/mips/struct 1399577826 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips.vhd \
-      EN work/mips 1399577825 CP controller CP datapath
 FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_alu.vhd 2014/04/29.09:44:29 P.68d
-EN work/alu 1399577815 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_alu.vhd \
-      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609
-AR work/alu/behave 1399577816 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_alu.vhd \
-      EN work/alu 1399577815
 FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd 2014/04/29.09:44:29 P.68d
-EN work/regfile 1399577803 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd \
-      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609 \
-      PB ieee/NUMERIC_STD 1370735611
-EN work/adder 1399577804 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd \
-      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609
-EN work/sl2 1399577805 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd \
-      PB ieee/std_logic_1164 1370735607
-EN work/extend 1399577806 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd \
-      PB ieee/std_logic_1164 1370735607
-EN work/flopr 1399577807 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd \
-      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611
-EN work/mux2 1399577808 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd \
-      PB ieee/std_logic_1164 1370735607
-AR work/regfile/behave 1399577809 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd \
-      EN work/regfile 1399577803
-AR work/adder/behave 1399577810 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd \
-      EN work/adder 1399577804
-AR work/sl2/behave 1399577811 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd \
-      EN work/sl2 1399577805
-AR work/extend/behave 1399577812 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd \
-      EN work/extend 1399577806
-AR work/flopr/asynchronous 1399577813 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd \
-      EN work/flopr 1399577807
-AR work/mux2/behave 1399577814 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd \
-      EN work/mux2 1399577808
 FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_controller.vhd 2014/05/01.09:34:58 P.68d
-EN work/controller 1399577821 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_controller.vhd \
-      PB ieee/std_logic_1164 1370735607
-AR work/controller/struct 1399577822 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_controller.vhd \
-      EN work/controller 1399577821 CP maindec CP aludec
 FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_datapath.vhd 2014/05/06.09:59:50 P.68d
-EN work/datapath 1399577823 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_datapath.vhd \
-      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611
-AR work/datapath/struct 1399577824 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_datapath.vhd \
-      EN work/datapath 1399577823 CP flopr CP adder CP sl2 CP mux2 CP regfile \
-      CP extend CP alu
 FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_decoder_alu.vhd 2014/05/08.12:05:49 P.68d
-EN work/aludec 1399577819 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_decoder_alu.vhd \
-      PB ieee/std_logic_1164 1370735607
-AR work/aludec/behave 1399577820 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_decoder_alu.vhd \
-      EN work/aludec 1399577819
 FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_decoder_main.vhd 2014/04/29.10:39:05 P.68d
-EN work/maindec 1399577817 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_decoder_main.vhd \
-      PB ieee/std_logic_1164 1370735607
-AR work/maindec/behave 1399577818 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_decoder_main.vhd \
-      EN work/maindec 1399577817
 FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd 2014/04/29.09:44:29 P.68d
-EN work/mips_fpga_interface 1399577833 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd \
+FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_mem.vhd 2014/05/08.12:07:32 P.68d
+FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_top.vhd 2014/04/29.09:44:29 P.68d
+FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips.vhd 2014/05/08.22:33:50 P.68d
+EN work/mips 1399614526 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/mips/struct 1399614527 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips.vhd \
+      EN work/mips 1399614526 CP controller CP datapath
+FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_alu.vhd 2014/05/08.22:33:51 P.68d
+EN work/alu 1399614516 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_alu.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/alu/behave 1399614517 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_alu.vhd \
+      EN work/alu 1399614516
+FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd 2014/05/08.22:33:51 P.68d
+EN work/regfile 1399614504 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd \
       PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609 \
       PB ieee/NUMERIC_STD 1370735611
-AR work/mips_fpga_interface/test_fpga 1399577834 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd \
-      EN work/mips_fpga_interface 1399577833 CP top
-FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_mem.vhd 2014/05/08.12:07:32 P.68d
-EN work/dmem 1399577827 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_mem.vhd \
-      PB ieee/std_logic_1164 1370735607 PB std/TEXTIO 1370735606 \
-      PB ieee/STD_LOGIC_UNSIGNED 1370735609 PB ieee/NUMERIC_STD 1370735611
-AR work/dmem/behave 1399577828 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_mem.vhd \
-      EN work/dmem 1399577827
-EN work/imem 1399577829 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_mem.vhd \
-      PB ieee/std_logic_1164 1370735607 PB std/TEXTIO 1370735606 \
-      PB ieee/STD_LOGIC_UNSIGNED 1370735609 PB ieee/NUMERIC_STD 1370735611
-AR work/imem/behave 1399577830 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_mem.vhd \
-      EN work/imem 1399577829
-FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_top.vhd 2014/04/29.09:44:29 P.68d
-EN work/top 1399577831 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_top.vhd \
+EN work/adder 1399614505 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd \
       PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609
-AR work/top/test 1399577832 \
-      FL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_top.vhd \
-      EN work/top 1399577831 CP mips CP imem CP dmem
+EN work/sl2 1399614506 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd \
+      PB ieee/std_logic_1164 1370735607
+EN work/extend 1399614507 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd \
+      PB ieee/std_logic_1164 1370735607
+EN work/flopr 1399614508 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611
+EN work/mux2 1399614509 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/regfile/behave 1399614510 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd \
+      EN work/regfile 1399614504
+AR work/adder/behave 1399614511 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd \
+      EN work/adder 1399614505
+AR work/sl2/behave 1399614512 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd \
+      EN work/sl2 1399614506
+AR work/extend/behave 1399614513 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd \
+      EN work/extend 1399614507
+AR work/flopr/asynchronous 1399614514 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd \
+      EN work/flopr 1399614508
+AR work/mux2/behave 1399614515 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd \
+      EN work/mux2 1399614509
+FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_controller.vhd 2014/05/08.22:33:51 P.68d
+EN work/controller 1399614522 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_controller.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/controller/struct 1399614523 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_controller.vhd \
+      EN work/controller 1399614522 CP maindec CP aludec
+FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_datapath.vhd 2014/05/08.22:33:51 P.68d
+EN work/datapath 1399614524 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_datapath.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611
+AR work/datapath/struct 1399614525 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_datapath.vhd \
+      EN work/datapath 1399614524 CP flopr CP adder CP sl2 CP mux2 CP regfile \
+      CP extend CP alu
+FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_decoder_alu.vhd 2014/05/08.22:33:51 P.68d
+EN work/aludec 1399614520 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_decoder_alu.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/aludec/behave 1399614521 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_decoder_alu.vhd \
+      EN work/aludec 1399614520
+FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_decoder_main.vhd 2014/05/08.22:33:51 P.68d
+EN work/maindec 1399614518 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_decoder_main.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/maindec/behave 1399614519 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_decoder_main.vhd \
+      EN work/maindec 1399614518
+FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd 2014/05/08.22:33:51 P.68d
+EN work/mips_fpga_interface 1399614534 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609 \
+      PB ieee/NUMERIC_STD 1370735611
+AR work/mips_fpga_interface/test_fpga 1399614535 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd \
+      EN work/mips_fpga_interface 1399614534 CP top
+FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_mem.vhd 2014/05/08.22:33:51 P.68d
+EN work/dmem 1399614528 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_mem.vhd \
+      PB ieee/std_logic_1164 1370735607 PB std/TEXTIO 1370735606 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609 PB ieee/NUMERIC_STD 1370735611
+AR work/dmem/behave 1399614529 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_mem.vhd \
+      EN work/dmem 1399614528
+EN work/imem 1399614530 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_mem.vhd \
+      PB ieee/std_logic_1164 1370735607 PB std/TEXTIO 1370735606 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609 PB ieee/NUMERIC_STD 1370735611
+AR work/imem/behave 1399614531 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_mem.vhd \
+      EN work/imem 1399614530
+FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_top.vhd 2014/05/08.22:33:51 P.68d
+EN work/top 1399614532 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_top.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/top/test 1399614533 \
+      FL C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_top.vhd \
+      EN work/top 1399614532 CP mips CP imem CP dmem

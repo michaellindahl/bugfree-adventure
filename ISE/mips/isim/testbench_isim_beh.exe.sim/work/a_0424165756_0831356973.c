@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd";
+static const char *ng0 = "C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd";
 extern char *IEEE_P_2592010699;
 
 
@@ -97,7 +97,7 @@ LAB7:    if (t1 != 0)
         goto LAB3;
 
 LAB4:
-LAB10:    t30 = (t0 + 4745);
+LAB10:    t30 = (t0 + 4757);
     t32 = (t0 + 1032U);
     t33 = *((char **)t32);
     t35 = ((IEEE_P_2592010699) + 4024);
@@ -113,7 +113,7 @@ LAB10:    t30 = (t0 + 4745);
     t40 = (t40 + 1);
     t38 = (t37 + 12U);
     *((unsigned int *)t38) = t40;
-    t38 = (t0 + 4672U);
+    t38 = (t0 + 4684U);
     t32 = xsi_base_array_concat(t32, t34, t35, (char)97, t30, t36, (char)97, t33, t38, (char)101);
     t40 = (16U + 16U);
     t41 = (32U != t40);
@@ -132,7 +132,7 @@ LAB2:    t47 = (t0 + 2832);
     *((int *)t47) = 1;
 
 LAB1:    return;
-LAB3:    t10 = (t0 + 4729);
+LAB3:    t10 = (t0 + 4741);
     t15 = (t0 + 1032U);
     t16 = *((char **)t15);
     t18 = ((IEEE_P_2592010699) + 4024);
@@ -148,7 +148,7 @@ LAB3:    t10 = (t0 + 4729);
     t23 = (t23 + 1);
     t21 = (t20 + 12U);
     *((unsigned int *)t21) = t23;
-    t21 = (t0 + 4672U);
+    t21 = (t0 + 4684U);
     t15 = xsi_base_array_concat(t15, t17, t18, (char)97, t10, t19, (char)97, t16, t21, (char)101);
     t23 = (16U + 16U);
     t24 = (32U != t23);

@@ -27,7 +27,7 @@ extern char *IEEE_P_1242562249;
 int ieee_p_1242562249_sub_1657552908_1035706684(char *, char *, char *);
 
 
-static void work_a_3720894149_0831356973_p_0(char *t0)
+static void work_a_1352674679_0831356973_p_0(char *t0)
 {
     char t17[16];
     unsigned char t1;
@@ -161,9 +161,9 @@ LAB8:    xsi_set_current_line(24, ng0);
 }
 
 
-extern void work_a_3720894149_0831356973_init()
+extern void work_a_1352674679_0831356973_init()
 {
-	static char *pe[] = {(void *)work_a_3720894149_0831356973_p_0};
-	xsi_register_didat("work_a_3720894149_0831356973", "isim/testbench_isim_beh.exe.sim/work/a_3720894149_0831356973.didat");
+	static char *pe[] = {(void *)work_a_1352674679_0831356973_p_0};
+	xsi_register_didat("work_a_1352674679_0831356973", "isim/dmem_isim_beh.exe.sim/work/a_1352674679_0831356973.didat");
 	xsi_register_executes(pe);
 }

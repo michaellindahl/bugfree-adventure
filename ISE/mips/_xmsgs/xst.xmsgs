@@ -5,7 +5,106 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_decoder_alu.vhd</arg>&quot; line <arg fmt="%d" index="2">14</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mips_fpga_interface</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mips_fpga_interface/test_fpga</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/top</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_top.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_top.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/top/test</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_top.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_top.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mips</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mips/struct</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/dmem</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_mem.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_mem.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/dmem/behave</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_mem.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_mem.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/imem</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_mem.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_mem.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/imem/behave</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_mem.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_mem.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/controller</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_controller.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_controller.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/controller/struct</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_controller.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_controller.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/datapath</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_datapath.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_datapath.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/datapath/struct</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_datapath.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_datapath.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/alu</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_alu.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_alu.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/alu/behave</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_alu.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_alu.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/regfile</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/adder</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/sl2</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/extend</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/flopr</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mux2</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/regfile/behave</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/adder/behave</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/sl2/behave</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/extend/behave</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/flopr/asynchronous</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mux2/behave</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/aludec</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_decoder_alu.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_decoder_alu.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/aludec/behave</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_decoder_alu.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_decoder_alu.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/maindec</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_decoder_main.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_decoder_main.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/maindec/behave</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_decoder_main.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_decoder_main.vhd</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLParsers" num="0" delta="new" >Cannot rename dependency database for library &quot;work&quot;, file is &quot;xst/work/hdpdeps.ref&quot;, Temporary database file &quot;C:\Users\tglasser15\Documents\GitHub\bugfree-adventure\ISE\mips\xst\work\xil_464_11&quot; will remain.  System error message is:  File exists
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_decoder_alu.vhd</arg>&quot; line <arg fmt="%d" index="2">14</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;op&gt;</arg>
 </msg>
 
