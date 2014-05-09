@@ -16,7 +16,7 @@ addi 	$t3, $0, 0
 loop:
 slt 	$t2, $t3, $a0
 		# break loop condition
-beq	$t2, $s0, done
+beq	$t2, $0, done
 		# set returnvalue to a plus b
 add	$v0, $t0, $t1
 		# set a equal to b
