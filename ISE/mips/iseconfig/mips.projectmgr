@@ -14,13 +14,13 @@
          <ClosedNode>/top - test C:|CS401|mips_cpu_v2_sim_reorg|mips|mips_top.vhd/mips1 - mips - struct/cont - controller - struct</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>mips_fpga_interface - test_fpga (C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd)</SelectedItem>
+         <SelectedItem>mips_fpga_interface - test_fpga (C:/Users/jburge16/Desktop/ISE_copy/mips_fpga_interface.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001bf000000020000000000000000000000000200000064ffffffff000000810000000300000002000001bf0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>mips_fpga_interface - test_fpga (C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd)</CurrentItem>
+      <CurrentItem>mips_fpga_interface - test_fpga (C:/Users/jburge16/Desktop/ISE_copy/mips_fpga_interface.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -71,16 +71,18 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000e7000000010000000100000000000000000000000064ffffffff000000810000000000000001000000e70000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Synthesize - XST</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/ALUTestBench - behavior C:|Users|jburge16|Desktop|ISE_copy|ALUTestBench.vhd</ClosedNode>
          <ClosedNode>/mips_fpga_interface - test_fpga C:|CS401|MIPS_CPU_FPGA_AND_SIM_V3|mips|mips_fpga_interface.vhd/mips_cpu - top - test</ClosedNode>
          <ClosedNode>/mips_fpga_interface - test_fpga C:|CS401|MIPS_CPU_FPGA_AND_SIM_V3|mips|mips_fpga_interface.vhd/mips_cpu - top - test/mips1 - mips - struct/dp - datapath - struct</ClosedNode>
          <ClosedNode>/mips_fpga_interface - test_fpga C:|CS401|MIPS_CPU_FPGA_AND_SIM_V4|mips_fpga_interface.vhd/mips_cpu - top - test/mips1 - mips - struct/dp - datapath - struct</ClosedNode>
+         <ClosedNode>/mips_fpga_interface - test_fpga C:|Users|jburge16|Desktop|ISE_copy|mips_fpga_interface.vhd</ClosedNode>
          <ClosedNode>/mips_fpga_interface - test_fpga C:|Users|mlindahl15|Documents|GitHub|bugfree-adventure|ISE|mips_fpga_interface.vhd</ClosedNode>
          <ClosedNode>/mips_fpga_interface - test_fpga X:|mlindahl15|CS475|MIPS_CPU_FPGA_AND_SIM_V4|mips_fpga_interface.vhd</ClosedNode>
          <ClosedNode>/mips_fpga_interface - test_fpga X:|mlindahl15|CS475|MIPS_CPU_FPGA_AND_SIM_V4|mips_fpga_interface.vhd/mips_cpu - top - test/mips1 - mips - struct/cont - controller - struct</ClosedNode>
@@ -90,6 +92,7 @@
          <ClosedNode>/testbench - test C:|CS401|mips_cpu_v2_sim_reorg|mips|mips_testbench.vhd/dut - top - test/mips1 - mips - struct</ClosedNode>
          <ClosedNode>/testbench - test_simulation C:|CS401|MIPS_CPU_FPGA_AND_SIM_V3|mips|mips_testbench.vhd</ClosedNode>
          <ClosedNode>/testbench - test_simulation C:|CS401|MIPS_CPU_FPGA_AND_SIM_V4|mips_testbench.vhd</ClosedNode>
+         <ClosedNode>/testbench - test_simulation C:|Users|jburge16|Desktop|ISE_copy|mips_testbench.vhd</ClosedNode>
          <ClosedNode>/testbench - test_simulation C:|Users|jburge16|Documents|GitHub|bugfree-adventure|ISE|mips_testbench.vhd</ClosedNode>
          <ClosedNode>/testbench - test_simulation C:|Users|jburge16|Documents|GitHub|bugfree-adventure|ISE|mips_testbench.vhd/dut - top - test</ClosedNode>
          <ClosedNode>/testbench - test_simulation C:|Users|mlindahl15|Documents|GitHub|bugfree-adventure|ISE|mips_testbench.vhd</ClosedNode>
@@ -100,13 +103,13 @@
          <ClosedNode>/top - test C:|CS401|mips_cpu_v2_sim_reorg|mips|mips_top.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>testbench - test_simulation (C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_testbench.vhd)</SelectedItem>
+         <SelectedItem>Unassigned User Library Modules</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001bf000000020000000000000000000000000200000064ffffffff000000810000000300000002000001bf0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000175000000020000000000000000000000000200000064ffffffff000000810000000300000002000001750000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>testbench - test_simulation (C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_testbench.vhd)</CurrentItem>
+      <CurrentItem>Unassigned User Library Modules</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -114,13 +117,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>

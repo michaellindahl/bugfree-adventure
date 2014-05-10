@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips/testbench_isim_beh.exe" -prj "C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips/testbench_beh.prj" "work.testbench" 
+-intstyle "ise" -incremental -o "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips/testbench_isim_beh.exe" -prj "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips/testbench_beh.prj" "work.testbench" 
