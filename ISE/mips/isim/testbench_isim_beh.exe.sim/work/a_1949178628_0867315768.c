@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_testbench.vhd";
+static const char *ng0 = "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_testbench.vhd";
 extern char *IEEE_P_1242562249;
 extern char *IEEE_P_3620187407;
 
@@ -195,7 +195,7 @@ LAB1:    return;
 LAB2:    xsi_set_current_line(48, ng0);
     t5 = (t0 + 1192U);
     t13 = *((char **)t5);
-    t5 = (t0 + 6384U);
+    t5 = (t0 + 6360U);
     t14 = ieee_p_1242562249_sub_1657552908_1035706684(IEEE_P_1242562249, t13, t5);
     t15 = (t14 == 84);
     if (t15 == 1)
@@ -208,7 +208,7 @@ LAB16:    if (t12 != 0)
 
 LAB13:    t3 = (t0 + 1192U);
     t5 = *((char **)t3);
-    t3 = (t0 + 6384U);
+    t3 = (t0 + 6360U);
     t1 = ieee_p_3620187407_sub_3890342512_3965413181(IEEE_P_3620187407, t5, t3, 80);
     if (t1 != 0)
         goto LAB17;
@@ -231,20 +231,20 @@ LAB8:    t5 = (t0 + 1512U);
     goto LAB10;
 
 LAB11:    xsi_set_current_line(49, ng0);
-    t20 = (t0 + 6507);
+    t20 = (t0 + 6483);
     xsi_report(t20, 20U, 0);
     goto LAB12;
 
 LAB14:    t16 = (t0 + 1032U);
     t17 = *((char **)t16);
-    t16 = (t0 + 6384U);
+    t16 = (t0 + 6360U);
     t18 = ieee_p_1242562249_sub_1657552908_1035706684(IEEE_P_1242562249, t17, t16);
     t19 = (t18 == 7);
     t12 = t19;
     goto LAB16;
 
 LAB17:    xsi_set_current_line(51, ng0);
-    t6 = (t0 + 6527);
+    t6 = (t0 + 6503);
     xsi_report(t6, 17U, 0);
     goto LAB12;
 
