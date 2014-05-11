@@ -1,4 +1,5 @@
 -- VGA Character Memory
+-- from http://ece320web.groups.et.byu.net/labs/VGATextGeneration/VGA_Terminal.html
 --
 -- This memory can store 128x32 characters where each character is
 -- 8 bits. The memory is dual ported providing a port

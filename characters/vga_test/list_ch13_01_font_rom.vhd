@@ -1,4 +1,5 @@
 -- Listing 13.1
+-- from http://ece320web.groups.et.byu.net/labs/VGATextGeneration/VGA_Terminal.html
 -- ROM with synchonous read (inferring Block RAM)
 -- character ROM
 --   - 8-by-16 (8-by-2^4) font
