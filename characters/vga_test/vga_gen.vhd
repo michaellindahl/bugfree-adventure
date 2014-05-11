@@ -25,6 +25,7 @@ use IEEE.NUMERIC_STD.all;
 use unisim.vcomponents.all;
 use work.ps2_kbd_pckg.all;
 use work.font_rom_pckg.all;
+use work.char_mem_pckg.all;
 
 entity vgatest is
   generic(
@@ -62,7 +63,14 @@ signal color: std_logic_vector(8 downto 0);
   signal ascii_pixels : std_logic_vector(7 downto 0);
   signal white_out 	 : std_logic;
   
-  signal number : std_logic_vector(11 downto 0);
+  signal char_read_addr    : std_logic_vector(11 downto 0);
+  signal char_write_addr   : std_logic_vector(11 downto 0);
+  signal char_enable_write : std_logic;
+  signal char_write_value  : std_logic_vector(7 downto 0);
+  signal char_read_value   : std_logic_vector(7 downto 0);
+  
+  signal number : std_logic_vector(7 downto 0);
+
   
   -- Color patterns for various numbers and letters
   constant DIG_1    : std_logic_vector(8 downto 0) := "111000000";
@@ -130,6 +138,17 @@ begin
       addr		=> ascii_line, -- x200 - x200f for 0
       data     => ascii_pixels
    );
+	
+	u2 : char_mem
+    port map(
+      clk					=> clk,
+      char_read_addr    => char_read_addr,
+      char_write_addr   => char_write_addr,
+      char_we           => char_enable_write,
+      char_write_value  => char_write_value,
+      char_read_value   => char_read_value
+   );
+
 
   -- this maps the scancode received from the keyboard into a pattern on the 7-segment display
  keyboard_map <= DIG_1 when scancode = "00010110" else
@@ -217,11 +236,13 @@ begin
 		
 			-- get the character we are to draw
 			-- for now let's draw all x02_ (smilie faces)
-		   -- 0 is x30_
-			
+			char_read_addr <= "000000001000";
+			number <= char_read_value;
+
+			-- 0 is x30_
 			-- fetch x02_
-			number <= x"350";
-			ascii_line <= number(10 downto 0) + vpcounter;
+			-- number <= x"350";
+			ascii_line <= number(7 downto 0) + vpcounter;
 			white_out <= ascii_pixels(horizontal_pixel);
 						
       	red_out(2)   <= white_out;
