@@ -1,7 +1,7 @@
 Release 14.6 - par P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sat May 10 14:15:55 2014
+Sat May 10 20:45:10 2014
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -23,10 +23,10 @@ A1|||GND||||||||||||
 A2|||TDI||||||||||||
 A3||IOB|IO/VREF_0|UNUSED||0|||||||||
 A4||DIFFM|IO_L01P_0/VRN_0|UNUSED||0|||||||||
-A5||IOB|IO|UNUSED||0|||||||||
+A5|green_out<1>|IOB|IO|OUTPUT|LVCMOS25*|0|12|SLOW|NONE**|||LOCATED|NO|NONE|
 A6|||VCCAUX||||||||2.5||||
 A7||IOB|IO|UNUSED||0|||||||||
-A8||DIFFM|IO_L32P_0/GCLK6|UNUSED||0|||||||||
+A8|green_out<0>|IOB|IO_L32P_0/GCLK6|OUTPUT|LVCMOS25*|0|12|SLOW|NONE**|||LOCATED|NO|NONE|
 A9||IOB|IO|UNUSED||1|||||||||
 A10||DIFFS|IO_L31N_1/VREF_1|UNUSED||1|||||||||
 A11|||VCCAUX||||||||2.5||||
@@ -35,13 +35,13 @@ A13||DIFFS|IO_L10N_1/VREF_1|UNUSED||1|||||||||
 A14||DIFFS|IO_L01N_1/VRP_1|UNUSED||1|||||||||
 A15|||TDO||||||||||||
 A16|||GND||||||||||||
-B1||DIFFM|IO_L01P_7/VRN_7|UNUSED||7|||||||||
+B1|red_out<2>|IOB|IO_L01P_7/VRN_7|OUTPUT|LVCMOS25*|7|12|SLOW|NONE**|||LOCATED|NO|NONE|
 B2|||GND||||||||||||
 B3|||PROG_B||||||||||||
 B4||DIFFS|IO_L01N_0/VRP_0|UNUSED||0|||||||||
 B5||DIFFM|IO_L25P_0|UNUSED||0|||||||||
 B6||DIFFM|IO_L28P_0|UNUSED||0|||||||||
-B7||DIFFM|IO_L30P_0|UNUSED||0|||||||||
+B7|hs_out|IOB|IO_L30P_0|OUTPUT|LVCMOS25*|0|12|SLOW|NONE**|||LOCATED|NO|NONE|
 B8||DIFFS|IO_L32N_0/GCLK7|UNUSED||0|||||||||
 B9|||GND||||||||||||
 B10||DIFFM|IO_L31P_1|UNUSED||1|||||||||
@@ -53,13 +53,13 @@ B15|||GND||||||||||||
 B16|ps2_clk|IOB|IO_L01N_2/VRP_2|INPUT|LVCMOS25*|2||||NONE||LOCATED|NO|NONE|
 C1||DIFFS|IO_L01N_7/VRP_7|UNUSED||7|||||||||
 C2||DIFFS|IO_L16N_7|UNUSED||7|||||||||
-C3||DIFFM|IO_L16P_7/VREF_7|UNUSED||7|||||||||
+C3|green_out<2>|IOB|IO_L16P_7/VREF_7|OUTPUT|LVCMOS25*|7|12|SLOW|NONE**|||LOCATED|NO|NONE|
 C4|||HSWAP_EN||||||||||||
 C5||DIFFS|IO_L25N_0|UNUSED||0|||||||||
 C6||DIFFS|IO_L28N_0|UNUSED||0|||||||||
 C7||DIFFS|IO_L30N_0|UNUSED||0|||||||||
-C8||DIFFM|IO_L31P_0/VREF_0|UNUSED||0|||||||||
-C9||DIFFS|IO_L32N_1/GCLK5|UNUSED||1|||||||||
+C8|red_out<0>|IOB|IO_L31P_0/VREF_0|OUTPUT|LVCMOS25*|0|12|SLOW|NONE**|||LOCATED|NO|NONE|
+C9|blue_out<0>|IOB|IO_L32N_1/GCLK5|OUTPUT|LVCMOS25*|1|12|SLOW|NONE**|||LOCATED|NO|NONE|
 C10||IOB|IO|UNUSED||1|||||||||
 C11||DIFFM|IO_L29P_1|UNUSED||1|||||||||
 C12||DIFFM|IO_L27P_1|UNUSED||1|||||||||
@@ -71,10 +71,10 @@ D1||DIFFS|IO_L17N_7|UNUSED||7|||||||||
 D2||DIFFM|IO_L17P_7|UNUSED||7|||||||||
 D3||DIFFM|IO_L19P_7|UNUSED||7|||||||||
 D4|||VCCINT||||||||1.2||||
-D5||IOB|IO/VREF_0|UNUSED||0|||||||||
-D6||DIFFM|IO_L27P_0|UNUSED||0|||||||||
+D5|blue_out<2>|IOB|IO/VREF_0|OUTPUT|LVCMOS25*|0|12|SLOW|NONE**|||LOCATED|NO|NONE|
+D6|red_out<1>|IOB|IO_L27P_0|OUTPUT|LVCMOS25*|0|12|SLOW|NONE**|||LOCATED|NO|NONE|
 D7||DIFFM|IO_L29P_0|UNUSED||0|||||||||
-D8||DIFFS|IO_L31N_0|UNUSED||0|||||||||
+D8|vs_out|IOB|IO_L31N_0|OUTPUT|LVCMOS25*|0|12|SLOW|NONE**|||LOCATED|NO|NONE|
 D9||DIFFM|IO_L32P_1/GCLK4|UNUSED||1|||||||||
 D10||DIFFS|IO_L30N_1|UNUSED||1|||||||||
 D11||DIFFS|IO_L28N_1|UNUSED||1|||||||||
@@ -89,8 +89,8 @@ E3||DIFFS|IO_L19N_7/VREF_7|UNUSED||7|||||||||
 E4||DIFFM|IO_L21P_7|UNUSED||7|||||||||
 E5|||VCCINT||||||||1.2||||
 E6||DIFFS|IO_L27N_0|UNUSED||0|||||||||
-E7||DIFFS|IO_L29N_0|UNUSED||0|||||||||
-E8|||VCCO_0|||0|||||any******||||
+E7|blue_out<1>|IOB|IO_L29N_0|OUTPUT|LVCMOS25*|0|12|SLOW|NONE**|||LOCATED|NO|NONE|
+E8|||VCCO_0|||0|||||2.50||||
 E9|||VCCO_1|||1|||||2.50||||
 E10||DIFFM|IO_L30P_1|UNUSED||1|||||||||
 E11|rst_n|IOB|IO_L28P_1|INPUT|LVCMOS25*|1||||NONE||LOCATED|NO|NONE|
@@ -105,8 +105,8 @@ F3||DIFFM|IO_L22P_7|UNUSED||7|||||||||
 F4||DIFFS|IO_L21N_7|UNUSED||7|||||||||
 F5||DIFFM|IO_L23P_7|UNUSED||7|||||||||
 F6|||GND||||||||||||
-F7|||VCCO_0|||0|||||any******||||
-F8|||VCCO_0|||0|||||any******||||
+F7|||VCCO_0|||0|||||2.50||||
+F8|||VCCO_0|||0|||||2.50||||
 F9|||VCCO_1|||1|||||2.50||||
 F10|||VCCO_1|||1|||||2.50||||
 F11|||GND||||||||||||
@@ -120,7 +120,7 @@ G2||DIFFS|IO|UNUSED||7|||||||||
 G3||DIFFS|IO_L24N_7|UNUSED||7|||||||||
 G4||DIFFM|IO_L24P_7|UNUSED||7|||||||||
 G5||DIFFS|IO_L23N_7|UNUSED||7|||||||||
-G6|||VCCO_7|||7|||||any******||||
+G6|||VCCO_7|||7|||||2.50||||
 G7|||GND||||||||||||
 G8|||GND||||||||||||
 G9|||GND||||||||||||
@@ -135,8 +135,8 @@ H1||DIFFS|IO_L40N_7/VREF_7|UNUSED||7|||||||||
 H2|||GND||||||||||||
 H3||DIFFS|IO_L39N_7|UNUSED||7|||||||||
 H4||DIFFM|IO_L39P_7|UNUSED||7|||||||||
-H5|||VCCO_7|||7|||||any******||||
-H6|||VCCO_7|||7|||||any******||||
+H5|||VCCO_7|||7|||||2.50||||
+H6|||VCCO_7|||7|||||2.50||||
 H7|||GND||||||||||||
 H8|||GND||||||||||||
 H9|||GND||||||||||||
@@ -234,7 +234,7 @@ P4|||M2||||||||||||
 P5||DIFFM|IO_L27P_5|UNUSED||5|||||||||
 P6||DIFFM|IO_L29P_5/VREF_5|UNUSED||5|||||||||
 P7||IOB|IO|UNUSED||5|||||||||
-P8||DIFFS|IO_L32N_5/GCLK3|UNUSED||5|||||||||
+P8|clk50_in|IOB|IO_L32N_5/GCLK3|INPUT|LVCMOS25*|5||||NONE||LOCATED|NO|NONE|
 P9||DIFFM|IO_L31P_4/DOUT/BUSY|UNUSED||4|||||||||
 P10|led<4>|IOB|IO_L30N_4/D2|OUTPUT|LVCMOS25*|4|12|SLOW|NONE**|||LOCATED|NO|NONE|
 P11||DIFFS|IO_L28N_4|UNUSED||4|||||||||

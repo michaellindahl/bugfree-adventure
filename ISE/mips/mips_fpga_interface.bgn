@@ -6,7 +6,7 @@ C:\Xilinx\14.6\ISE_DS\ISE\.
 speed -4
 Opened constraints file mips_fpga_interface.pcf.
 
-Sat May 10 14:16:01 2014
+Sat May 10 20:45:16 2014
 
 C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g ConfigRate:6 -g CclkPin:PullNone -g M0Pin:PullNone -g M1Pin:PullNone -g M2Pin:PullNone -g ProgPin:PullNone -g DonePin:PullNone -g HswapenPin:PullNone -g TckPin:PullNone -g TdiPin:PullNone -g TdoPin:PullNone -g TmsPin:PullNone -g UnusedPin:PullNone -g UserID:0xFFFFFFFF -g DCMShutdown:Disable -g DCIUpdateMode:AsRequired -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Match_cycle:Auto -g Security:None -g DonePipe:Yes -g DriveDone:No mips_fpga_interface.ncd 
 
