@@ -1,0 +1,65 @@
+--------------------------------------------------------------------------------
+Release 9.2.04i Trace 
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx92i\bin\nt\trce.exe -ise
+C:/Users/mhagerott09/Desktop/vga1/vga_test/vga_test.ise -intstyle ise -e 3 -s 4
+-xml test1 test1.ncd -o test1.twr test1.pcf -ucf test1.ucf
+
+Design file:              test1.ncd
+Physical constraint file: test1.pcf
+Device,package,speed:     xc3s1000,ft256,-4 (PRODUCTION 1.39 2007-10-19)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock Clock to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+Horiz_sync  |    9.985(R)|Clock_BUFGP       |   0.000|
+Red<0>      |   10.080(R)|Clock_BUFGP       |   0.000|
+Red<1>      |   10.154(R)|Clock_BUFGP       |   0.000|
+Red<2>      |   11.412(R)|Clock_BUFGP       |   0.000|
+Vert_sync   |   10.921(R)|Clock_BUFGP       |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock Clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clock          |    8.803|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Wed May 07 20:49:17 2008 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 106 MB
+
+
+

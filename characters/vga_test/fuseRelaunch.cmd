@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/jburge16/Desktop/simple_vga_driver_V2/vga1/vga_test/vgatest_isim_beh.exe" -prj "C:/Users/jburge16/Desktop/simple_vga_driver_V2/vga1/vga_test/vgatest_beh.prj" "work.vgatest" 

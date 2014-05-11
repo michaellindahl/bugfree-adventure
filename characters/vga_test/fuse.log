@@ -1,0 +1,19 @@
+Running: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/jburge16/Desktop/simple_vga_driver_V2/vga1/vga_test/vgatest_isim_beh.exe -prj C:/Users/jburge16/Desktop/simple_vga_driver_V2/vga1/vga_test/vgatest_beh.prj work.vgatest 
+ISim P.68d (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/jburge16/Desktop/simple_vga_driver_V2/vga1/vga_test/vga_gen.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity vgatest
+Time Resolution for simulation is 1ps.
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\vgatest_isim_beh.exe.sim\libPortability.dll".
+Compiled 5 VHDL Units
+Built simulation executable C:/Users/jburge16/Desktop/simple_vga_driver_V2/vga1/vga_test/vgatest_isim_beh.exe
+Fuse Memory Usage: 31936 KB
+Fuse CPU Usage: 327 ms
