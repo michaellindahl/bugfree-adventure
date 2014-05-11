@@ -25,6 +25,7 @@ use IEEE.NUMERIC_STD.all;
 use unisim.vcomponents.all;
 use work.ps2_kbd_pckg.all;
 use work.font_rom_pckg.all;
+use work.char_mem_pckg.all;
 
 entity vgatest is
   generic(
@@ -62,7 +63,13 @@ signal color: std_logic_vector(8 downto 0);
   signal ascii_pixels : std_logic_vector(7 downto 0);
   signal white_out 	 : std_logic;
   
-  signal number : std_logic_vector(11 downto 0);
+  signal char_read_addr    : std_logic_vector(11 downto 0);
+  signal char_write_addr   : std_logic_vector(11 downto 0);
+  signal char_enable_write : std_logic;
+  signal char_write_value  : std_logic_vector(7 downto 0);
+  signal char_read_value   : std_logic_vector(7 downto 0);
+  
+  signal number : std_logic_vector(7 downto 0);
   
   -- Color patterns for various numbers and letters
   constant DIG_1    : std_logic_vector(8 downto 0) := "111000000";
@@ -227,14 +234,14 @@ begin
 		
 			-- get the character we are to draw
 			-- for now let's draw all x02_ (smilie faces)
-			char_read_addr <= x"08";
+			char_read_addr <= "000000001000";
 			number <= char_read_value;
 			
 			
 		   -- 0 is x30_
 			-- fetch x02_
 			--number <= x"010";
-			ascii_line <= number(10 downto 0) + vpcounter;
+			ascii_line <= number(7 downto 0) + vpcounter;
 			white_out <= ascii_pixels(horizontal_pixel);
 						
       	red_out(2)   <= white_out;
