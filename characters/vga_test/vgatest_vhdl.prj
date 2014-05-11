@@ -1,4 +1,3 @@
-vhdl work "C:\Users\mlindahl15\Documents\GitHub\bugfree-adventure\characters\vga_test\list_ch13_01_font_rom.vhd"
-vhdl work "C:\Users\mlindahl15\Documents\GitHub\bugfree-adventure\characters\vga_test\char_mem.vhd"
-vhdl work "C:\Users\mlindahl15\Documents\GitHub\bugfree-adventure\characters\ps2_kbd.vhd"
-vhdl work "C:\Users\mlindahl15\Documents\GitHub\bugfree-adventure\characters\vga_test\vga_gen.vhd"
+vhdl work "C:\Users\jburge16\Documents\GitHub\bugfree-adventure\characters\vga_test\list_ch13_01_font_rom.vhd"
+vhdl work "C:\Users\jburge16\Documents\GitHub\bugfree-adventure\characters\ps2_kbd.vhd"
+vhdl work "C:\Users\jburge16\Documents\GitHub\bugfree-adventure\characters\vga_test\vga_gen.vhd"

@@ -5,9 +5,9 @@ Command Line: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -filter
 iseconfig/filter.filter -intstyle ise -dd _ngo -nt timestamp -uc test1.ucf -p
 xc3s1000-ft256-4 vgatest.ngc vgatest.ngd
 
-Reading NGO file "Q:/mlindahl15/Old
-Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/vga_test/vgat
-est.ngc" ...
+Reading NGO file
+"C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/vgates
+t.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -29,10 +29,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 177120 kilobytes
+Total memory usage is 173020 kilobytes
 
 Writing NGD file "vgatest.ngd" ...
 Total REAL time to NGDBUILD completion:  3 sec
-Total CPU time to NGDBUILD completion:   2 sec
+Total CPU time to NGDBUILD completion:   3 sec
 
 Writing NGDBUILD log file "vgatest.bld"...

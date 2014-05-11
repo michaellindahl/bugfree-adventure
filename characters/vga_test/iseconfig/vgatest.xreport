@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="1.7" >
  <header>
-  <DateModified>2014-05-11T13:00:12</DateModified>
+  <DateModified>2014-05-11T12:37:50</DateModified>
   <ModuleName>vgatest</ModuleName>
   <DateInitialized>2008-05-07T21:04:23</DateInitialized>
-  <ImplementationReportsDirectory>C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test\</ImplementationReportsDirectory>
-  <SavedFilePath>C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/iseconfig/vgatest.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/iseconfig/vgatest.xreport</SavedFilePath>
   <EnableMessageFiltering>true</EnableMessageFiltering>
  </header>
  <body>

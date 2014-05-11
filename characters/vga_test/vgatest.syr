@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: vgatest.prj
 
@@ -104,15 +104,14 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/ps2_kbd.vhd" in Library work.
+Compiling vhdl file "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/ps2_kbd.vhd" in Library work.
 Architecture arch of Entity ps2_kbd is up to date.
-Compiling vhdl file "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/list_ch13_01_font_rom.vhd" in Library work.
-Architecture arch of Entity font_rom is up to date.
-Compiling vhdl file "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/char_mem.vhd" in Library work.
-Architecture arch of Entity char_mem is up to date.
-Compiling vhdl file "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd" in Library work.
-Entity <vgatest> compiled.
-Entity <vgatest> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/list_ch13_01_font_rom.vhd" in Library work.
+Package <font_rom_pckg> compiled.
+Entity <font_rom> compiled.
+Entity <font_rom> (Architecture <arch>) compiled.
+Compiling vhdl file "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd" in Library work.
+Architecture behavioral of Entity vgatest is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -125,20 +124,17 @@ Analyzing hierarchy for entity <ps2_kbd> in library <work> (architecture <arch>)
 
 Analyzing hierarchy for entity <font_rom> in library <work> (architecture <arch>).
 
-Analyzing hierarchy for entity <char_mem> in library <work> (architecture <arch>).
-
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing generic Entity <vgatest> in library <work> (Architecture <behavioral>).
 	FREQ = 100000
-WARNING:Xst:753 - "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd" line 120: Unconnected output port 'parity' of component 'ps2_kbd'.
-WARNING:Xst:753 - "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd" line 120: Unconnected output port 'busy' of component 'ps2_kbd'.
-WARNING:Xst:1610 - "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd" line 244: Width mismatch. <ascii_line> has a width of 11 bits but assigned expression is 8-bit wide.
-WARNING:Xst:819 - "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd" line 214: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:753 - "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd" line 113: Unconnected output port 'parity' of component 'ps2_kbd'.
+WARNING:Xst:753 - "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd" line 113: Unconnected output port 'busy' of component 'ps2_kbd'.
+WARNING:Xst:819 - "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd" line 197: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <hpcounter>, <vpcounter>
-INFO:Xst:2679 - Register <char_read_addr> in unit <vgatest> has a constant value of 000000001000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <number> in unit <vgatest> has a constant value of 001101010000 during circuit operation. The register is replaced by logic.
 Entity <vgatest> analyzed. Unit <vgatest> generated.
 
 Analyzing generic Entity <ps2_kbd> in library <work> (Architecture <arch>).
@@ -148,9 +144,6 @@ Entity <ps2_kbd> analyzed. Unit <ps2_kbd> generated.
 Analyzing Entity <font_rom> in library <work> (Architecture <arch>).
 Entity <font_rom> analyzed. Unit <font_rom> generated.
 
-Analyzing Entity <char_mem> in library <work> (Architecture <arch>).
-Entity <char_mem> analyzed. Unit <char_mem> generated.
-
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -159,7 +152,7 @@ Entity <char_mem> analyzed. Unit <char_mem> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <ps2_kbd>.
-    Related source file is "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/ps2_kbd.vhd".
+    Related source file is "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/ps2_kbd.vhd".
     Found 4-bit up counter for signal <bitcnt_r>.
     Found 1-bit register for signal <error_r>.
     Found 1-bit register for signal <keyrel_r>.
@@ -176,7 +169,7 @@ Unit <ps2_kbd> synthesized.
 
 
 Synthesizing Unit <font_rom>.
-    Related source file is "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/list_ch13_01_font_rom.vhd".
+    Related source file is "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/list_ch13_01_font_rom.vhd".
     Found 2048x8-bit ROM for signal <data$rom0000> created at line 2228.
     Found 11-bit register for signal <addr_reg>.
     Summary:
@@ -185,24 +178,12 @@ Synthesizing Unit <font_rom>.
 Unit <font_rom> synthesized.
 
 
-Synthesizing Unit <char_mem>.
-    Related source file is "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/char_mem.vhd".
-    Found 4096x8-bit dual-port RAM <Mram_char_ram> for signal <char_ram>.
-    Found 12-bit register for signal <read_a>.
-    Summary:
-	inferred   1 RAM(s).
-	inferred  12 D-type flip-flop(s).
-Unit <char_mem> synthesized.
-
-
 Synthesizing Unit <vgatest>.
-    Related source file is "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd".
+    Related source file is "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd".
 WARNING:Xst:646 - Signal <rdy> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <number> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <keyboard_map> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <color> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <char_write_value> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
-WARNING:Xst:653 - Signal <char_write_addr> is used but never assigned. This sourceless signal will be automatically connected to value 000000000000.
-WARNING:Xst:653 - Signal <char_enable_write> is used but never assigned. This sourceless signal will be automatically connected to value 0.
     Register <blue_out<1>> equivalent to <blue_out<0>> has been removed
     Register <blue_out<2>> equivalent to <blue_out<0>> has been removed
     Register <green_out<0>> equivalent to <blue_out<0>> has been removed
@@ -215,28 +196,27 @@ WARNING:Xst:653 - Signal <char_enable_write> is used but never assigned. This so
     Found 1-bit register for signal <hs_out>.
     Found 1-bit register for signal <vs_out>.
     Found 11-bit register for signal <ascii_line>.
-    Found 8-bit adder for signal <ascii_line$add0000> created at line 244.
+    Found 11-bit adder for signal <ascii_line$add0000> created at line 224.
     Found 1-bit register for signal <clk>.
-    Found 10-bit comparator greater for signal <green_out_0$cmp_gt0000> created at line 233.
-    Found 9-bit comparator greater for signal <green_out_0$cmp_gt0001> created at line 233.
-    Found 10-bit comparator less for signal <green_out_0$cmp_lt0000> created at line 233.
-    Found 9-bit comparator less for signal <green_out_0$cmp_lt0001> created at line 233.
-    Found 10-bit subtractor for signal <green_out_0$sub0000> created at line 224.
-    Found 9-bit subtractor for signal <green_out_0$sub0001> created at line 225.
+    Found 10-bit comparator greater for signal <green_out_0$cmp_gt0000> created at line 216.
+    Found 9-bit comparator greater for signal <green_out_0$cmp_gt0001> created at line 216.
+    Found 10-bit comparator less for signal <green_out_0$cmp_lt0000> created at line 216.
+    Found 9-bit comparator less for signal <green_out_0$cmp_lt0001> created at line 216.
+    Found 10-bit subtractor for signal <green_out_0$sub0000> created at line 207.
+    Found 9-bit subtractor for signal <green_out_0$sub0001> created at line 208.
     Found 10-bit up counter for signal <hcounter>.
     Found 4-bit down counter for signal <hpcounter>.
-    Found 10-bit comparator greater for signal <hs_out$cmp_gt0000> created at line 270.
-    Found 10-bit comparator less for signal <hs_out$cmp_lt0000> created at line 270.
-    Found 8-bit register for signal <number>.
+    Found 10-bit comparator greater for signal <hs_out$cmp_gt0000> created at line 250.
+    Found 10-bit comparator less for signal <hs_out$cmp_lt0000> created at line 250.
     Found 10-bit up counter for signal <vcounter>.
     Found 5-bit up counter for signal <vpcounter>.
-    Found 10-bit comparator greater for signal <vs_out$cmp_gt0000> created at line 282.
-    Found 10-bit comparator less for signal <vs_out$cmp_lt0000> created at line 282.
+    Found 10-bit comparator greater for signal <vs_out$cmp_gt0000> created at line 262.
+    Found 10-bit comparator less for signal <vs_out$cmp_lt0000> created at line 262.
     Found 1-bit register for signal <white_out>.
-    Found 1-bit 8-to-1 multiplexer for signal <white_out$mux0000> created at line 245.
+    Found 1-bit 8-to-1 multiplexer for signal <white_out$mux0000> created at line 225.
     Summary:
 	inferred   4 Counter(s).
-	inferred  24 D-type flip-flop(s).
+	inferred  16 D-type flip-flop(s).
 	inferred   3 Adder/Subtractor(s).
 	inferred   8 Comparator(s).
 	inferred   1 Multiplexer(s).
@@ -247,28 +227,24 @@ Unit <vgatest> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 1
- 4096x8-bit dual-port RAM                              : 1
 # ROMs                                                 : 1
  2048x8-bit ROM                                        : 1
 # Adders/Subtractors                                   : 4
  10-bit subtractor                                     : 1
+ 11-bit adder                                          : 1
  14-bit adder                                          : 1
- 8-bit adder                                           : 1
  9-bit subtractor                                      : 1
 # Counters                                             : 5
  10-bit up counter                                     : 2
  4-bit down counter                                    : 1
  4-bit up counter                                      : 1
  5-bit up counter                                      : 1
-# Registers                                            : 15
+# Registers                                            : 13
  1-bit register                                        : 8
  10-bit register                                       : 1
  11-bit register                                       : 2
- 12-bit register                                       : 1
  14-bit register                                       : 1
  5-bit register                                        : 1
- 8-bit register                                        : 1
 # Comparators                                          : 8
  10-bit comparator greater                             : 3
  10-bit comparator less                                : 3
@@ -285,17 +261,6 @@ Macro Statistics
 
 WARNING:Xst:1290 - Hierarchical block <u0> is unconnected in block <vgatest>.
    It will be removed from the design.
-INFO:Xst:2261 - The FF/Latch <read_a_0> in Unit <u2> is equivalent to the following 10 FFs/Latches, which will be removed : <read_a_1> <read_a_2> <read_a_4> <read_a_5> <read_a_6> <read_a_7> <read_a_8> <read_a_9> <read_a_10> <read_a_11> 
-WARNING:Xst:1710 - FF/Latch <addr_reg_8> (without init value) has a constant value of 0 in block <u1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <addr_reg_9> (without init value) has a constant value of 0 in block <u1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <addr_reg_10> (without init value) has a constant value of 0 in block <u1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <read_a_0> (without init value) has a constant value of 0 in block <u2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <read_a_3> (without init value) has a constant value of 1 in block <u2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <ascii_line_8> (without init value) has a constant value of 0 in block <vgatest>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <ascii_line_9> (without init value) has a constant value of 0 in block <vgatest>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <ascii_line_10> (without init value) has a constant value of 0 in block <vgatest>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2404 -  FFs/Latches <ascii_line<10:8>> (without init value) have a constant value of 0 in block <vgatest>.
-WARNING:Xst:2404 -  FFs/Latches <read_a<11:4>> (without init value) have a constant value of 0 in block <char_mem>.
 
 Synthesizing (advanced) Unit <font_rom>.
 INFO:Xst:3044 - The ROM <Mrom_data_rom0000> will be implemented as a read-only BLOCK RAM, absorbing the register: <addr_reg>.
@@ -316,53 +281,24 @@ INFO:Xst:3225 - The RAM <Mrom_data_rom0000> will be implemented as BLOCK RAM
     -----------------------------------------------------------------------
 Unit <font_rom> synthesized (advanced).
 
-Synthesizing (advanced) Unit <vgatest>.
-INFO:Xst:3038 - The RAM <u2/Mram_char_ram> appears to be read-only. If that was not your intent please check the write enable description.
-INFO:Xst:3226 - The RAM <u2/Mram_char_ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <number>
-    -----------------------------------------------------------------------
-    | ram_type           | Block                               |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 4096-word x 8-bit                   |          |
-    |     mode           | read-first                          |          |
-    |     clkA           | connected to signal <clk>           | rise     |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <GND>           |          |
-    |     diA            | connected to signal <GND>           |          |
-    -----------------------------------------------------------------------
-    | optimization       | speed                               |          |
-    -----------------------------------------------------------------------
-    | Port B                                                              |
-    |     aspect ratio   | 4096-word x 8-bit                   |          |
-    |     mode           | write-first                         |          |
-    |     clkB           | connected to signal <clk>           | rise     |
-    |     enB            | connected to signal <ascii_line_and0000> | high     |
-    |     addrB          | connected to signal <u2/read_a>     |          |
-    |     doB            | connected to signal <number>        |          |
-    -----------------------------------------------------------------------
-    | optimization       | speed                               |          |
-    -----------------------------------------------------------------------
-Unit <vgatest> synthesized (advanced).
-
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 2
+# RAMs                                                 : 1
  2048x8-bit single-port block RAM                      : 1
- 4096x8-bit dual-port block RAM                        : 1
 # Adders/Subtractors                                   : 4
  10-bit subtractor                                     : 1
+ 11-bit adder                                          : 1
  14-bit adder                                          : 1
- 8-bit adder                                           : 1
  9-bit subtractor                                      : 1
 # Counters                                             : 5
  10-bit up counter                                     : 2
  4-bit down counter                                    : 1
  4-bit up counter                                      : 1
  5-bit up counter                                      : 1
-# Registers                                            : 49
- Flip-Flops                                            : 49
+# Registers                                            : 48
+ Flip-Flops                                            : 48
 # Comparators                                          : 8
  10-bit comparator greater                             : 3
  10-bit comparator less                                : 3
@@ -376,10 +312,11 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1710 - FF/Latch <u2/read_a_0> (without init value) has a constant value of 0 in block <vgatest>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <u2/read_a_1> (without init value) has a constant value of 0 in block <vgatest>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <u2/read_a_2> (without init value) has a constant value of 0 in block <vgatest>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <u2/read_a_3> (without init value) has a constant value of 1 in block <vgatest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ascii_line_6> (without init value) has a constant value of 1 in block <vgatest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ascii_line_7> (without init value) has a constant value of 0 in block <vgatest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ascii_line_8> (without init value) has a constant value of 1 in block <vgatest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ascii_line_9> (without init value) has a constant value of 1 in block <vgatest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ascii_line_10> (without init value) has a constant value of 0 in block <vgatest>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <vgatest> ...
 
@@ -431,8 +368,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 42
- Flip-Flops                                            : 42
+# Registers                                            : 40
+ Flip-Flops                                            : 40
 
 =========================================================================
 
@@ -461,30 +398,29 @@ Design Statistics
 # IOs                              : 14
 
 Cell Usage :
-# BELS                             : 135
-#      GND                         : 4
-#      INV                         : 5
-#      LUT1                        : 20
-#      LUT2                        : 8
-#      LUT2_D                      : 1
-#      LUT2_L                      : 1
-#      LUT3                        : 7
+# BELS                             : 122
+#      GND                         : 2
+#      INV                         : 4
+#      LUT1                        : 18
+#      LUT2                        : 7
+#      LUT2_L                      : 2
+#      LUT3                        : 10
 #      LUT3_L                      : 2
-#      LUT4                        : 25
-#      LUT4_D                      : 1
-#      LUT4_L                      : 3
-#      MUXCY                       : 25
-#      MUXF5                       : 3
+#      LUT4                        : 27
+#      LUT4_D                      : 3
+#      LUT4_L                      : 5
+#      MUXCY                       : 18
+#      MUXF5                       : 2
 #      MUXF6                       : 1
 #      VCC                         : 1
-#      XORCY                       : 28
-# FlipFlops/Latches                : 42
-#      FDE                         : 9
+#      XORCY                       : 20
+# FlipFlops/Latches                : 40
+#      FDE                         : 7
 #      FDR                         : 17
 #      FDRE                        : 15
-#      FDRS                        : 1
-# RAMS                             : 3
-#      RAMB16                      : 3
+#      FDS                         : 1
+# RAMS                             : 1
+#      RAMB16                      : 1
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
@@ -497,12 +433,12 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-4 
 
- Number of Slices:                       38  out of   7680     0%  
- Number of Slice Flip Flops:             42  out of  15360     0%  
- Number of 4 input LUTs:                 73  out of  15360     0%  
+ Number of Slices:                       45  out of   7680     0%  
+ Number of Slice Flip Flops:             40  out of  15360     0%  
+ Number of 4 input LUTs:                 78  out of  15360     0%  
  Number of IOs:                          14
  Number of bonded IOBs:                  12  out of    173     6%  
- Number of BRAMs:                         3  out of     24    12%  
+ Number of BRAMs:                         1  out of     24     4%  
  Number of GCLKs:                         2  out of      8    25%  
 
 ---------------------------
@@ -527,7 +463,7 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
 clk50_in                           | BUFGP                  | 1     |
-clk1                               | BUFG                   | 44    |
+clk1                               | BUFG                   | 40    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -538,7 +474,7 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 9.711ns (Maximum Frequency: 102.976MHz)
+   Minimum period: 7.875ns (Maximum Frequency: 126.984MHz)
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: 7.488ns
    Maximum combinational path delay: No path found
@@ -570,29 +506,28 @@ Delay:               2.623ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk1'
-  Clock period: 9.711ns (frequency: 102.976MHz)
-  Total number of paths / destination ports: 1020 / 106
+  Clock period: 7.875ns (frequency: 126.984MHz)
+  Total number of paths / destination ports: 1023 / 97
 -------------------------------------------------------------------------
-Delay:               9.711ns (Levels of Logic = 5)
-  Source:            hcounter_3 (FF)
+Delay:               7.875ns (Levels of Logic = 4)
+  Source:            vcounter_7 (FF)
   Destination:       blue_out_0 (FF)
   Source Clock:      clk1 rising
   Destination Clock: clk1 rising
 
-  Data Path: hcounter_3 to blue_out_0
+  Data Path: vcounter_7 to blue_out_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              6   0.720   1.342  hcounter_3 (hcounter_3)
-     LUT4:I0->O            1   0.551   0.996  ascii_line_and00001121 (ascii_line_and0000112)
-     LUT2:I1->O            1   0.551   0.827  ascii_line_and0000140_SW0 (N2)
-     LUT4_L:I3->LO         1   0.551   0.126  ascii_line_and000011111 (N11)
-     LUT4:I3->O           12   0.551   1.118  ascii_line_and000069 (ascii_line_and0000)
-     INV:I->O              1   0.551   0.801  ascii_line_and0000_inv1_INV_0 (ascii_line_and0000_inv)
+     FDRE:C->Q             5   0.720   1.260  vcounter_7 (vcounter_7)
+     LUT3:I0->O            1   0.551   0.869  green_out_0_cmp_gt0001215 (green_out_0_cmp_gt0001215)
+     LUT4_D:I2->LO         1   0.551   0.126  green_out_0_cmp_gt0001227 (N21)
+     LUT4:I3->O            1   0.551   0.869  ascii_line_and0000_inv31 (ascii_line_and0000_inv31)
+     LUT4:I2->O            1   0.551   0.801  ascii_line_and0000_inv91 (ascii_line_and0000_inv)
      FDR:R                     1.026          blue_out_0
     ----------------------------------------
-    Total                      9.711ns (4.501ns logic, 5.210ns route)
-                                       (46.3% logic, 53.7% route)
+    Total                      7.875ns (3.950ns logic, 3.925ns route)
+                                       (50.2% logic, 49.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk1'
@@ -617,13 +552,13 @@ Offset:              7.488ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.38 secs
+Total CPU time to Xst completion: 5.36 secs
  
 --> 
 
-Total memory usage is 261904 kilobytes
+Total memory usage is 261916 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   61 (   0 filtered)
-Number of infos    :    6 (   0 filtered)
+Number of warnings :   49 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
 

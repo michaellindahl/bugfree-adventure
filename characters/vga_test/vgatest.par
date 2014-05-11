@@ -1,11 +1,11 @@
 Release 14.6 par P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-LAB-SCI-304-12::  Sat May 10 21:14:02 2014
+LAB-SCI-304-17::  Sun May 11 13:11:43 2014
 
-par -filter "Q:/mlindahl15/Old
-Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/vga_test/isec
-onfig/filter.filter" -w -intstyle ise -ol high -t 1 vgatest_map.ncd vgatest.ncd
+par -filter
+C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/iseconf
+ig/filter.filter -w -intstyle ise -ol high -t 1 vgatest_map.ncd vgatest.ncd
 vgatest.pcf 
 
 
@@ -32,7 +32,7 @@ Device Utilization Summary:
       Number of LOCed IOBs                  14 out of 14    100%
 
    Number of RAMB16s                         1 out of 24      4%
-   Number of Slices                         46 out of 7680    1%
+   Number of Slices                         45 out of 7680    1%
       Number of SLICEMs                      0 out of 3840    0%
 
 
@@ -50,37 +50,37 @@ WARNING:Par:288 - The signal ps2_clk_IBUF has no load.  PAR will not attempt to 
 
 Starting Placer
 Total REAL time at the beginning of Placer: 1 secs 
-Total CPU  time at the beginning of Placer: 0 secs 
+Total CPU  time at the beginning of Placer: 1 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:fe39fc3c) REAL time: 1 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:fe39fbfe) REAL time: 1 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:fe39fc3c) REAL time: 1 secs 
+Phase 2.7  Design Feasibility Check (Checksum:fe39fbfe) REAL time: 1 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:fe39fc3c) REAL time: 1 secs 
+Phase 3.31  Local Placement Optimization (Checksum:fe39fbfe) REAL time: 1 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:82926cc1) REAL time: 1 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:82926c83) REAL time: 1 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:82926cc1) REAL time: 1 secs 
+Phase 5.36  Local Placement Optimization (Checksum:82926c83) REAL time: 1 secs 
 
 Phase 6.8  Global Placement
 ....
 ..
-Phase 6.8  Global Placement (Checksum:40fa4e33) REAL time: 2 secs 
+Phase 6.8  Global Placement (Checksum:a2018d6a) REAL time: 2 secs 
 
 Phase 7.5  Local Placement Optimization
-Phase 7.5  Local Placement Optimization (Checksum:40fa4e33) REAL time: 2 secs 
+Phase 7.5  Local Placement Optimization (Checksum:a2018d6a) REAL time: 2 secs 
 
 Phase 8.18  Placement Optimization
-Phase 8.18  Placement Optimization (Checksum:1e4bf1ee) REAL time: 2 secs 
+Phase 8.18  Placement Optimization (Checksum:a8afa032) REAL time: 2 secs 
 
 Phase 9.5  Local Placement Optimization
-Phase 9.5  Local Placement Optimization (Checksum:1e4bf1ee) REAL time: 2 secs 
+Phase 9.5  Local Placement Optimization (Checksum:a8afa032) REAL time: 2 secs 
 
 Total REAL time to Placer completion: 2 secs 
 Total CPU  time to Placer completion: 2 secs 
@@ -91,13 +91,13 @@ Writing design to file vgatest.ncd
 Starting Router
 
 
-Phase  1  : 321 unrouted;      REAL time: 2 secs 
+Phase  1  : 322 unrouted;      REAL time: 2 secs 
 
-Phase  2  : 282 unrouted;      REAL time: 2 secs 
+Phase  2  : 283 unrouted;      REAL time: 2 secs 
 
-Phase  3  : 47 unrouted;      REAL time: 3 secs 
+Phase  3  : 61 unrouted;      REAL time: 2 secs 
 
-Phase  4  : 60 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  4  : 67 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
 Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
@@ -132,7 +132,7 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|                 clk |      BUFGMUX4| No   |   25 |  0.169     |  0.895      |
+|                 clk |      BUFGMUX4| No   |   24 |  0.168     |  0.912      |
 +---------------------+--------------+------+------+------------+-------------+
 |      clk50_in_BUFGP |      BUFGMUX3| No   |    1 |  0.000     |  0.846      |
 +---------------------+--------------+------+------+------------+-------------+
@@ -154,8 +154,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     6.599ns|     N/A|           0
-                                            | HOLD        |     0.799ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     6.209ns|     N/A|           0
+                                            | HOLD        |     0.817ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net clk | SETUP       |         N/A|     2.592ns|     N/A|           0
   50_in_BUFGP                               | HOLD        |     1.282ns|            |       0|           0
@@ -176,10 +176,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 2 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 12 secs 
-Total CPU time to PAR completion: 4 secs 
+Total REAL time to PAR completion: 4 secs 
+Total CPU time to PAR completion: 3 secs 
 
-Peak Memory Usage:  328 MB
+Peak Memory Usage:  325 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.

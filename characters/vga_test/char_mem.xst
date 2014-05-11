@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/xst"
+elaborate
+-ifn char_mem.prj
+-ifmt mixed
