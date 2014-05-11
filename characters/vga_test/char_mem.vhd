@@ -10,6 +10,23 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+package char_mem_pckg is
+  component char_mem
+    port(
+      clk: in std_logic;
+      char_read_addr : in std_logic_vector(11 downto 0);
+      char_write_addr: in std_logic_vector(11 downto 0);
+      char_we : in std_logic;
+      char_write_value : in std_logic_vector(7 downto 0);
+      char_read_value : out std_logic_vector(7 downto 0)
+   );
+  end component char_mem;
+end package char_mem_pckg;
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
 entity char_mem is
    port(
       clk: in std_logic;

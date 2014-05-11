@@ -130,6 +130,16 @@ begin
       addr		=> ascii_line, -- x200 - x200f for 0
       data     => ascii_pixels
    );
+	
+	u2 : char_mem
+    port map(
+      clk					=> clk,
+      char_read_addr    => char_read_addr,
+      char_write_addr   => char_write_addr,
+      char_we           => char_enable_write,
+      char_write_value  => char_write_value,
+      char_read_value   => char_read_value
+   );
 
   -- this maps the scancode received from the keyboard into a pattern on the 7-segment display
  keyboard_map <= DIG_1 when scancode = "00010110" else
@@ -217,10 +227,13 @@ begin
 		
 			-- get the character we are to draw
 			-- for now let's draw all x02_ (smilie faces)
-		   -- 0 is x30_
+			char_read_addr <= x"08";
+			number <= char_read_value;
 			
+			
+		   -- 0 is x30_
 			-- fetch x02_
-			number <= x"010";
+			--number <= x"010";
 			ascii_line <= number(10 downto 0) + vpcounter;
 			white_out <= ascii_pixels(horizontal_pixel);
 						
