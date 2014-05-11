@@ -206,9 +206,8 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name=".lso"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="mips_fpga_interface.lso"/>
       <outfile xil_pn:name="mips_fpga_interface.ngc"/>
       <outfile xil_pn:name="mips_fpga_interface.ngr"/>
       <outfile xil_pn:name="mips_fpga_interface.prj"/>
@@ -228,6 +227,7 @@
     <transform xil_pn:end_ts="1399779903" xil_pn:in_ck="-6903444084185088958" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7427276884881517904" xil_pn:start_ts="1399779898">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="mips_fpga_interface.bld"/>
@@ -237,6 +237,7 @@
     <transform xil_pn:end_ts="1399779906" xil_pn:in_ck="-694152284988171350" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-3037193059779134713" xil_pn:start_ts="1399779903">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="mips_fpga_interface.pcf"/>
       <outfile xil_pn:name="mips_fpga_interface_map.map"/>
@@ -251,6 +252,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="mips_fpga_interface.ncd"/>
       <outfile xil_pn:name="mips_fpga_interface.pad"/>
@@ -265,18 +267,21 @@
     <transform xil_pn:end_ts="1399779922" xil_pn:in_ck="2431106888626950729" xil_pn:name="TRANEXT_bitFile_spartan3" xil_pn:prop_ck="4513092874982558118" xil_pn:start_ts="1399779914">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="mips_fpga_interface.bgn"/>
       <outfile xil_pn:name="mips_fpga_interface.bit"/>
       <outfile xil_pn:name="mips_fpga_interface.drc"/>
       <outfile xil_pn:name="mips_fpga_interface.ut"/>
       <outfile xil_pn:name="usage_statistics_webtalk.html"/>
-      <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
     <transform xil_pn:end_ts="1399779914" xil_pn:in_ck="-694152284988171482" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1399779912">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="mips_fpga_interface.twr"/>
       <outfile xil_pn:name="mips_fpga_interface.twx"/>

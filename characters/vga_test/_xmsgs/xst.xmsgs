@@ -5,162 +5,70 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/vga_test/vga_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">113</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">parity</arg>&apos; of component &apos;<arg fmt="%s" index="4">ps2_kbd</arg>&apos;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/vgatest</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/vga_test/vga_gen.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/vga_test/vga_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">113</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">busy</arg>&apos; of component &apos;<arg fmt="%s" index="4">ps2_kbd</arg>&apos;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/vgatest/behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/vga_test/vga_gen.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/vga_test/vga_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">197</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-<arg fmt="%s" index="3">&lt;hpcounter&gt;, &lt;vpcounter&gt;</arg>
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ps2_kbd_pckg</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/ps2_kbd.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/ps2_kbd.vhd</arg>&quot;.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">number</arg>&gt; in unit &lt;<arg fmt="%s" index="2">vgatest</arg>&gt; has a constant value of <arg fmt="%s" index="3">000000010000</arg> during circuit operation. The register is replaced by logic.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ps2_kbd</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/ps2_kbd.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/ps2_kbd.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">rdy</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ps2_kbd/arch</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/ps2_kbd.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/ps2_kbd.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">number</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/font_rom_pckg</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/vga_test/list_ch13_01_font_rom.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/list_ch13_01_font_rom.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">keyboard_map</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/font_rom</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/vga_test/list_ch13_01_font_rom.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/list_ch13_01_font_rom.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">color</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/font_rom/arch</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/vga_test/list_ch13_01_font_rom.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/list_ch13_01_font_rom.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">u0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-It will be removed from the design.
+<msg type="error" file="HDLParsers" num="3312" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd</arg>&quot; Line <arg fmt="%d" index="2">135</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">char_mem</arg>&apos;.
 </msg>
 
-<msg type="info" file="Xst" num="3044" delta="old" >The ROM &lt;<arg fmt="%s" index="1">Mrom_data_rom0000</arg>&gt; will be implemented as a read-only BLOCK RAM, absorbing the register: &lt;<arg fmt="%s" index="2">addr_reg</arg>&gt;.
+<msg type="error" file="HDLParsers" num="3312" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd</arg>&quot; Line <arg fmt="%d" index="2">137</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">char_read_addr</arg>&apos;.
 </msg>
 
-<msg type="info" file="Xst" num="3225" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mrom_data_rom0000</arg>&gt; will be implemented as BLOCK RAM
+<msg type="error" file="HDLParsers" num="1209" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd</arg>&quot; Line <arg fmt="%d" index="2">137</arg>. <arg fmt="%s" index="3">char_read_addr</arg>: Undefined symbol (last report in this block)
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ascii_line_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">vgatest</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="error" file="HDLParsers" num="3312" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd</arg>&quot; Line <arg fmt="%d" index="2">138</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">char_write_addr</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ascii_line_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">vgatest</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="error" file="HDLParsers" num="1209" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd</arg>&quot; Line <arg fmt="%d" index="2">138</arg>. <arg fmt="%s" index="3">char_write_addr</arg>: Undefined symbol (last report in this block)
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ascii_line_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">vgatest</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="error" file="HDLParsers" num="3312" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd</arg>&quot; Line <arg fmt="%d" index="2">139</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">char_enable_write</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ascii_line_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">vgatest</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="error" file="HDLParsers" num="1209" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd</arg>&quot; Line <arg fmt="%d" index="2">139</arg>. <arg fmt="%s" index="3">char_enable_write</arg>: Undefined symbol (last report in this block)
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ascii_line_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">vgatest</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="error" file="HDLParsers" num="3312" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd</arg>&quot; Line <arg fmt="%d" index="2">140</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">char_write_value</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/bitcnt_r_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
+<msg type="error" file="HDLParsers" num="1209" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd</arg>&quot; Line <arg fmt="%d" index="2">140</arg>. <arg fmt="%s" index="3">char_write_value</arg>: Undefined symbol (last report in this block)
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/bitcnt_r_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
+<msg type="error" file="HDLParsers" num="3312" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd</arg>&quot; Line <arg fmt="%d" index="2">142</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">char_read_value</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/bitcnt_r_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
+<msg type="error" file="HDLParsers" num="1209" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd</arg>&quot; Line <arg fmt="%d" index="2">142</arg>. <arg fmt="%s" index="3">char_read_value</arg>: Undefined symbol (last report in this block)
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/bitcnt_r_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
+<msg type="error" file="HDLParsers" num="3312" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd</arg>&quot; Line <arg fmt="%d" index="2">230</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">char_read_addr</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/ps2_clk_r_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
+<msg type="error" file="HDLParsers" num="3312" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd</arg>&quot; Line <arg fmt="%d" index="2">231</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">char_read_value</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/ps2_clk_r_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/ps2_clk_r_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/ps2_clk_r_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/ps2_clk_r_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/rdy_r</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/error_r</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/timer_r_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/timer_r_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/timer_r_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/timer_r_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/timer_r_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/timer_r_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/timer_r_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/timer_r_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/timer_r_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/timer_r_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/timer_r_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/timer_r_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/timer_r_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/timer_r_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/keyrel_r</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/sc_r_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/sc_r_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/sc_r_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/sc_r_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/sc_r_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/sc_r_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/sc_r_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/sc_r_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/sc_r_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u0/sc_r_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vgatest</arg>&gt;.
+<msg type="error" file="HDLParsers" num="1209" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd</arg>&quot; Line <arg fmt="%d" index="2">231</arg>. <arg fmt="%s" index="3">char_read_value</arg>: Undefined symbol (last report in this block)
 </msg>
 
 </messages>
