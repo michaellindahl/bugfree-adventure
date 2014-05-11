@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=Q:\mlindahl15\Old Classes\CS373\FinalProject\FinalProject\FinalProject_ISEFiles\vga1\vga_test\vgatest.ncd
-OUTFILE=Q:\mlindahl15\Old Classes\CS373\FinalProject\FinalProject\FinalProject_ISEFiles\vga1\vga_test\vgatest.bit
+INFILE=C:\Users\jburge16\Documents\GitHub\bugfree-adventure\characters\vga_test\vgatest.ncd
+OUTFILE=C:\Users\jburge16\Documents\GitHub\bugfree-adventure\characters\vga_test\vgatest.bit
 FAMILY=Spartan3
 PART=xc3s1000-4ft256
-WORKINGDIR=Q:\mlindahl15\Old Classes\CS373\FinalProject\FinalProject\FinalProject_ISEFiles\vga1\vga_test
+WORKINGDIR=C:\Users\jburge16\Documents\GitHub\bugfree-adventure\characters\vga_test
 LICENSE=WebPack
 USER_INFO=210788141_0_0_457

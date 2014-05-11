@@ -1,8 +1,10 @@
-AR ps2_kbd arch "//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/ps2_kbd.vhd" sub00/vhpl04 1399781625
-PH font_rom_pckg NULL "//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/vga_test/list_ch13_01_font_rom.vhd" sub00/vhpl05 1399781626
-AR vgatest behavioral "//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/vga_test/vga_gen.vhd" sub00/vhpl01 1399781630
-PH ps2_kbd_pckg NULL "//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/ps2_kbd.vhd" sub00/vhpl02 1399781623
-AR font_rom arch "//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/vga_test/list_ch13_01_font_rom.vhd" sub00/vhpl07 1399781628
-EN font_rom NULL "//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/vga_test/list_ch13_01_font_rom.vhd" sub00/vhpl06 1399781627
-EN vgatest NULL "//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/vga_test/vga_gen.vhd" sub00/vhpl00 1399781629
-EN ps2_kbd NULL "//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/ps2_kbd.vhd" sub00/vhpl03 1399781624
+AR ps2_kbd arch C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/ps2_kbd.vhd sub00/vhpl04 1399839090
+AR char_mem arch C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/char_mem.vhd sub00/vhpl09 1399837695
+PH font_rom_pckg NULL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/list_ch13_01_font_rom.vhd sub00/vhpl05 1399839091
+AR vgatest behavioral C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd sub00/vhpl01 1399839095
+PH ps2_kbd_pckg NULL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/ps2_kbd.vhd sub00/vhpl02 1399839088
+AR font_rom arch C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/list_ch13_01_font_rom.vhd sub00/vhpl07 1399839093
+EN font_rom NULL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/list_ch13_01_font_rom.vhd sub00/vhpl06 1399839092
+EN vgatest NULL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd sub00/vhpl00 1399839094
+EN ps2_kbd NULL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/ps2_kbd.vhd sub00/vhpl03 1399839089
+EN char_mem NULL C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/char_mem.vhd sub00/vhpl08 1399837694

@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: vgatest.prj
 
@@ -104,13 +104,14 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/ps2_kbd.vhd" in Library work.
+Compiling vhdl file "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/ps2_kbd.vhd" in Library work.
 Architecture arch of Entity ps2_kbd is up to date.
-Compiling vhdl file "//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/vga_test/list_ch13_01_font_rom.vhd" in Library work.
-Architecture arch of Entity font_rom is up to date.
-Compiling vhdl file "//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/vga_test/vga_gen.vhd" in Library work.
-Entity <vgatest> compiled.
-Entity <vgatest> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/list_ch13_01_font_rom.vhd" in Library work.
+Package <font_rom_pckg> compiled.
+Entity <font_rom> compiled.
+Entity <font_rom> (Architecture <arch>) compiled.
+Compiling vhdl file "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd" in Library work.
+Architecture behavioral of Entity vgatest is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -129,11 +130,11 @@ Analyzing hierarchy for entity <font_rom> in library <work> (architecture <arch>
 =========================================================================
 Analyzing generic Entity <vgatest> in library <work> (Architecture <behavioral>).
 	FREQ = 100000
-WARNING:Xst:753 - "//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/vga_test/vga_gen.vhd" line 113: Unconnected output port 'parity' of component 'ps2_kbd'.
-WARNING:Xst:753 - "//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/vga_test/vga_gen.vhd" line 113: Unconnected output port 'busy' of component 'ps2_kbd'.
-WARNING:Xst:819 - "//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/vga_test/vga_gen.vhd" line 197: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:753 - "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd" line 113: Unconnected output port 'parity' of component 'ps2_kbd'.
+WARNING:Xst:753 - "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd" line 113: Unconnected output port 'busy' of component 'ps2_kbd'.
+WARNING:Xst:819 - "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd" line 197: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <hpcounter>, <vpcounter>
-INFO:Xst:2679 - Register <number> in unit <vgatest> has a constant value of 000000010000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <number> in unit <vgatest> has a constant value of 001101010000 during circuit operation. The register is replaced by logic.
 Entity <vgatest> analyzed. Unit <vgatest> generated.
 
 Analyzing generic Entity <ps2_kbd> in library <work> (Architecture <arch>).
@@ -151,7 +152,7 @@ Entity <font_rom> analyzed. Unit <font_rom> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <ps2_kbd>.
-    Related source file is "//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/ps2_kbd.vhd".
+    Related source file is "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/ps2_kbd.vhd".
     Found 4-bit up counter for signal <bitcnt_r>.
     Found 1-bit register for signal <error_r>.
     Found 1-bit register for signal <keyrel_r>.
@@ -168,7 +169,7 @@ Unit <ps2_kbd> synthesized.
 
 
 Synthesizing Unit <font_rom>.
-    Related source file is "//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/vga_test/list_ch13_01_font_rom.vhd".
+    Related source file is "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/list_ch13_01_font_rom.vhd".
     Found 2048x8-bit ROM for signal <data$rom0000> created at line 2228.
     Found 11-bit register for signal <addr_reg>.
     Summary:
@@ -178,7 +179,7 @@ Unit <font_rom> synthesized.
 
 
 Synthesizing Unit <vgatest>.
-    Related source file is "//cs1/cs_students/mlindahl15/Old Classes/CS373/FinalProject/FinalProject/FinalProject_ISEFiles/vga1/vga_test/vga_gen.vhd".
+    Related source file is "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/vga_gen.vhd".
 WARNING:Xst:646 - Signal <rdy> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <number> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <keyboard_map> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -311,10 +312,10 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1710 - FF/Latch <ascii_line_6> (without init value) has a constant value of 0 in block <vgatest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ascii_line_6> (without init value) has a constant value of 1 in block <vgatest>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <ascii_line_7> (without init value) has a constant value of 0 in block <vgatest>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <ascii_line_8> (without init value) has a constant value of 0 in block <vgatest>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <ascii_line_9> (without init value) has a constant value of 0 in block <vgatest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ascii_line_8> (without init value) has a constant value of 1 in block <vgatest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ascii_line_9> (without init value) has a constant value of 1 in block <vgatest>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <ascii_line_10> (without init value) has a constant value of 0 in block <vgatest>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <vgatest> ...
@@ -399,14 +400,14 @@ Design Statistics
 Cell Usage :
 # BELS                             : 122
 #      GND                         : 2
-#      INV                         : 5
+#      INV                         : 4
 #      LUT1                        : 18
-#      LUT2                        : 8
+#      LUT2                        : 7
 #      LUT2_L                      : 2
-#      LUT3                        : 9
+#      LUT3                        : 10
 #      LUT3_L                      : 2
-#      LUT4                        : 25
-#      LUT4_D                      : 4
+#      LUT4                        : 27
+#      LUT4_D                      : 3
 #      LUT4_L                      : 5
 #      MUXCY                       : 18
 #      MUXF5                       : 2
@@ -417,7 +418,7 @@ Cell Usage :
 #      FDE                         : 7
 #      FDR                         : 17
 #      FDRE                        : 15
-#      FDRS                        : 1
+#      FDS                         : 1
 # RAMS                             : 1
 #      RAMB16                      : 1
 # Clock Buffers                    : 2
@@ -432,7 +433,7 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-4 
 
- Number of Slices:                       44  out of   7680     0%  
+ Number of Slices:                       45  out of   7680     0%  
  Number of Slice Flip Flops:             40  out of  15360     0%  
  Number of 4 input LUTs:                 78  out of  15360     0%  
  Number of IOs:                          14
@@ -473,7 +474,7 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 8.501ns (Maximum Frequency: 117.637MHz)
+   Minimum period: 7.875ns (Maximum Frequency: 126.984MHz)
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: 7.488ns
    Maximum combinational path delay: No path found
@@ -505,27 +506,28 @@ Delay:               2.623ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk1'
-  Clock period: 8.501ns (frequency: 117.637MHz)
-  Total number of paths / destination ports: 1002 / 98
+  Clock period: 7.875ns (frequency: 126.984MHz)
+  Total number of paths / destination ports: 1023 / 97
 -------------------------------------------------------------------------
-Delay:               8.501ns (Levels of Logic = 3)
-  Source:            hcounter_7 (FF)
-  Destination:       hpcounter_3 (FF)
+Delay:               7.875ns (Levels of Logic = 4)
+  Source:            vcounter_7 (FF)
+  Destination:       blue_out_0 (FF)
   Source Clock:      clk1 rising
   Destination Clock: clk1 rising
 
-  Data Path: hcounter_7 to hpcounter_3
+  Data Path: vcounter_7 to blue_out_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              6   0.720   1.342  hcounter_7 (hcounter_7)
-     LUT4:I0->O            2   0.551   0.945  ascii_line_and0000131 (N8)
-     LUT4:I2->O           26   0.551   2.014  hpcounter_and000021_1 (hpcounter_and000021)
-     LUT2:I1->O            1   0.551   0.801  hpcounter_and00001 (hpcounter_and0000)
-     FDRS:R                    1.026          hpcounter_3
+     FDRE:C->Q             5   0.720   1.260  vcounter_7 (vcounter_7)
+     LUT3:I0->O            1   0.551   0.869  green_out_0_cmp_gt0001215 (green_out_0_cmp_gt0001215)
+     LUT4_D:I2->LO         1   0.551   0.126  green_out_0_cmp_gt0001227 (N21)
+     LUT4:I3->O            1   0.551   0.869  ascii_line_and0000_inv31 (ascii_line_and0000_inv31)
+     LUT4:I2->O            1   0.551   0.801  ascii_line_and0000_inv91 (ascii_line_and0000_inv)
+     FDR:R                     1.026          blue_out_0
     ----------------------------------------
-    Total                      8.501ns (3.399ns logic, 5.102ns route)
-                                       (40.0% logic, 60.0% route)
+    Total                      7.875ns (3.950ns logic, 3.925ns route)
+                                       (50.2% logic, 49.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk1'
@@ -549,12 +551,12 @@ Offset:              7.488ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.68 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.36 secs
  
 --> 
 
-Total memory usage is 266024 kilobytes
+Total memory usage is 261916 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   49 (   0 filtered)

@@ -45,8 +45,8 @@ architecture behavioral of vgatest is
 signal clk              : std_logic;
 signal hcounter : integer range 0 to 800;
 signal vcounter   : integer range 0 to 521;
-signal hpcounter : integer range 0 to 8;
-signal vpcounter : integer range 0 to 16;
+signal hpcounter : integer range 0 to 8 := 8;
+signal vpcounter : integer range 0 to 17;
 signal color: std_logic_vector(8 downto 0);
 
   constant YES : std_logic := '1';
@@ -220,7 +220,7 @@ begin
 		   -- 0 is x30_
 			
 			-- fetch x02_
-			number <= x"010";
+			number <= x"350";
 			ascii_line <= number(10 downto 0) + vpcounter;
 			white_out <= ascii_pixels(horizontal_pixel);
 						
@@ -272,7 +272,7 @@ begin
       	vcounter <= vcounter+1;
 			vpcounter <= vpcounter+1;
       	hcounter <= 0;
-			hpcounter <= 0;
+			hpcounter <= 8;
     	end if;
 	 	-- vertical counts from 0 to 519
     	if vcounter = 521 then		    
