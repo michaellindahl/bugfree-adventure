@@ -233,13 +233,13 @@ begin
  		-- To draw a pixel in (x0, y0), simply test if the ray trace to it
 		-- and set its color to any value between 1 to 7. The following example simply sets 
 		-- the whole display area to a single-color wash, which is changed every one 
-		-- second. 	
+		-- second. 			
 	 	if ( (( x > 0) and (x < 639)) and ((y > 0) and (y < 479)) ) then
 		
 			-- get the character we are to draw
 			-- for now let's draw all x02_ (smilie faces)
-			xsignal <= conv_std_logic_vector(x, 12);
-			ysignal <= conv_std_logic_vector(y, 12);
+			xsignal <= conv_std_logic_vector(x, 11);
+			ysignal <= conv_std_logic_vector(y, 11);
 
 		   number <= char_read_value & "0000";
 		   -- char_read_addr <= "000000000011";	
@@ -248,7 +248,7 @@ begin
 			column <= "0000" & ysignal(11 downto 4);
 			
 			-- char_read_addr <= (column << 8) + (x >> 3);
-			char_read_addr <= (("00000000" & column(11 downto 8)) + (xsignal(9 downto 0) & "000"));
+			char_read_addr <= ((column(3 downto 0) & "00000000") + ("000" & xsignal(11 downto 3)));
 
 			-- 0 is x30_
 			-- fetch x02_
