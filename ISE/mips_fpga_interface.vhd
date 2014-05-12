@@ -9,7 +9,9 @@ use IEEE.STD_LOGIC_UNSIGNED.all;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.NUMERIC_STD.all;
 use work.ps2_kbd_pckg.all;
-use work.vga_gen_pckg.all;
+--use work.vga_gen_pckg.all;
+use work.font_rom_pckg.all;
+use work.char_mem_pckg.all;
 
 entity mips_fpga_interface is
 generic(
@@ -52,10 +54,28 @@ architecture test_fpga of mips_fpga_interface is
   signal clk25              : std_logic;
   signal hcounter : integer range 0 to 800;
   signal vcounter   : integer range 0 to 521;
+  signal hpcounter : integer range 0 to 8 := 8;
+  signal vpcounter : integer range 0 to 17;
   signal color: std_logic_vector(2 downto 0);
   
   constant YES : std_logic := '1';
   constant NO  : std_logic := '0';
+  
+    -- signals for font ROM
+  signal ascii_line   : std_logic_vector(10 downto 0);
+  signal ascii_pixels : std_logic_vector(7 downto 0);
+  signal white_out 	 : std_logic;
+  
+  signal char_read_addr    : std_logic_vector(11 downto 0);
+  signal char_write_addr   : std_logic_vector(11 downto 0);
+  signal char_enable_write : std_logic;
+  signal char_write_value  : std_logic_vector(7 downto 0);
+  signal char_read_value   : std_logic_vector(7 downto 0);
+  
+  signal number : std_logic_vector(11 downto 0);
+  signal column : std_logic_vector(11 downto 0);
+  signal xsignal : std_logic_vector(11 downto 0);
+  signal ysignal : std_logic_vector(11 downto 0);
   
 begin
 
@@ -73,20 +93,26 @@ begin
       rdy      => rdy,                  -- indicates when a scancode from the keyboard is available
       error    => kbd_error            -- indicates an error in receiving a scancode from the keyboard
       );
-	
---	u1: vga_gen
---	generic map(
---      FREQ     => FREQ
---      )
---		port map (
---			clk50_in => clk50_in,
---			red_out => red_out,
---			green_out => green_out,
---			blue_out => blue_out,
---			hs_out => hs_out,
---			vs_out => vs_out
---		);
 
+
+	u1 : font_rom
+   port map(
+      clk		=> clk,
+      addr		=> ascii_line, -- x200 - x200f for 0
+      data     => ascii_pixels
+   );
+	
+	u2 : char_mem
+    port map(
+      clk					=> clk,
+      char_read_addr    => char_read_addr,
+      char_write_addr   => char_write_addr,
+      char_we           => char_enable_write,
+      char_write_value  => char_write_value,
+      char_read_value   => char_read_value
+   );
+	
+	
   -- this maps the scancode received from the keyboard into a pattern on the 7-segment display
  input_value <= "000000001" when scancode = "00010110" else
          "000000010" when scancode = "00011110" else
@@ -163,6 +189,8 @@ end process;
 p5: process (clk25, hcounter, vcounter)
 	variable x: integer range 0 to 639;
 	variable y: integer range 0 to 479;
+	variable horizontal_pixel: integer range 0 to 7;
+	variable vertical_pixel: integer range 0 to 16;
 begin
 	-- hcounter counts from 0 to 799
 	-- vcounter counts from 0 to 520
@@ -170,15 +198,44 @@ begin
 	-- y coordinate: 0 - 479 (y = vcounter - 31, i.e., vcounter-Tpw-Tbp)
 	x := hcounter - 144;
 	y := vcounter - 31;
+	horizontal_pixel := hpcounter - 1;
+	vertical_pixel := vpcounter;
   	if clk25'event and clk25 = '1' then
  		-- To draw a pixel in (x0, y0), simply test if the ray trace to it
 		-- and set its color to any value between 1 to 7. The following example simply sets 
 		-- the whole display area to a single-color wash, which is changed every one 
 		-- second. 	
 	 	if ( (( x > 50) and (x < 200)) and ((y > 200) and (y < 300)) ) then
-      	red_out <= color;
-      	green_out <= color; 
-      	blue_out <= "000";
+		
+			-- get the character we are to draw
+			-- for now let's draw all x02_ (smilie faces)
+			xsignal <= conv_std_logic_vector(x, 11);
+			ysignal <= conv_std_logic_vector(y, 11);
+
+		   number <= char_read_value & "0000";
+		   -- char_read_addr <= "000000000011";	
+			-- column <= y / 8;
+			-- column <= (y >> 4);    parse error, unexpected GT
+			column <= "0000" & ysignal(11 downto 4);
+			
+			-- char_read_addr <= (column << 8) + (x >> 3);
+			char_read_addr <= ((column(3 downto 0) & "00000000") + ("000" & xsignal(11 downto 3)));
+
+			-- 0 is x30_
+			-- fetch x02_
+			-- number <= x"450";
+			ascii_line <= number + vpcounter;
+			white_out <= ascii_pixels(horizontal_pixel);
+						
+      	red_out(2)   <= white_out;
+      	red_out(1)   <= white_out;
+      	red_out(0)   <= white_out;
+      	green_out(2) <= white_out; 
+      	green_out(1) <= white_out; 
+      	green_out(0) <= white_out; 
+      	blue_out(2)  <= white_out;
+      	blue_out(1)  <= white_out;
+      	blue_out(0)  <= white_out;
     	else
 			-- if not traced, set it to "black" color
       	red_out <= "000";
@@ -212,14 +269,25 @@ begin
     	end if;
 	 	-- horizontal counts from 0 to 799
     	hcounter <= hcounter+1;
+		hpcounter <= hpcounter-1;
+		
     	if hcounter = 800 then
       	vcounter <= vcounter+1;
+			vpcounter <= vpcounter+1;
       	hcounter <= 0;
+			hpcounter <= 8;
     	end if;
 	 	-- vertical counts from 0 to 519
     	if vcounter = 521 then		    
       	vcounter <= 0;
+			vpcounter <= 0;
     	end if;
+		if hpcounter = 0 then
+			hpcounter <= 8;
+		end if;
+		if vpcounter = 17 then
+			vpcounter <= 0;
+		end if;
   end if;
 end process;
 
