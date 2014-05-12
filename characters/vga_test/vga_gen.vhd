@@ -70,7 +70,9 @@ signal color: std_logic_vector(8 downto 0);
   signal char_read_value   : std_logic_vector(7 downto 0);
   
   signal number : std_logic_vector(11 downto 0);
-
+  signal column : std_logic_vector(11 downto 0);
+  signal xsignal : std_logic_vector(11 downto 0);
+  signal ysignal : std_logic_vector(11 downto 0);
   
   -- Color patterns for various numbers and letters
   constant DIG_1    : std_logic_vector(8 downto 0) := "111000000";
@@ -236,9 +238,17 @@ begin
 		
 			-- get the character we are to draw
 			-- for now let's draw all x02_ (smilie faces)
+			xsignal <= conv_std_logic_vector(x, 12);
+			ysignal <= conv_std_logic_vector(y, 12);
 
 		   number <= char_read_value & "0000";
-		   char_read_addr <= "000000000011";	
+		   -- char_read_addr <= "000000000011";	
+			-- column <= y / 8;
+			-- column <= (y >> 4);    parse error, unexpected GT
+			column <= "0000" & ysignal(11 downto 4);
+			
+			-- char_read_addr <= (column << 8) + (x >> 3);
+			char_read_addr <= (("00000000" & column(11 downto 8)) + (xsignal(9 downto 0) & "000"));
 
 			-- 0 is x30_
 			-- fetch x02_
