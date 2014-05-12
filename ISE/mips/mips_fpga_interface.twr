@@ -39,16 +39,16 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   3.193ns.
+ Minimum period is   2.732ns.
 --------------------------------------------------------------------------------
 
-Paths for end point keyboard_clk (SLICE_X40Y70.SR), 1 path
+Paths for end point keyboard_clk (SLICE_X41Y94.SR), 1 path
 --------------------------------------------------------------------------------
-Slack (setup path):     6.807ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     7.408ns (requirement - (data path - clock path skew + uncertainty))
   Source:               keyboard_clk (FF)
   Destination:          keyboard_clk (FF)
   Requirement:          10.000ns
-  Data Path Delay:      3.193ns (Levels of Logic = 0)
+  Data Path Delay:      2.592ns (Levels of Logic = 0)
   Clock Path Skew:      0.000ns
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
@@ -58,27 +58,27 @@ Slack (setup path):     6.807ns (requirement - (data path - clock path skew + un
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X40Y70.YQ      Tcko                  0.720   keyboard_clk1
+    SLICE_X41Y94.YQ      Tcko                  0.720   keyboard_clk1
                                                        keyboard_clk
-    SLICE_X40Y70.SR      net (fanout=2)        1.447   keyboard_clk1
-    SLICE_X40Y70.CLK     Tsrck                 1.026   keyboard_clk1
+    SLICE_X41Y94.SR      net (fanout=2)        0.846   keyboard_clk1
+    SLICE_X41Y94.CLK     Tsrck                 1.026   keyboard_clk1
                                                        keyboard_clk
     -------------------------------------------------  ---------------------------
-    Total                                      3.193ns (1.746ns logic, 1.447ns route)
-                                                       (54.7% logic, 45.3% route)
+    Total                                      2.592ns (1.746ns logic, 0.846ns route)
+                                                       (67.4% logic, 32.6% route)
 
 --------------------------------------------------------------------------------
 
 Hold Paths: TS_clk = PERIOD TIMEGRP "clk" 10 ns HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point keyboard_clk (SLICE_X40Y70.SR), 1 path
+Paths for end point keyboard_clk (SLICE_X41Y94.SR), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      1.762ns (requirement - (clock path skew + uncertainty - data path))
+Slack (hold path):      1.282ns (requirement - (clock path skew + uncertainty - data path))
   Source:               keyboard_clk (FF)
   Destination:          keyboard_clk (FF)
   Requirement:          0.000ns
-  Data Path Delay:      1.762ns (Levels of Logic = 0)
+  Data Path Delay:      1.282ns (Levels of Logic = 0)
   Clock Path Skew:      0.000ns
   Source Clock:         clk_BUFGP rising at 10.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
@@ -88,43 +88,43 @@ Slack (hold path):      1.762ns (requirement - (clock path skew + uncertainty - 
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X40Y70.YQ      Tcko                  0.576   keyboard_clk1
+    SLICE_X41Y94.YQ      Tcko                  0.576   keyboard_clk1
                                                        keyboard_clk
-    SLICE_X40Y70.SR      net (fanout=2)        1.157   keyboard_clk1
-    SLICE_X40Y70.CLK     Tcksr       (-Th)    -0.029   keyboard_clk1
+    SLICE_X41Y94.SR      net (fanout=2)        0.677   keyboard_clk1
+    SLICE_X41Y94.CLK     Tcksr       (-Th)    -0.029   keyboard_clk1
                                                        keyboard_clk
     -------------------------------------------------  ---------------------------
-    Total                                      1.762ns (0.605ns logic, 1.157ns route)
-                                                       (34.3% logic, 65.7% route)
+    Total                                      1.282ns (0.605ns logic, 0.677ns route)
+                                                       (47.2% logic, 52.8% route)
 
 --------------------------------------------------------------------------------
 
 Component Switching Limit Checks: TS_clk = PERIOD TIMEGRP "clk" 10 ns HIGH 50%;
 --------------------------------------------------------------------------------
-Slack: 8.428ns (period - (min low pulse limit / (low pulse / period)))
+Slack: 7.268ns (period - (min low pulse limit / (low pulse / period)))
   Period: 10.000ns
   Low pulse: 5.000ns
-  Low pulse limit: 0.786ns (Tcl)
-  Physical resource: keyboard_clk1/CLK
-  Logical resource: keyboard_clk/CK
-  Location pin: SLICE_X40Y70.CLK
+  Low pulse limit: 1.366ns (Tbpwl)
+  Physical resource: u1/Mrom_data_rom0000/CLKA
+  Logical resource: u1/Mrom_data_rom0000.A/CLKA
+  Location pin: RAMB16_X0Y7.CLKA
   Clock network: clk_BUFGP
 --------------------------------------------------------------------------------
-Slack: 8.428ns (period - (min high pulse limit / (high pulse / period)))
+Slack: 7.268ns (period - (min high pulse limit / (high pulse / period)))
   Period: 10.000ns
   High pulse: 5.000ns
-  High pulse limit: 0.786ns (Tch)
-  Physical resource: keyboard_clk1/CLK
-  Logical resource: keyboard_clk/CK
-  Location pin: SLICE_X40Y70.CLK
+  High pulse limit: 1.366ns (Tbpwh)
+  Physical resource: u1/Mrom_data_rom0000/CLKA
+  Logical resource: u1/Mrom_data_rom0000.A/CLKA
+  Location pin: RAMB16_X0Y7.CLKA
   Clock network: clk_BUFGP
 --------------------------------------------------------------------------------
-Slack: 8.429ns (period - min period limit)
+Slack: 7.268ns (period - min period limit)
   Period: 10.000ns
-  Min period limit: 1.571ns (636.537MHz) (Tcp)
-  Physical resource: keyboard_clk1/CLK
-  Logical resource: keyboard_clk/CK
-  Location pin: SLICE_X40Y70.CLK
+  Min period limit: 2.732ns (366.032MHz) (Tbp)
+  Physical resource: u1/Mrom_data_rom0000/CLKA
+  Logical resource: u1/Mrom_data_rom0000.A/CLKA
+  Location pin: RAMB16_X0Y7.CLKA
   Clock network: clk_BUFGP
 --------------------------------------------------------------------------------
 
@@ -141,7 +141,7 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    3.193|         |         |         |
+clk            |    2.592|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -153,20 +153,20 @@ Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 Constraints cover 1 paths, 0 nets, and 3 connections
 
 Design statistics:
-   Minimum period:   3.193ns{1}   (Maximum frequency: 313.185MHz)
+   Minimum period:   2.732ns{1}   (Maximum frequency: 366.032MHz)
 
 
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Sat May 10 20:45:13 2014 
+Analysis completed Mon May 12 15:25:21 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 157 MB
+Peak Memory Usage: 158 MB
 
 
 

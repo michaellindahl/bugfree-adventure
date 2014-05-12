@@ -1,11 +1,11 @@
 Release 14.6 par P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-LAB-SCI-304-17::  Sun May 11 13:11:43 2014
+LAB-SCI-304-06::  Mon May 12 15:21:56 2014
 
 par -filter
-C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/iseconf
-ig/filter.filter -w -intstyle ise -ol high -t 1 vgatest_map.ncd vgatest.ncd
+C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/iseco
+nfig/filter.filter -w -intstyle ise -ol high -t 1 vgatest_map.ncd vgatest.ncd
 vgatest.pcf 
 
 
@@ -31,9 +31,9 @@ Device Utilization Summary:
    Number of External IOBs                  14 out of 173     8%
       Number of LOCed IOBs                  14 out of 14    100%
 
-   Number of RAMB16s                         1 out of 24      4%
-   Number of Slices                         45 out of 7680    1%
-      Number of SLICEMs                      0 out of 3840    0%
+   Number of RAMB16s                         3 out of 24     12%
+   Number of Slices                         65 out of 7680    1%
+      Number of SLICEMs                      4 out of 3840    1%
 
 
 
@@ -53,36 +53,36 @@ Total REAL time at the beginning of Placer: 1 secs
 Total CPU  time at the beginning of Placer: 1 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:fe39fbfe) REAL time: 1 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:71d556fc) REAL time: 1 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:fe39fbfe) REAL time: 1 secs 
+Phase 2.7  Design Feasibility Check (Checksum:71d556fc) REAL time: 1 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:fe39fbfe) REAL time: 1 secs 
+Phase 3.31  Local Placement Optimization (Checksum:71d556fc) REAL time: 1 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:82926c83) REAL time: 1 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:52938f6) REAL time: 1 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:82926c83) REAL time: 1 secs 
+Phase 5.36  Local Placement Optimization (Checksum:52938f6) REAL time: 1 secs 
 
 Phase 6.8  Global Placement
-....
+.......................
 ..
-Phase 6.8  Global Placement (Checksum:a2018d6a) REAL time: 2 secs 
+Phase 6.8  Global Placement (Checksum:64de8cf7) REAL time: 2 secs 
 
 Phase 7.5  Local Placement Optimization
-Phase 7.5  Local Placement Optimization (Checksum:a2018d6a) REAL time: 2 secs 
+Phase 7.5  Local Placement Optimization (Checksum:64de8cf7) REAL time: 2 secs 
 
 Phase 8.18  Placement Optimization
-Phase 8.18  Placement Optimization (Checksum:a8afa032) REAL time: 2 secs 
+Phase 8.18  Placement Optimization (Checksum:7b1e762f) REAL time: 3 secs 
 
 Phase 9.5  Local Placement Optimization
-Phase 9.5  Local Placement Optimization (Checksum:a8afa032) REAL time: 2 secs 
+Phase 9.5  Local Placement Optimization (Checksum:7b1e762f) REAL time: 3 secs 
 
-Total REAL time to Placer completion: 2 secs 
+Total REAL time to Placer completion: 3 secs 
 Total CPU  time to Placer completion: 2 secs 
 Writing design to file vgatest.ncd
 
@@ -91,30 +91,30 @@ Writing design to file vgatest.ncd
 Starting Router
 
 
-Phase  1  : 322 unrouted;      REAL time: 2 secs 
+Phase  1  : 537 unrouted;      REAL time: 3 secs 
 
-Phase  2  : 283 unrouted;      REAL time: 2 secs 
+Phase  2  : 446 unrouted;      REAL time: 3 secs 
 
-Phase  3  : 61 unrouted;      REAL time: 2 secs 
+Phase  3  : 86 unrouted;      REAL time: 3 secs 
 
-Phase  4  : 67 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  4  : 102 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
 Updating file: vgatest.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Total REAL time to Router completion: 3 secs 
-Total CPU time to Router completion: 3 secs 
+Total REAL time to Router completion: 4 secs 
+Total CPU time to Router completion: 4 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -132,7 +132,7 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|                 clk |      BUFGMUX4| No   |   24 |  0.168     |  0.912      |
+|                 clk |      BUFGMUX4| No   |   49 |  0.196     |  0.915      |
 +---------------------+--------------+------+------+------------+-------------+
 |      clk50_in_BUFGP |      BUFGMUX3| No   |    1 |  0.000     |  0.846      |
 +---------------------+--------------+------+------+------------+-------------+
@@ -154,8 +154,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     6.209ns|     N/A|           0
-                                            | HOLD        |     0.817ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     6.864ns|     N/A|           0
+                                            | HOLD        |     0.813ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net clk | SETUP       |         N/A|     2.592ns|     N/A|           0
   50_in_BUFGP                               | HOLD        |     1.282ns|            |       0|           0
@@ -177,7 +177,7 @@ All signals are completely routed.
 WARNING:Par:283 - There are 2 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
 Total REAL time to PAR completion: 4 secs 
-Total CPU time to PAR completion: 3 secs 
+Total CPU time to PAR completion: 4 secs 
 
 Peak Memory Usage:  325 MB
 

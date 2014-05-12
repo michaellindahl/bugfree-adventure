@@ -17,12 +17,12 @@
 -- Additional Comments: 
 --
 ----------------------------------------------------------------------------------
-library IEEE, unisim;
+library IEEE;--, unisim;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 use IEEE.NUMERIC_STD.all;
-use unisim.vcomponents.all;
+--use unisim.vcomponents.all;
 use work.ps2_kbd_pckg.all;
 use work.font_rom_pckg.all;
 use work.char_mem_pckg.all;

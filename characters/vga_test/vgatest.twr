@@ -3,7 +3,7 @@ Release 14.6 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -filter
-C:/Users/jburge16/Documents/GitHub/bugfree-adventure/characters/vga_test/iseconfig/filter.filter
+C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/characters/vga_test/iseconfig/filter.filter
 -intstyle ise -e 3 -s 4 -n 3 -xml vgatest.twx vgatest.ncd -o vgatest.twr
 vgatest.pcf -ucf test1.ucf
 
@@ -50,7 +50,7 @@ clk50_in       |    2.592|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sun May 11 13:11:50 2014 
+Analysis completed Mon May 12 15:22:03 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:

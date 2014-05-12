@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.68d on Sat May 10 20:45:05 2014
+// Written by: Map P.68d on Mon May 12 15:25:12 2014
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -28,8 +28,14 @@ COMP "clk50_in" LOCATE = SITE "P8" LEVEL 1;
 COMP "ps2_clk" LOCATE = SITE "B16" LEVEL 1;
 NET "clk50_in_BUFGP/IBUFG" BEL "clk50_in_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
 NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
-TIMEGRP clk = BEL "keyboard_clk" BEL "clk_BUFGP/BUFG.GCLKMUX" BEL
-        "clk_BUFGP/BUFG";
+PIN u2/Mram_char_ram1.A_pins<13> = BEL "u2/Mram_char_ram1.A" PINNAME CLKA;
+PIN u2/Mram_char_ram1.B_pins<13> = BEL "u2/Mram_char_ram1.B" PINNAME CLKB;
+PIN u2/Mram_char_ram2.A_pins<13> = BEL "u2/Mram_char_ram2.A" PINNAME CLKA;
+PIN u2/Mram_char_ram2.B_pins<13> = BEL "u2/Mram_char_ram2.B" PINNAME CLKB;
+TIMEGRP clk = BEL "keyboard_clk" BEL "u1/Mrom_data_rom0000.A" PIN
+        "u2/Mram_char_ram1.A_pins<13>" PIN "u2/Mram_char_ram1.B_pins<13>" PIN
+        "u2/Mram_char_ram2.A_pins<13>" PIN "u2/Mram_char_ram2.B_pins<13>" BEL
+        "clk_BUFGP/BUFG.GCLKMUX" BEL "clk_BUFGP/BUFG";
 TS_clk = PERIOD TIMEGRP "clk" 10 ns HIGH 50%;
 SCHEMATIC END;
 
