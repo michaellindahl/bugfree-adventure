@@ -205,7 +205,7 @@ begin
 		-- and set its color to any value between 1 to 7. The following example simply sets 
 		-- the whole display area to a single-color wash, which is changed every one 
 		-- second. 	
-	 	if ( (( x > 50) and (x < 200)) and ((y > 200) and (y < 300)) ) then
+		if ( (( x > 0) and (x < 639)) and ((y > 0) and (y < 479)) ) then
 		
 			-- get the character we are to draw
 			-- for now let's draw all x02_ (smilie faces)
