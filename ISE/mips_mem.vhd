@@ -10,8 +10,8 @@ use IEEE.NUMERIC_STD.all;
 
 entity dmem is -- data memory
   port(clk, we:  in STD_LOGIC;
-       io_in_port: in STD_LOGIC_VECTOR(31 downto 0);
-       io_out_port: out STD_LOGIC_VECTOR(31 downto 0);
+       io_fib_num: in STD_LOGIC_VECTOR(31 downto 0);
+       io_fib_result: out STD_LOGIC_VECTOR(31 downto 0);
        a, wd:    in STD_LOGIC_VECTOR(31 downto 0);
        rd:       out STD_LOGIC_VECTOR(31 downto 0));
 end;
@@ -25,14 +25,14 @@ begin
       if clk'event and clk = '1' then
           if (we = '1') then 
 			 		if (a = X"FFFFFFF0") then
-						io_out_port <= wd;
+						io_fib_result <= wd;
 					else
 						mem( to_integer(unsigned(a(7 downto 2))) ) := wd; -- write data value is stored to location 'a'. we do the typecast so we can index with an integer value
 					end if;
 			 end if;
       end if;
 		if (a = X"FFFFFFFF") then
-			rd <= io_in_port;
+			rd <= io_fib_num;
 		else
 			rd <= mem( to_integer(unsigned(a(7 downto 2))) ); -- word aligned. -- read instruction is happening all the time. convert address to unsigned, to integer, to be indexed and driven to the read.
 		end if;

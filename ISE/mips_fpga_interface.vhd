@@ -21,9 +21,6 @@ generic(
 		clk50_in : in std_logic;
 		led            : out STD_LOGIC_VECTOR(6 downto 0);
 
-		io_in_port: 			out STD_LOGIC_VECTOR(31 downto 0) := "00000000000000000000000000000000";
-      io_out_port: 			in STD_LOGIC_VECTOR(31 downto 0) := "00000000000000000000000000000000";
-
 		ps2_clk  : in  std_logic;           -- keyboard clock
 		ps2_data : in  std_logic;           -- keyboard data
 		red_out : out std_logic_vector(2 downto 0);
@@ -40,11 +37,14 @@ architecture test_fpga of mips_fpga_interface is
   component top
   port(clk, reset:         in     STD_LOGIC;
        writedata, dataadr: inout STD_LOGIC_VECTOR(31 downto 0);
+       io_fib_num: 			in STD_LOGIC_VECTOR(31 downto 0);
+       io_fib_result: 		out STD_LOGIC_VECTOR(31 downto 0);
        memwrite:           inout STD_LOGIC;
-       io_in_port: 			in STD_LOGIC_VECTOR(31 downto 0);
-       io_out_port: 			out STD_LOGIC_VECTOR(31 downto 0);
 		 pc:                 inout STD_LOGIC_VECTOR(31 downto 0) );
   end component;
+  
+  signal io_fib_num: 	 STD_LOGIC_VECTOR(31 downto 0);
+  signal io_fib_result: 	 STD_LOGIC_VECTOR(31 downto 0);
   
   signal mips_clk_input: STD_LOGIC;
   signal keyboard_clk              : std_logic;
@@ -176,10 +176,10 @@ p3: process(keyboard_clk)
   begin
     if rising_edge(keyboard_clk) then
       if rdy = YES then
-        led <= input_value(6 downto 0);                       -- update the display each time a scancode is received
-		  io_in_port <= "00000000000000000000000" & input_value; 
+        led <= io_fib_num(6 downto 0);                       -- update the display each time a scancode is received
+		  io_fib_num <= "00000000000000000000000" & input_value; 
 		  char_enable_write <= YES;
-		  char_write_value <= io_out_port + x"30";
+		  char_write_value <= io_fib_result + x"30";
 		  --char_write_value <= input_value + x"30";
 		  --char_write_addr <= X"105"; -- second line input
 		  --char_write_addr <= X"024"; -- first line input
@@ -306,8 +306,8 @@ begin
 end process;
 
   -- instantiate the mips CPU
-  mips_cpu: top port map( mips_clk_input, reset, writedata, dataadr, memwrite, pc);
-  
+  mips_cpu: top port map( mips_clk_input, reset, writedata, dataadr, io_fib_num, io_fib_result, memwrite, pc);
+    
   -- debug signals - this simply outputs the program counter address and the 
   -- signal for memory write.
   --led(6) <= memwrite;
