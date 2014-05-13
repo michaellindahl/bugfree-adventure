@@ -1,7 +1,7 @@
 Release 14.6 par P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-LAB-SCI-304-06::  Mon May 12 17:06:24 2014
+LAB-SCI-304-03::  Tue May 13 03:16:55 2014
 
 par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd
 mips_fpga_interface.ncd mips_fpga_interface.pcf 
@@ -45,43 +45,43 @@ Total REAL time at the beginning of Placer: 1 secs
 Total CPU  time at the beginning of Placer: 1 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:f6fdb785) REAL time: 1 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:fe8f23c5) REAL time: 1 secs 
 
 Phase 2.7  Design Feasibility Check
 INFO:Place:834 - Only a subset of IOs are locked. Out of 63 IOs, 23 are locked and 40 are not locked. If you would like
    to print the names of these IOs, please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
-Phase 2.7  Design Feasibility Check (Checksum:f6fdb785) REAL time: 1 secs 
+Phase 2.7  Design Feasibility Check (Checksum:fe8f23c5) REAL time: 1 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:f6fdb785) REAL time: 1 secs 
+Phase 3.31  Local Placement Optimization (Checksum:fe8f23c5) REAL time: 1 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 ...
-Phase 4.2  Initial Clock and IO Placement (Checksum:19f5743e) REAL time: 1 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:9a74f388) REAL time: 1 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:19f5743e) REAL time: 1 secs 
+Phase 5.36  Local Placement Optimization (Checksum:9a74f388) REAL time: 1 secs 
 
 Phase 6.3  Local Placement Optimization
 ...
-Phase 6.3  Local Placement Optimization (Checksum:418916f3) REAL time: 1 secs 
+Phase 6.3  Local Placement Optimization (Checksum:d60b3a4f) REAL time: 1 secs 
 
 Phase 7.5  Local Placement Optimization
-Phase 7.5  Local Placement Optimization (Checksum:418916f3) REAL time: 1 secs 
+Phase 7.5  Local Placement Optimization (Checksum:d60b3a4f) REAL time: 1 secs 
 
 Phase 8.8  Global Placement
-.......
+........
 ..
-Phase 8.8  Global Placement (Checksum:b56eaf66) REAL time: 2 secs 
+Phase 8.8  Global Placement (Checksum:ab26b2ca) REAL time: 2 secs 
 
 Phase 9.5  Local Placement Optimization
-Phase 9.5  Local Placement Optimization (Checksum:b56eaf66) REAL time: 2 secs 
+Phase 9.5  Local Placement Optimization (Checksum:ab26b2ca) REAL time: 2 secs 
 
 Phase 10.18  Placement Optimization
-Phase 10.18  Placement Optimization (Checksum:e5d35269) REAL time: 2 secs 
+Phase 10.18  Placement Optimization (Checksum:91b279d) REAL time: 2 secs 
 
 Phase 11.5  Local Placement Optimization
-Phase 11.5  Local Placement Optimization (Checksum:e5d35269) REAL time: 2 secs 
+Phase 11.5  Local Placement Optimization (Checksum:91b279d) REAL time: 2 secs 
 
 Total REAL time to Placer completion: 2 secs 
 Total CPU  time to Placer completion: 2 secs 
@@ -92,13 +92,13 @@ Writing design to file mips_fpga_interface.ncd
 Starting Router
 
 
-Phase  1  : 871 unrouted;      REAL time: 2 secs 
+Phase  1  : 870 unrouted;      REAL time: 2 secs 
 
-Phase  2  : 734 unrouted;      REAL time: 2 secs 
+Phase  2  : 733 unrouted;      REAL time: 2 secs 
 
-Phase  3  : 77 unrouted;      REAL time: 3 secs 
+Phase  3  : 116 unrouted;      REAL time: 2 secs 
 
-Phase  4  : 77 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
+Phase  4  : 116 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
 
 Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
 
@@ -129,13 +129,13 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|               clk25 |      BUFGMUX7| No   |   43 |  0.278     |  1.007      |
+|           clk_BUFGP |      BUFGMUX0| No   |    6 |  0.196     |  1.028      |
 +---------------------+--------------+------+------+------------+-------------+
-|      clk50_in_BUFGP |      BUFGMUX3| No   |    1 |  0.000     |  0.994      |
+|        keyboard_clk |      BUFGMUX7| No   |   30 |  0.356     |  1.081      |
 +---------------------+--------------+------+------+------------+-------------+
-|           clk_BUFGP |      BUFGMUX0| No   |    6 |  0.182     |  1.028      |
+|               clk25 |      BUFGMUX4| No   |   43 |  0.258     |  1.024      |
 +---------------------+--------------+------+------+------------+-------------+
-|        keyboard_clk |      BUFGMUX4| No   |   30 |  0.317     |  1.042      |
+|      clk50_in_BUFGP |      BUFGMUX3| No   |    1 |  0.000     |  0.961      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -155,9 +155,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_clk = PERIOD TIMEGRP "clk" 10 ns HIGH  | SETUP       |     7.408ns|     2.592ns|       0|           0
-  50%                                       | HOLD        |     1.282ns|            |       0|           0
-                                            | MINPERIOD   |     7.268ns|     2.732ns|       0|           0
+  TS_clk = PERIOD TIMEGRP "clk" 10 ns HIGH  | SETUP       |     6.834ns|     3.166ns|       0|           0
+  50%                                       | HOLD        |     1.741ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -173,7 +172,7 @@ WARNING:Par:283 - There are 1 loadless signals in this design. This design will 
 Total REAL time to PAR completion: 3 secs 
 Total CPU time to PAR completion: 3 secs 
 
-Peak Memory Usage:  325 MB
+Peak Memory Usage:  314 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.

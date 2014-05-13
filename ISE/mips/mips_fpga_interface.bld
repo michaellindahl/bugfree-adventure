@@ -3,17 +3,17 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
 -intstyle ise -dd _ngo -nt timestamp -uc
-C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.u
+C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.u
 cf -p xc3s1000-ft256-4 mips_fpga_interface.ngc mips_fpga_interface.ngd
 
 Reading NGO file
-"C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_inter
+"C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_inter
 face.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
 Annotating constraints to design from ucf file
-"C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.
+"C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.
 ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
@@ -32,7 +32,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 173008 kilobytes
+Total memory usage is 172992 kilobytes
 
 Writing NGD file "mips_fpga_interface.ngd" ...
 Total REAL time to NGDBUILD completion:  3 sec

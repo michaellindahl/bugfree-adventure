@@ -21,8 +21,8 @@ generic(
 		clk50_in : in std_logic;
 		led            : out STD_LOGIC_VECTOR(6 downto 0);
 
-		io_in_port: 			out STD_LOGIC_VECTOR(31 downto 0);
-      io_out_port: 			in STD_LOGIC_VECTOR(31 downto 0);
+		io_in_port: 			out STD_LOGIC_VECTOR(31 downto 0) := "00000000000000000000000000000000";
+      io_out_port: 			in STD_LOGIC_VECTOR(31 downto 0) := "00000000000000000000000000000000";
 
 		ps2_clk  : in  std_logic;           -- keyboard clock
 		ps2_data : in  std_logic;           -- keyboard data
@@ -183,7 +183,7 @@ p3: process(keyboard_clk)
 		  --char_write_value <= input_value + x"30";
 		  --char_write_addr <= X"105"; -- second line input
 		  --char_write_addr <= X"024"; -- first line input
-		  char_write_addr <= X"117";
+		  char_write_addr <= X"117"; -- output on second line
 		end if;
     end if;
 end process;
