@@ -23,10 +23,19 @@ begin
     variable mem: ramtype;
   begin
       if clk'event and clk = '1' then
-          if (we = '1') then mem( to_integer(unsigned(a(7 downto 2))) ) := wd; -- write data value is stored to location 'a'. we do the typecast so we can index with an integer value
-          end if;
+          if (we = '1') then 
+			 		if (a = X"FFFFFFF0") then
+						io_out_port <= wd;
+					else
+						mem( to_integer(unsigned(a(7 downto 2))) ) := wd; -- write data value is stored to location 'a'. we do the typecast so we can index with an integer value
+					end if;
+			 end if;
       end if;
-      rd <= mem( to_integer(unsigned(a(7 downto 2))) ); -- word aligned. -- read instruction is happening all the time. convert address to unsigned, to integer, to be indexed and driven to the read.
+		if (a = X"FFFFFFFF") then
+			rd <= io_in_port;
+		else
+			rd <= mem( to_integer(unsigned(a(7 downto 2))) ); -- word aligned. -- read instruction is happening all the time. convert address to unsigned, to integer, to be indexed and driven to the read.
+		end if;
   end process;
 end;
 
