@@ -82,6 +82,7 @@ architecture test_fpga of mips_fpga_interface is
   signal column : std_logic_vector(11 downto 0);
   signal xsignal : std_logic_vector(11 downto 0);
   signal ysignal : std_logic_vector(11 downto 0);
+
   
 begin
 
@@ -176,7 +177,7 @@ p3: process(keyboard_clk)
     if rising_edge(keyboard_clk) then
       if rdy = YES then
         led <= input_value(6 downto 0);                       -- update the display each time a scancode is received
-		  io_in_port <= "00000000000000000000000" & input_value;
+		  io_in_port <= "00000000000000000000000" & input_value; 
 		  char_enable_write <= YES;
 		  char_write_value <= io_out_port + x"30";
 		  --char_write_value <= input_value + x"30";
@@ -218,7 +219,7 @@ begin
 		-- and set its color to any value between 1 to 7. The following example simply sets 
 		-- the whole display area to a single-color wash, which is changed every one 
 		-- second. 	
-		if ( (( x > 0) and (x < 639)) and ((y > 0) and (y < 479)) ) then
+	 	if ( (( x > 0) and (x < 639)) and ((y > 0) and (y < 479)) ) then
 		
 			-- get the character we are to draw
 			-- for now let's draw all x02_ (smilie faces)

@@ -107,7 +107,7 @@ Slack: 7.268ns (period - (min low pulse limit / (low pulse / period)))
   Low pulse limit: 1.366ns (Tbpwl)
   Physical resource: u1/Mrom_data_rom0000/CLKA
   Logical resource: u1/Mrom_data_rom0000.A/CLKA
-  Location pin: RAMB16_X0Y7.CLKA
+  Location pin: RAMB16_X1Y9.CLKA
   Clock network: clk_BUFGP
 --------------------------------------------------------------------------------
 Slack: 7.268ns (period - (min high pulse limit / (high pulse / period)))
@@ -116,7 +116,7 @@ Slack: 7.268ns (period - (min high pulse limit / (high pulse / period)))
   High pulse limit: 1.366ns (Tbpwh)
   Physical resource: u1/Mrom_data_rom0000/CLKA
   Logical resource: u1/Mrom_data_rom0000.A/CLKA
-  Location pin: RAMB16_X0Y7.CLKA
+  Location pin: RAMB16_X1Y9.CLKA
   Clock network: clk_BUFGP
 --------------------------------------------------------------------------------
 Slack: 7.268ns (period - min period limit)
@@ -124,7 +124,7 @@ Slack: 7.268ns (period - min period limit)
   Min period limit: 2.732ns (366.032MHz) (Tbp)
   Physical resource: u1/Mrom_data_rom0000/CLKA
   Logical resource: u1/Mrom_data_rom0000.A/CLKA
-  Location pin: RAMB16_X0Y7.CLKA
+  Location pin: RAMB16_X1Y9.CLKA
   Clock network: clk_BUFGP
 --------------------------------------------------------------------------------
 
@@ -159,7 +159,7 @@ Design statistics:
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Mon May 12 15:25:21 2014 
+Analysis completed Mon May 12 17:06:31 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:

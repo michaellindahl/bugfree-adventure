@@ -5,10 +5,61 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1196" delta="unknown" >"C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips/../mips_mem.vhd" Line 66: Readline called past the end of file <arg fmt="%s" index="1">mem_file</arg>
+<msg type="error" file="HDLCompiler" num="839" delta="unknown" >"C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/../mips_top.vhd" Line 23: Type <arg fmt="%s" index="1">std_logic_vector</arg> does not match with the integer literal
 </msg>
 
-<msg type="warning" file="Simulator" num="0" delta="unknown" >Unable to copy libPortabilityNOSH.dll to the simulation executable directory: <arg fmt="%s" index="1">boost::filesystem::copy_file: The system cannot find the path specified, &quot;isim\testbench_isim_beh.exe.sim\libPortability.dll&quot;</arg>.
+<msg type="error" file="HDLCompiler" num="854" delta="unknown" >"C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/../mips_top.vhd" Line 20: Unit &lt;<arg fmt="%s" index="1">top</arg>&gt; ignored due to previous errors.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="374" delta="unknown" >"C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/../mips_top.vhd" Line 33: Entity &lt;<arg fmt="%s" index="1">top</arg>&gt; is not yet compiled.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/../mips_top.vhd" Line 36: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/../mips_top.vhd" Line 37: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/../mips_top.vhd" Line 41: &lt;<arg fmt="%s" index="1">std_logic</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/../mips_top.vhd" Line 42: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/../mips_top.vhd" Line 43: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/../mips_top.vhd" Line 44: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/../mips_top.vhd" Line 45: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/../mips_top.vhd" Line 49: &lt;<arg fmt="%s" index="1">std_logic</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/../mips_top.vhd" Line 50: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/../mips_top.vhd" Line 51: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/../mips_top.vhd" Line 52: &lt;<arg fmt="%s" index="1">std_logic</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/../mips_top.vhd" Line 53: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/../mips_top.vhd" Line 54: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/../mips_top.vhd" Line 57: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/../mips_top.vhd" Line 60: &lt;<arg fmt="%s" index="1">clk</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="192" delta="unknown" >"C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/../mips_top.vhd" Line 60: Actual of formal <arg fmt="%s" index="1">inout</arg> port <arg fmt="%s" index="2">pc</arg> cannot be an expression
 </msg>
 
 </messages>

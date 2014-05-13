@@ -215,6 +215,8 @@
     <transform xil_pn:end_ts="1399933315" xil_pn:in_ck="-6448837987853930686" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-2892641949761537043" xil_pn:start_ts="1399933311">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="vgatest.pcf"/>
       <outfile xil_pn:name="vgatest_map.map"/>
