@@ -176,7 +176,14 @@ p3: process(keyboard_clk)
     if rising_edge(keyboard_clk) then
       if rdy = YES then
         led <= input_value(6 downto 0);                       -- update the display each time a scancode is received
-      end if;
+		  io_in_port <= "00000000000000000000000" & input_value;
+		  char_enable_write <= YES;
+		  char_write_value <= io_out_port + x"30";
+		  --char_write_value <= input_value + x"30";
+		  --char_write_addr <= X"105"; -- second line input
+		  --char_write_addr <= X"024"; -- first line input
+		  char_write_addr <= X"117";
+		end if;
     end if;
 end process;
 
