@@ -10,6 +10,8 @@ use IEEE.NUMERIC_STD.all;
 
 entity dmem is -- data memory
   port(clk, we:  in STD_LOGIC;
+       io_in_port: in STD_LOGIC_VECTOR(31 downto 0);
+       io_out_port: out STD_LOGIC_VECTOR(31 downto 0);
        a, wd:    in STD_LOGIC_VECTOR(31 downto 0);
        rd:       out STD_LOGIC_VECTOR(31 downto 0));
 end;

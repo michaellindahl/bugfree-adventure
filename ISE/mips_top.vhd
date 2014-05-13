@@ -20,6 +20,8 @@ use IEEE.STD_LOGIC_UNSIGNED.all;
 entity top is -- top-level design for testing
   port(clk, reset:         in     STD_LOGIC;
        writedata, dataadr: inout STD_LOGIC_VECTOR(31 downto 0);
+       io_in_port: 			in STD_LOGIC_VECTOR(31 downto 0);
+       io_out_port: 			out STD_LOGIC_VECTOR(31 downto 0);
        memwrite:           inout STD_LOGIC;
 		 pc:                 inout STD_LOGIC_VECTOR(31 downto 0) );
 end;
@@ -37,6 +39,8 @@ architecture test of top is
   
   component dmem
     port(clk, we:  in STD_LOGIC;
+	      io_in_port: in STD_LOGIC_VECTOR(31 downto 0);
+         io_out_port: out STD_LOGIC_VECTOR(31 downto 0);
          a, wd:    in STD_LOGIC_VECTOR(31 downto 0);
          rd:       out STD_LOGIC_VECTOR(31 downto 0));
   end component;
@@ -55,7 +59,7 @@ begin
   -- instantiate processor and memories
   mips1: mips port map(clk, reset, pc, instr, memwrite, dataadr, writedata, readdata);
   imem1: imem port map(pc(7 downto 2), instr);
-  dmem1: dmem port map(clk, memwrite, dataadr, writedata, readdata);
+  dmem1: dmem port map(clk, memwrite, io_in_port, io_out_port, dataadr, writedata, readdata);
 
 end;
 
