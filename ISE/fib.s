@@ -2,6 +2,9 @@
 		# No memory variables for this program
 .text
 main:
+#lw      $a0, 0
+lw   	$a0, ffffffff($0) # 8C040000
+
 		# $a0 – input = level
 addi	$a0, $0, 10
 		# $v0 – output = returnValue
@@ -29,4 +32,5 @@ addi 	$t3, $t3, 1
 j	loop	
 		# Target of branch conditional jump
 done:
+ sw   $t3, fffffff0($0) # AC0B0000
  jr   $ra            	# return to OS
