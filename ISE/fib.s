@@ -3,7 +3,7 @@
 .text
 main:
 lw   	$a0, 0fff($0) # 8C040fff
-addi	$a0, $a0, 0
+addi	$v0, $a0, 0
 		# $a0 – input = level
 addi	$a0, $0, 10 #2004000a
 		# $v0 – output = returnValue
