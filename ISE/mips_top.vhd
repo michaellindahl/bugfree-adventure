@@ -20,7 +20,7 @@ use IEEE.STD_LOGIC_UNSIGNED.all;
 entity top is -- top-level design for testing
   port(clk, reset:         in     STD_LOGIC;
        writedata, dataadr: inout STD_LOGIC_VECTOR(31 downto 0);
-       io_fib_num: 			in STD_LOGIC_VECTOR(31 downto 0) := "00000000000000000000000000000101";
+       io_fib_num: 			in  STD_LOGIC_VECTOR(31 downto 0) := "00000000000000000000000000000000";
        io_fib_result: 	   out STD_LOGIC_VECTOR(31 downto 0) := "00000000000000000000000000000000";
        memwrite:           inout STD_LOGIC;
 		 pc:                 inout STD_LOGIC_VECTOR(31 downto 0) );

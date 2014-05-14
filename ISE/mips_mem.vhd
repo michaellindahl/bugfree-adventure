@@ -24,14 +24,14 @@ begin
   begin
       if clk'event and clk = '1' then
           if (we = '1') then 
-			 		if (a = X"FFFFFFF0") then
+			 		if (a = X"00000FF0") then -- store word 4080
 						io_fib_result <= wd;
 					else
 						mem( to_integer(unsigned(a(7 downto 2))) ) := wd; -- write data value is stored to location 'a'. we do the typecast so we can index with an integer value
 					end if;
 			 end if;
       end if;
-		if (a = X"FFFFFFFF") then
+		if (a = X"00000FFF") then -- load word 4095
 			rd <= io_fib_num;
 		else
 			rd <= mem( to_integer(unsigned(a(7 downto 2))) ); -- word aligned. -- read instruction is happening all the time. convert address to unsigned, to integer, to be indexed and driven to the read.
