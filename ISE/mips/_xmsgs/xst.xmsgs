@@ -5,42 +5,48 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd</arg>&quot; line <arg fmt="%d" index="2">90</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">parity</arg>&apos; of component &apos;<arg fmt="%s" index="4">ps2_kbd</arg>&apos;.
+<msg type="error" file="HDLParsers" num="0" delta="new" >Cannot rename dependency database for library &quot;work&quot;, file is &quot;xst/work/hdpdeps.ref&quot;, Temporary database file &quot;C:\Users\jburge16\Documents\GitHub\bugfree-adventure\ISE\mips\xst\work\xil_2672_18&quot; will remain.  System error message is:  File exists
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd</arg>&quot; line <arg fmt="%d" index="2">90</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">busy</arg>&apos; of component &apos;<arg fmt="%s" index="4">ps2_kbd</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd</arg>&quot; line <arg fmt="%d" index="2">91</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">parity</arg>&apos; of component &apos;<arg fmt="%s" index="4">ps2_kbd</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd</arg>&quot; line <arg fmt="%d" index="2">191</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">char_write_value</arg>&gt; has a width of <arg fmt="%d" index="4">8</arg> bits but assigned expression is <arg fmt="%d" index="5">9</arg>-bit wide.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd</arg>&quot; line <arg fmt="%d" index="2">91</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">busy</arg>&apos; of component &apos;<arg fmt="%s" index="4">ps2_kbd</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd</arg>&quot; line <arg fmt="%d" index="2">196</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">char_write_value</arg>&gt; has a width of <arg fmt="%d" index="4">8</arg> bits but assigned expression is <arg fmt="%d" index="5">32</arg>-bit wide.
+<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd</arg>&quot; line <arg fmt="%d" index="2">192</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">char_write_value</arg>&gt; has a width of <arg fmt="%d" index="4">8</arg> bits but assigned expression is <arg fmt="%d" index="5">9</arg>-bit wide.
 </msg>
 
-<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd</arg>&quot; line <arg fmt="%d" index="2">201</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">char_write_value</arg>&gt; has a width of <arg fmt="%d" index="4">8</arg> bits but assigned expression is <arg fmt="%d" index="5">32</arg>-bit wide.
+<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd</arg>&quot; line <arg fmt="%d" index="2">197</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">char_write_value</arg>&gt; has a width of <arg fmt="%d" index="4">8</arg> bits but assigned expression is <arg fmt="%d" index="5">32</arg>-bit wide.
 </msg>
 
-<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd</arg>&quot; line <arg fmt="%d" index="2">234</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">xsignal</arg>&gt; has a width of <arg fmt="%d" index="4">12</arg> bits but assigned expression is <arg fmt="%d" index="5">11</arg>-bit wide.
+<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd</arg>&quot; line <arg fmt="%d" index="2">202</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">char_write_value</arg>&gt; has a width of <arg fmt="%d" index="4">8</arg> bits but assigned expression is <arg fmt="%d" index="5">32</arg>-bit wide.
 </msg>
 
-<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd</arg>&quot; line <arg fmt="%d" index="2">235</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">ysignal</arg>&gt; has a width of <arg fmt="%d" index="4">12</arg> bits but assigned expression is <arg fmt="%d" index="5">11</arg>-bit wide.
+<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd</arg>&quot; line <arg fmt="%d" index="2">207</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">char_write_value</arg>&gt; has a width of <arg fmt="%d" index="4">8</arg> bits but assigned expression is <arg fmt="%d" index="5">32</arg>-bit wide.
 </msg>
 
-<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd</arg>&quot; line <arg fmt="%d" index="2">249</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">ascii_line</arg>&gt; has a width of <arg fmt="%d" index="4">11</arg> bits but assigned expression is <arg fmt="%d" index="5">12</arg>-bit wide.
+<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd</arg>&quot; line <arg fmt="%d" index="2">240</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">xsignal</arg>&gt; has a width of <arg fmt="%d" index="4">12</arg> bits but assigned expression is <arg fmt="%d" index="5">11</arg>-bit wide.
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd</arg>&quot; line <arg fmt="%d" index="2">211</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd</arg>&quot; line <arg fmt="%d" index="2">241</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">ysignal</arg>&gt; has a width of <arg fmt="%d" index="4">12</arg> bits but assigned expression is <arg fmt="%d" index="5">11</arg>-bit wide.
+</msg>
+
+<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd</arg>&quot; line <arg fmt="%d" index="2">255</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">ascii_line</arg>&gt; has a width of <arg fmt="%d" index="4">11</arg> bits but assigned expression is <arg fmt="%d" index="5">12</arg>-bit wide.
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.vhd</arg>&quot; line <arg fmt="%d" index="2">217</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;hpcounter&gt;, &lt;vpcounter&gt;</arg>
 </msg>
 
 <msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">char_enable_write</arg>&gt; in unit &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_decoder_alu.vhd</arg>&quot; line <arg fmt="%d" index="2">14</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_decoder_alu.vhd</arg>&quot; line <arg fmt="%d" index="2">14</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;op&gt;</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_mem.vhd</arg>&quot; line <arg fmt="%d" index="2">21</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_mem.vhd</arg>&quot; line <arg fmt="%d" index="2">22</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;io_fib_num&gt;</arg>
 </msg>
 
@@ -65,6 +71,9 @@
 <msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">number&lt;11&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">io_fib_result_2&lt;31:8&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
 <msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">io_fib_result&lt;31:8&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
@@ -75,9 +84,6 @@
 </msg>
 
 <msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">io_fib_num_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">io_fib_num_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -179,34 +185,103 @@
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">io_fib_num_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">char_write_addr_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">io_fib_num_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">char_write_addr_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">led_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">led_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">led_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">char_write_addr_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">char_write_addr_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">char_write_addr_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">char_write_addr_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">char_write_addr_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">char_write_addr_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">char_write_addr_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">led_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">led_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">led_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">char_write_addr_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">char_write_addr_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">io_fib_result_2_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmem1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">io_fib_result_2_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmem1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">io_fib_result_2_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmem1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">io_fib_result_2_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmem1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">io_fib_result_2_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmem1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">io_fib_result_2_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmem1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">io_fib_result_2_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmem1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">io_fib_result_2_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmem1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">io_fib_result_2_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmem1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">io_fib_result_2_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmem1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">io_fib_result_2_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmem1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">io_fib_result_2_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmem1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">io_fib_result_2_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmem1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">io_fib_result_2_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmem1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">io_fib_result_2_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmem1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">io_fib_result_2_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmem1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">io_fib_result_2_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmem1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">io_fib_result_2_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmem1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">io_fib_result_2_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmem1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">io_fib_result_2_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmem1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">io_fib_result_2_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmem1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">io_fib_result_2_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmem1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">io_fib_result_2_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmem1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">io_fib_result_2_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmem1</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">io_fib_result_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmem1</arg>&gt;.
@@ -415,12 +490,6 @@
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">number_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">char_write_addr_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">char_write_addr_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">char_write_addr_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
@@ -434,12 +503,6 @@
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">char_write_addr_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">char_write_addr_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;char_write_addr_8&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">char_write_addr_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;char_write_addr_4&gt; </arg>
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">char_read_addr_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mips_fpga_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -515,6 +578,78 @@
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/dmem1/io_fib_result_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/dmem1/io_fib_result_2_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/dmem1/io_fib_result_2_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/dmem1/io_fib_result_2_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/dmem1/io_fib_result_2_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/dmem1/io_fib_result_2_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/dmem1/io_fib_result_2_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/dmem1/io_fib_result_2_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/dmem1/io_fib_result_2_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/dmem1/io_fib_result_2_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/dmem1/io_fib_result_2_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/dmem1/io_fib_result_2_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/dmem1/io_fib_result_2_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/dmem1/io_fib_result_2_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/dmem1/io_fib_result_2_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/dmem1/io_fib_result_2_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/dmem1/io_fib_result_2_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/dmem1/io_fib_result_2_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/dmem1/io_fib_result_2_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/dmem1/io_fib_result_2_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/dmem1/io_fib_result_2_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/dmem1/io_fib_result_2_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/dmem1/io_fib_result_2_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/dmem1/io_fib_result_2_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/dmem1/io_fib_result_2_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mips_cpu/mips1/dp/pcreg/q_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mips_fpga_interface</arg>&gt;.
