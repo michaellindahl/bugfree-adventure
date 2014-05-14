@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_mem.vhd";
+static const char *ng0 = "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_mem.vhd";
 extern char *IEEE_P_3620187407;
 extern char *IEEE_P_1242562249;
 

@@ -320,3 +320,178 @@ map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mips_fp
 par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd mips_fpga_interface.ncd mips_fpga_interface.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o mips_fpga_interface.twr mips_fpga_interface.pcf 
 bitgen -intstyle ise -f mips_fpga_interface.ut mips_fpga_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.ucf -p xc3s1000-ft256-4 mips_fpga_interface.ngc mips_fpga_interface.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mips_fpga_interface_map.ncd mips_fpga_interface.ngd mips_fpga_interface.pcf 
+par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd mips_fpga_interface.ncd mips_fpga_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o mips_fpga_interface.twr mips_fpga_interface.pcf 
+bitgen -intstyle ise -f mips_fpga_interface.ut mips_fpga_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.ucf -p xc3s1000-ft256-4 mips_fpga_interface.ngc mips_fpga_interface.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mips_fpga_interface_map.ncd mips_fpga_interface.ngd mips_fpga_interface.pcf 
+par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd mips_fpga_interface.ncd mips_fpga_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o mips_fpga_interface.twr mips_fpga_interface.pcf 
+bitgen -intstyle ise -f mips_fpga_interface.ut mips_fpga_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.ucf -p xc3s1000-ft256-4 mips_fpga_interface.ngc mips_fpga_interface.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mips_fpga_interface_map.ncd mips_fpga_interface.ngd mips_fpga_interface.pcf 
+par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd mips_fpga_interface.ncd mips_fpga_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o mips_fpga_interface.twr mips_fpga_interface.pcf 
+bitgen -intstyle ise -f mips_fpga_interface.ut mips_fpga_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.ucf -p xc3s1000-ft256-4 mips_fpga_interface.ngc mips_fpga_interface.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mips_fpga_interface_map.ncd mips_fpga_interface.ngd mips_fpga_interface.pcf 
+par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd mips_fpga_interface.ncd mips_fpga_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o mips_fpga_interface.twr mips_fpga_interface.pcf 
+bitgen -intstyle ise -f mips_fpga_interface.ut mips_fpga_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.ucf -p xc3s1000-ft256-4 mips_fpga_interface.ngc mips_fpga_interface.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mips_fpga_interface_map.ncd mips_fpga_interface.ngd mips_fpga_interface.pcf 
+par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd mips_fpga_interface.ncd mips_fpga_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o mips_fpga_interface.twr mips_fpga_interface.pcf 
+bitgen -intstyle ise -f mips_fpga_interface.ut mips_fpga_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.ucf -p xc3s1000-ft256-4 mips_fpga_interface.ngc mips_fpga_interface.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mips_fpga_interface_map.ncd mips_fpga_interface.ngd mips_fpga_interface.pcf 
+par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd mips_fpga_interface.ncd mips_fpga_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o mips_fpga_interface.twr mips_fpga_interface.pcf 
+bitgen -intstyle ise -f mips_fpga_interface.ut mips_fpga_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.ucf -p xc3s1000-ft256-4 mips_fpga_interface.ngc mips_fpga_interface.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mips_fpga_interface_map.ncd mips_fpga_interface.ngd mips_fpga_interface.pcf 
+par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd mips_fpga_interface.ncd mips_fpga_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o mips_fpga_interface.twr mips_fpga_interface.pcf 
+bitgen -intstyle ise -f mips_fpga_interface.ut mips_fpga_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.ucf -p xc3s1000-ft256-4 mips_fpga_interface.ngc mips_fpga_interface.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mips_fpga_interface_map.ncd mips_fpga_interface.ngd mips_fpga_interface.pcf 
+par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd mips_fpga_interface.ncd mips_fpga_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o mips_fpga_interface.twr mips_fpga_interface.pcf 
+bitgen -intstyle ise -f mips_fpga_interface.ut mips_fpga_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.ucf -p xc3s1000-ft256-4 mips_fpga_interface.ngc mips_fpga_interface.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mips_fpga_interface_map.ncd mips_fpga_interface.ngd mips_fpga_interface.pcf 
+par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd mips_fpga_interface.ncd mips_fpga_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o mips_fpga_interface.twr mips_fpga_interface.pcf 
+bitgen -intstyle ise -f mips_fpga_interface.ut mips_fpga_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.ucf -p xc3s1000-ft256-4 mips_fpga_interface.ngc mips_fpga_interface.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mips_fpga_interface_map.ncd mips_fpga_interface.ngd mips_fpga_interface.pcf 
+par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd mips_fpga_interface.ncd mips_fpga_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o mips_fpga_interface.twr mips_fpga_interface.pcf 
+bitgen -intstyle ise -f mips_fpga_interface.ut mips_fpga_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.ucf -p xc3s1000-ft256-4 mips_fpga_interface.ngc mips_fpga_interface.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mips_fpga_interface_map.ncd mips_fpga_interface.ngd mips_fpga_interface.pcf 
+par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd mips_fpga_interface.ncd mips_fpga_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o mips_fpga_interface.twr mips_fpga_interface.pcf 
+bitgen -intstyle ise -f mips_fpga_interface.ut mips_fpga_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.ucf -p xc3s1000-ft256-4 mips_fpga_interface.ngc mips_fpga_interface.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mips_fpga_interface_map.ncd mips_fpga_interface.ngd mips_fpga_interface.pcf 
+par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd mips_fpga_interface.ncd mips_fpga_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o mips_fpga_interface.twr mips_fpga_interface.pcf 
+bitgen -intstyle ise -f mips_fpga_interface.ut mips_fpga_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.ucf -p xc3s1000-ft256-4 mips_fpga_interface.ngc mips_fpga_interface.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mips_fpga_interface_map.ncd mips_fpga_interface.ngd mips_fpga_interface.pcf 
+par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd mips_fpga_interface.ncd mips_fpga_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o mips_fpga_interface.twr mips_fpga_interface.pcf 
+bitgen -intstyle ise -f mips_fpga_interface.ut mips_fpga_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.ucf -p xc3s1000-ft256-4 mips_fpga_interface.ngc mips_fpga_interface.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mips_fpga_interface_map.ncd mips_fpga_interface.ngd mips_fpga_interface.pcf 
+par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd mips_fpga_interface.ncd mips_fpga_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o mips_fpga_interface.twr mips_fpga_interface.pcf 
+bitgen -intstyle ise -f mips_fpga_interface.ut mips_fpga_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.ucf -p xc3s1000-ft256-4 mips_fpga_interface.ngc mips_fpga_interface.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mips_fpga_interface_map.ncd mips_fpga_interface.ngd mips_fpga_interface.pcf 
+par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd mips_fpga_interface.ncd mips_fpga_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o mips_fpga_interface.twr mips_fpga_interface.pcf 
+bitgen -intstyle ise -f mips_fpga_interface.ut mips_fpga_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.ucf -p xc3s1000-ft256-4 mips_fpga_interface.ngc mips_fpga_interface.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mips_fpga_interface_map.ncd mips_fpga_interface.ngd mips_fpga_interface.pcf 
+par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd mips_fpga_interface.ncd mips_fpga_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o mips_fpga_interface.twr mips_fpga_interface.pcf 
+bitgen -intstyle ise -f mips_fpga_interface.ut mips_fpga_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.ucf -p xc3s1000-ft256-4 mips_fpga_interface.ngc mips_fpga_interface.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mips_fpga_interface_map.ncd mips_fpga_interface.ngd mips_fpga_interface.pcf 
+par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd mips_fpga_interface.ncd mips_fpga_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o mips_fpga_interface.twr mips_fpga_interface.pcf 
+bitgen -intstyle ise -f mips_fpga_interface.ut mips_fpga_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.ucf -p xc3s1000-ft256-4 mips_fpga_interface.ngc mips_fpga_interface.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mips_fpga_interface_map.ncd mips_fpga_interface.ngd mips_fpga_interface.pcf 
+par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd mips_fpga_interface.ncd mips_fpga_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o mips_fpga_interface.twr mips_fpga_interface.pcf 
+bitgen -intstyle ise -f mips_fpga_interface.ut mips_fpga_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.ucf -p xc3s1000-ft256-4 mips_fpga_interface.ngc mips_fpga_interface.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mips_fpga_interface_map.ncd mips_fpga_interface.ngd mips_fpga_interface.pcf 
+par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd mips_fpga_interface.ncd mips_fpga_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o mips_fpga_interface.twr mips_fpga_interface.pcf 
+bitgen -intstyle ise -f mips_fpga_interface.ut mips_fpga_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.ucf -p xc3s1000-ft256-4 mips_fpga_interface.ngc mips_fpga_interface.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mips_fpga_interface_map.ncd mips_fpga_interface.ngd mips_fpga_interface.pcf 
+par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd mips_fpga_interface.ncd mips_fpga_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o mips_fpga_interface.twr mips_fpga_interface.pcf 
+bitgen -intstyle ise -f mips_fpga_interface.ut mips_fpga_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.ucf -p xc3s1000-ft256-4 mips_fpga_interface.ngc mips_fpga_interface.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mips_fpga_interface_map.ncd mips_fpga_interface.ngd mips_fpga_interface.pcf 
+par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd mips_fpga_interface.ncd mips_fpga_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o mips_fpga_interface.twr mips_fpga_interface.pcf 
+bitgen -intstyle ise -f mips_fpga_interface.ut mips_fpga_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.ucf -p xc3s1000-ft256-4 mips_fpga_interface.ngc mips_fpga_interface.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mips_fpga_interface_map.ncd mips_fpga_interface.ngd mips_fpga_interface.pcf 
+par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd mips_fpga_interface.ncd mips_fpga_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o mips_fpga_interface.twr mips_fpga_interface.pcf 
+bitgen -intstyle ise -f mips_fpga_interface.ut mips_fpga_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.ucf -p xc3s1000-ft256-4 mips_fpga_interface.ngc mips_fpga_interface.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mips_fpga_interface_map.ncd mips_fpga_interface.ngd mips_fpga_interface.pcf 
+par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd mips_fpga_interface.ncd mips_fpga_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o mips_fpga_interface.twr mips_fpga_interface.pcf 
+bitgen -intstyle ise -f mips_fpga_interface.ut mips_fpga_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.ucf -p xc3s1000-ft256-4 mips_fpga_interface.ngc mips_fpga_interface.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mips_fpga_interface_map.ncd mips_fpga_interface.ngd mips_fpga_interface.pcf 
+par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd mips_fpga_interface.ncd mips_fpga_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o mips_fpga_interface.twr mips_fpga_interface.pcf 
+bitgen -intstyle ise -f mips_fpga_interface.ut mips_fpga_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.ucf -p xc3s1000-ft256-4 mips_fpga_interface.ngc mips_fpga_interface.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mips_fpga_interface_map.ncd mips_fpga_interface.ngd mips_fpga_interface.pcf 
+par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd mips_fpga_interface.ncd mips_fpga_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o mips_fpga_interface.twr mips_fpga_interface.pcf 
+bitgen -intstyle ise -f mips_fpga_interface.ut mips_fpga_interface.ncd 
+xst -intstyle ise -ifn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.xst" -ofn "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/mips_fpga_interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_fpga_interface.ucf -p xc3s1000-ft256-4 mips_fpga_interface.ngc mips_fpga_interface.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mips_fpga_interface_map.ncd mips_fpga_interface.ngd mips_fpga_interface.pcf 
+par -w -intstyle ise -ol high -t 1 mips_fpga_interface_map.ncd mips_fpga_interface.ncd mips_fpga_interface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o mips_fpga_interface.twr mips_fpga_interface.pcf 
+bitgen -intstyle ise -f mips_fpga_interface.ut mips_fpga_interface.ncd 

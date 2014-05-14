@@ -1,7 +1,7 @@
 Release 14.6 Drc P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Tue May 13 03:17:04 2014
+Tue May 13 18:28:53 2014
 
 drc -z mips_fpga_interface.ncd mips_fpga_interface.pcf
 

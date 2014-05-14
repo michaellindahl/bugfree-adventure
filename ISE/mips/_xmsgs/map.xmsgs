@@ -5,15 +5,15 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">io_out_port&lt;31&gt;</arg> has no load.
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">mips_cpu/mips1/dp/rf/Mram_mem1/SPO</arg> has no load.
 </msg>
 
-<msg type="info" file="LIT" num="395" delta="new" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">24</arg> more times for the following (max. 5 shown):
-<arg fmt="%s" index="3">io_out_port&lt;30&gt;,
-io_out_port&lt;29&gt;,
-io_out_port&lt;28&gt;,
-io_out_port&lt;27&gt;,
-io_out_port&lt;26&gt;</arg>
+<msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">95</arg> more times for the following (max. 5 shown):
+<arg fmt="%s" index="3">mips_cpu/mips1/dp/rf/Mram_mem2/SPO,
+mips_cpu/mips1/dp/rf/Mram_mem3/SPO,
+mips_cpu/mips1/dp/rf/Mram_mem6/SPO,
+mips_cpu/mips1/dp/rf/Mram_mem4/SPO,
+mips_cpu/mips1/dp/rf/Mram_mem5/SPO</arg>
 To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
 </msg>
 

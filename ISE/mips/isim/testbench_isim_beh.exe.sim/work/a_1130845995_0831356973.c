@@ -25,7 +25,7 @@ extern char *STD_STANDARD;
 extern char *IEEE_P_1242562249;
 extern char *STD_TEXTIO;
 static const char *ng3 = "mem_file";
-static const char *ng4 = "C:/Users/tglasser15/Documents/GitHub/bugfree-adventure/ISE/mips_mem.vhd";
+static const char *ng4 = "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_mem.vhd";
 
 int ieee_p_1242562249_sub_1657552908_1035706684(char *, char *, char *);
 char *ieee_p_1242562249_sub_180853171_1035706684(char *, char *, int , int );
