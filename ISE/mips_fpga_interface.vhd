@@ -80,6 +80,7 @@ architecture test_fpga of mips_fpga_interface is
   
   signal number : std_logic_vector(11 downto 0);
   signal column : std_logic_vector(11 downto 0);
+  signal row : std_logic_vector(11 downto 0);
   signal xsignal : std_logic_vector(11 downto 0);
   signal ysignal : std_logic_vector(11 downto 0);
 
@@ -189,12 +190,12 @@ begin
 		if cnt = 1 then
 			char_enable_write <= YES;
 			char_write_value <= input_value + x"30";
-			char_write_addr <= X"024"; -- first line input
+			char_write_addr <= X"0A4"; -- first line input
 		end if;
 		if cnt = 2 then
 			char_enable_write <= YES;
 			char_write_value <= io_fib_num + x"30";
-			char_write_addr <= X"105"; -- second line input
+			char_write_addr <= X"185"; -- second line input
 		end if;
 		if cnt = 3 then
 			char_enable_write <= YES;
@@ -203,12 +204,12 @@ begin
 			else
 				char_write_value <= io_fib_result(3 downto 0) + x"30";
 			end if;
-			char_write_addr <= X"118"; -- output on second line
+			char_write_addr <= X"198"; -- output on second line
 		end if;
 		if cnt = 4 then
 			char_enable_write <= YES;
 			char_write_value <= io_fib_result(7 downto 4) + x"30";
-			char_write_addr <= X"117"; -- output on second line
+			char_write_addr <= X"197"; -- output on second line
 		end if;
 		cnt := cnt + 1;		
 		if cnt = 5 then
@@ -244,13 +245,24 @@ begin
 			ysignal <= conv_std_logic_vector(y, 11);
 
 		   number <= char_read_value & "0000";
-		   -- char_read_addr <= "000000000011";	
-			-- column <= y / 8;
-			-- column <= (y >> 4);    parse error, unexpected GT
-			column <= "0000" & ysignal(11 downto 4);
+ 		   -- char_read_addr <= "000000000011";	
 			
-			-- char_read_addr <= (column << 8) + (x >> 3);
-			char_read_addr <= ((column(3 downto 0) & "00000000") + ("000" & xsignal(11 downto 3)));
+ 			-- column <= x / 8;
+ 			-- column <= (x >> 3);    parse error, unexpected GT
+    		column <= "000" & xsignal(11 downto 3);
+			
+			-- row <= y / 16
+ 			-- row <= (y >> 4)
+ 			row <= "0000" & ysignal(11 downto 4);
+ 			
+ 			-- char_read_addr <= row * 128 + column
+ 			-- char_read_addr <= (row << 7) + column
+ 			char_read_addr <= (row(4 downto 0) & "0000000") + column;
+			
+			-- char_read_addr <= (("0000" & ysignal(11 downto 4))(4 downto 0) & "0000000") + ("000" & xsignal(11 downto 3));
+			
+			-- old
+			-- char_read_addr <= ((("0000" & ysignal(11 downto 4))(3 downto 0) & "00000000") + ("000" & xsignal(11 downto 3)));
 
 			-- 0 is x30_
 			-- fetch x02_
