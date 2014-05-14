@@ -145,9 +145,9 @@ begin
 			   -- reset state, start read
 			   cnt := 0;
 				mips_clk_input <= '0';
-			elsif cnt < 12500000 then
+			elsif cnt < 125 then
 			   mips_clk_input <= '0';
-			elsif cnt < 25000000 then
+			elsif cnt < 250 then
 			   mips_clk_input <= '1';				
 			else
 			   mips_clk_input <= '1';	
@@ -178,23 +178,31 @@ p3: process(keyboard_clk)
       if rdy = YES then
         led <= io_fib_num(6 downto 0);                       -- update the display each time a scancode is received
 		  io_fib_num <= "00000000000000000000000" & input_value; 
-		  char_enable_write <= YES;
-		  char_write_value <= io_fib_result + x"30";
-		  --char_write_value <= input_value + x"30";
-		  --char_write_addr <= X"105"; -- second line input
-		  --char_write_addr <= X"024"; -- first line input
-		  char_write_addr <= X"117"; -- output on second line
 		end if;
     end if;
 end process;
 
-p4: process (clk25)
+p4: process (clk)
 	variable cnt: integer;
 begin
-	if clk25'event and clk25='1' then
-		cnt := cnt + 1;
-		if cnt = 25000000 then
-			color <= color + "001";
+	if clk'event and clk='1' then	
+		if cnt = 1 then
+			char_enable_write <= YES;
+			char_write_value <= input_value + x"30";
+			char_write_addr <= X"024"; -- first line input
+		end if;
+		if cnt = 2 then
+			char_enable_write <= YES;
+			char_write_value <= io_fib_num + x"30";
+			char_write_addr <= X"105"; -- second line input
+		end if;
+		if cnt = 3 then
+			char_enable_write <= YES;
+			char_write_value <= io_fib_result + x"30";
+			char_write_addr <= X"117"; -- output on second line
+		end if;
+		cnt := cnt + 1;		
+		if cnt = 5 then
 			cnt := 0;
 		end if;
 	end if;
