@@ -20,8 +20,9 @@ use IEEE.STD_LOGIC_UNSIGNED.all;
 entity top is -- top-level design for testing
   port(clk, reset:         in     STD_LOGIC;
        writedata, dataadr: inout STD_LOGIC_VECTOR(31 downto 0);
-       io_fib_num: 			in  STD_LOGIC_VECTOR(31 downto 0) := "00000000000000000000000000000000";
+       io_fib_num: 			in  STD_LOGIC_VECTOR(31 downto 0) := "00000000000000000000000000001000";
        io_fib_result: 	   out STD_LOGIC_VECTOR(31 downto 0) := "00000000000000000000000000000000";
+		 io_fib_result_2: out STD_LOGIC_VECTOR(31 downto 0):= "00000000000000000000000000000000";
        memwrite:           inout STD_LOGIC;
 		 pc:                 inout STD_LOGIC_VECTOR(31 downto 0) );
 end;
@@ -41,6 +42,7 @@ architecture test of top is
     port(clk, we:  in STD_LOGIC;
 	      io_fib_num: in STD_LOGIC_VECTOR(31 downto 0);
          io_fib_result: out STD_LOGIC_VECTOR(31 downto 0);
+			io_fib_result_2: out STD_LOGIC_VECTOR(31 downto 0);
          a, wd:    in STD_LOGIC_VECTOR(31 downto 0);
          rd:       out STD_LOGIC_VECTOR(31 downto 0));
   end component;
@@ -59,7 +61,7 @@ begin
   -- instantiate processor and memories
   mips1: mips port map(clk, reset, pc, instr, memwrite, dataadr, writedata, readdata);
   imem1: imem port map(pc(7 downto 2), instr);
-  dmem1: dmem port map(clk, memwrite, io_fib_num, io_fib_result, dataadr, writedata, readdata);
+  dmem1: dmem port map(clk, memwrite, io_fib_num, io_fib_result, io_fib_result_2, dataadr, writedata, readdata);
 
 end;
 
