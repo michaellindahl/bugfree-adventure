@@ -198,7 +198,16 @@ begin
 		end if;
 		if cnt = 3 then
 			char_enable_write <= YES;
-			char_write_value <= io_fib_result + x"30";
+			if io_fib_result(3 downto 0) = x"0D" then
+				char_write_value <= io_fib_result(3 downto 0) + x"37";
+			else
+				char_write_value <= io_fib_result(3 downto 0) + x"30";
+			end if;
+			char_write_addr <= X"118"; -- output on second line
+		end if;
+		if cnt = 4 then
+			char_enable_write <= YES;
+			char_write_value <= io_fib_result(7 downto 4) + x"30";
 			char_write_addr <= X"117"; -- output on second line
 		end if;
 		cnt := cnt + 1;		
