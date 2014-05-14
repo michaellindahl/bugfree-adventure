@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-05-14T12:21:58</DateModified>
+  <DateModified>2014-05-14T12:55:12</DateModified>
   <ModuleName>mips_fpga_interface</ModuleName>
   <SummaryTimeStamp>2014-05-14T12:17:44</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips/iseconfig/mips_fpga_interface.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips/iseconfig/mips_fpga_interface.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips\</ImplementationReportsDirectory>
   <DateInitialized>2014-03-09T17:22:16</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
