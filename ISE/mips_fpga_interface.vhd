@@ -39,12 +39,14 @@ architecture test_fpga of mips_fpga_interface is
        writedata, dataadr: inout STD_LOGIC_VECTOR(31 downto 0);
        io_fib_num: 			in STD_LOGIC_VECTOR(31 downto 0);
        io_fib_result: 		out STD_LOGIC_VECTOR(31 downto 0);
+		 io_fib_result_2: out STD_LOGIC_VECTOR(31 downto 0);
        memwrite:           inout STD_LOGIC;
 		 pc:                 inout STD_LOGIC_VECTOR(31 downto 0) );
   end component;
   
   signal io_fib_num: 	 STD_LOGIC_VECTOR(31 downto 0);
   signal io_fib_result: 	 STD_LOGIC_VECTOR(31 downto 0);
+  signal io_fib_result_2:  STD_LOGIC_VECTOR(31 downto 0);
   
   signal mips_clk_input: STD_LOGIC;
   signal keyboard_clk              : std_logic;
@@ -83,7 +85,6 @@ architecture test_fpga of mips_fpga_interface is
   signal row : std_logic_vector(11 downto 0);
   signal xsignal : std_logic_vector(11 downto 0);
   signal ysignal : std_logic_vector(11 downto 0);
-
   
 begin
 
@@ -186,7 +187,7 @@ end process;
 p4: process (clk)
 	variable cnt: integer;
 begin
-	if clk'event and clk='1' then	
+	if clk'event and clk='1' then				
 		if cnt = 1 then
 			char_enable_write <= YES;
 			char_write_value <= input_value + x"30";
@@ -199,16 +200,12 @@ begin
 		end if;
 		if cnt = 3 then
 			char_enable_write <= YES;
-			if io_fib_result(3 downto 0) = x"0D" then
-				char_write_value <= io_fib_result(3 downto 0) + x"37";
-			else
-				char_write_value <= io_fib_result(3 downto 0) + x"30";
-			end if;
+			char_write_value <= io_fib_result_2 + x"30";
 			char_write_addr <= X"198"; -- output on second line
 		end if;
 		if cnt = 4 then
 			char_enable_write <= YES;
-			char_write_value <= io_fib_result(7 downto 4) + x"30";
+			char_write_value <= io_fib_result + x"30";
 			char_write_addr <= X"197"; -- output on second line
 		end if;
 		cnt := cnt + 1;		
@@ -335,7 +332,7 @@ begin
 end process;
 
   -- instantiate the mips CPU
-  mips_cpu: top port map( mips_clk_input, reset, writedata, dataadr, io_fib_num, io_fib_result, memwrite, pc);
+  mips_cpu: top port map( mips_clk_input, reset, writedata, dataadr, io_fib_num, io_fib_result, io_fib_result_2, memwrite, pc);
     
   -- debug signals - this simply outputs the program counter address and the 
   -- signal for memory write.

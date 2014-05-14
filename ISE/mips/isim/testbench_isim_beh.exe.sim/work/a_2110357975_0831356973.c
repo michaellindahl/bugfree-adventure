@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/mlindahl15/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd";
+static const char *ng0 = "C:/Users/jburge16/Documents/GitHub/bugfree-adventure/ISE/mips_building_blocks.vhd";
 extern char *IEEE_P_2592010699;
 
 
@@ -60,7 +60,7 @@ LAB3:    t1 = (t0 + 1032U);
     t4 = (t3 * 1U);
     t5 = (0 + t4);
     t1 = (t2 + t5);
-    t6 = (t0 + 4496);
+    t6 = (t0 + 4484);
     t10 = ((IEEE_P_2592010699) + 4024);
     t12 = (t11 + 0U);
     t13 = (t12 + 0U);

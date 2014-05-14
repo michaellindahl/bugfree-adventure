@@ -12,6 +12,7 @@ entity dmem is -- data memory
   port(clk, we:  in STD_LOGIC;
        io_fib_num: in STD_LOGIC_VECTOR(31 downto 0);
        io_fib_result: out STD_LOGIC_VECTOR(31 downto 0);
+		 io_fib_result_2: out STD_LOGIC_VECTOR(31 downto 0);
        a, wd:    in STD_LOGIC_VECTOR(31 downto 0);
        rd:       out STD_LOGIC_VECTOR(31 downto 0));
 end;
@@ -26,6 +27,8 @@ begin
           if (we = '1') then 
 			 		if (a = X"00000FF0") then -- store word 4080
 						io_fib_result <= wd;
+					elsif (a = X"00000F00") then --
+						io_fib_result_2 <= wd;
 					else
 						mem( to_integer(unsigned(a(7 downto 2))) ) := wd; -- write data value is stored to location 'a'. we do the typecast so we can index with an integer value
 					end if;

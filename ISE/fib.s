@@ -32,5 +32,19 @@ addi 	$t3, $t3, 1
 j	loop	
 		# Target of branch conditional jump
 done:
- sw   $v0, fffffff0($0) # AC0B0000
+ #break fib result into digits (tens place, ones place)
+ addi	$t3, $0, 1
+ addi 	$v1, $0, 0 #20030000
+ addi 	$a0, $0, 10
+ slt 	$t2, $v0, $a0 #0044502A
+ beq	$t2, $t3, finish
+
+sub $v0, $v0, $a0
+addi $v1, $v1, 1
+
+
+ j done
+finish:
+ sw   $v0, fffffff0($0) # AC0B0000 io_fib_result
+ sw   $v1, 00000f00
  jr   $ra            	# return to OS
