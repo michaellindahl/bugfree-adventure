@@ -1,4 +1,0 @@
-vhdl work "list_ch13_01_font_rom.vhd"
-vhdl work "char_mem.vhd"
-vhdl work "../ps2_kbd.vhd"
-vhdl work "vga_gen.vhd"

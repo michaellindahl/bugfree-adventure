@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\mlindahl15\Documents\GitHub\bugfree-adventure\characters\vga_test\vgatest.ncd
-OUTFILE=C:\Users\mlindahl15\Documents\GitHub\bugfree-adventure\characters\vga_test\vgatest.bit
-FAMILY=Spartan3
-PART=xc3s1000-4ft256
-WORKINGDIR=C:\Users\mlindahl15\Documents\GitHub\bugfree-adventure\characters\vga_test
-LICENSE=WebPack
-USER_INFO=210788141_0_0_457
