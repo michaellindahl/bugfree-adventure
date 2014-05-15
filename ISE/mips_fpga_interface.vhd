@@ -201,12 +201,12 @@ begin
 		if cnt = 3 then
 			char_enable_write <= YES;
 			char_write_value <= io_fib_result_2 + x"30";
-			char_write_addr <= X"198"; -- output on second line
+			char_write_addr <= X"197"; -- output on second line
 		end if;
 		if cnt = 4 then
 			char_enable_write <= YES;
 			char_write_value <= io_fib_result + x"30";
-			char_write_addr <= X"197"; -- output on second line
+			char_write_addr <= X"198"; -- output on second line
 		end if;
 		cnt := cnt + 1;		
 		if cnt = 5 then
